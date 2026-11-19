@@ -38,10 +38,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 65
     },
     "status": "vorschlag",
     "paket": "start",
@@ -95,10 +95,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 19,
+      "grund": 59
     },
     "status": "vorschlag",
     "paket": "start",
@@ -153,10 +153,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 19,
+      "grund": 59
     },
     "status": "vorschlag",
     "paket": "start",
@@ -211,10 +211,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 65
     },
     "status": "vorschlag",
     "paket": "start",
@@ -269,10 +269,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 65
     },
     "status": "vorschlag",
     "paket": "start",
@@ -326,10 +326,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 25,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 60
     },
     "status": "vorschlag",
     "paket": "start",
@@ -384,10 +384,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 65
     },
     "status": "vorschlag",
     "paket": "start",
@@ -442,10 +442,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 65
     },
     "status": "vorschlag",
     "paket": "start",
@@ -500,10 +500,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 19,
+      "grund": 59
     },
     "status": "vorschlag",
     "paket": "start",
@@ -557,10 +557,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 25,
+      "nachfrage": 10,
+      "kauf": 19,
+      "grund": 54
     },
     "status": "vorschlag",
     "paket": "start",
@@ -614,10 +614,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 65
     },
     "status": "vorschlag",
     "paket": "start",
@@ -670,10 +670,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 25,
+      "nachfrage": 10,
+      "kauf": 19,
+      "grund": 54
     },
     "status": "vorschlag",
     "paket": "start",
@@ -727,10 +727,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 65
     },
     "status": "vorschlag",
     "paket": "start",
@@ -785,10 +785,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 65
     },
     "status": "vorschlag",
     "paket": "start",
@@ -841,10 +841,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 19,
+      "grund": 59
     },
     "status": "vorschlag",
     "paket": "start",
@@ -898,10 +898,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 19,
+      "grund": 59
     },
     "status": "vorschlag",
     "paket": "start",
@@ -956,10 +956,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 65
     },
     "status": "vorschlag",
     "paket": "start",
@@ -1013,10 +1013,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 25,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 60
     },
     "status": "vorschlag",
     "paket": "start",
@@ -1070,10 +1070,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 65
     },
     "status": "vorschlag",
     "paket": "start",
@@ -1126,10 +1126,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 25,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 60
     },
     "status": "vorschlag",
     "paket": "start",
@@ -1183,10 +1183,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 25,
+      "nachfrage": 10,
+      "kauf": 19,
+      "grund": 54
     },
     "status": "vorschlag",
     "paket": "start",
@@ -1241,10 +1241,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 20,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 55
     },
     "status": "vorschlag",
     "paket": "start",
@@ -1298,10 +1298,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 65
     },
     "status": "vorschlag",
     "paket": "start",
@@ -1356,10 +1356,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 15,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 50
     },
     "status": "vorschlag",
     "paket": "start",
@@ -1414,10 +1414,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 25,
+      "nachfrage": 10,
+      "kauf": 19,
+      "grund": 54
     },
     "status": "vorschlag",
     "paket": "start",
@@ -1472,10 +1472,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 65
     },
     "status": "vorschlag",
     "paket": "start",
@@ -1529,10 +1529,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 65
     },
     "status": "vorschlag",
     "paket": "start",
@@ -1586,10 +1586,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 19,
+      "grund": 59
     },
     "status": "vorschlag",
     "paket": "start",
@@ -1644,10 +1644,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 65
     },
     "status": "vorschlag",
     "paket": "start",
@@ -1702,10 +1702,10 @@
       "sperre": ""
     },
     "score": {
-      "kurios": 0,
-      "nachfrage": 0,
-      "kauf": 0,
-      "grund": 0
+      "kurios": 30,
+      "nachfrage": 10,
+      "kauf": 25,
+      "grund": 65
     },
     "status": "vorschlag",
     "paket": "start",
