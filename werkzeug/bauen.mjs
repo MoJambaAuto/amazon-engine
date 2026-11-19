@@ -72,18 +72,29 @@ h2{color:var(--cyan);margin-top:20px}
 
 const KOPIEREN = `document.querySelectorAll('[data-kopiere]').forEach(function(b){b.addEventListener('click',function(){
 var q=document.getElementById(b.getAttribute('data-kopiere'));var t=q.textContent;var alt=b.textContent;
-function ok(){b.textContent='Kopiert ✓';setTimeout(function(){b.textContent=alt},2500)}
+var dann=b.getAttribute('data-dann');
+function ok(){b.textContent='Kopiert ✓';if(dann){setTimeout(function(){window.location.href=dann},500)}setTimeout(function(){b.textContent=alt},2500)}
 if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,function(){waehle(q);ok()})}else{waehle(q);ok()}});});
 function waehle(q){var r=document.createRange();r.selectNodeContents(q);var s=window.getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy')}catch(e){}}`;
 
-function seite(titel, inhalt, config, skript = '') {
+// Kopf-Zusatz der Kopierseite: lässt sich als „Heute posten“ mit Schmetterling auf den Startbildschirm legen.
+const STARTBILDSCHIRM = `<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="../papillon-192.png">
+<link rel="apple-touch-icon" href="../papillon-192.png">
+<meta name="theme-color" content="#0B0B14">
+<meta name="apple-mobile-web-app-title" content="Heute posten">`;
+const MANIFEST = (g) => JSON.stringify({ name: 'Heute posten', short_name: 'Heute posten', start_url: './', scope: './', display: 'standalone',
+  background_color: g.hintergrund, theme_color: g.hintergrund, lang: 'de',
+  icons: [{ src: '../papillon-192.png', sizes: '192x192', type: 'image/png' }, { src: '../papillon-512.png', sizes: '512x512', type: 'image/png' }] }, null, 2) + '\n';
+
+function seite(titel, inhalt, config, skript = '', kopf = '') {
   return `<!doctype html>
 <html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>${esc(titel)}</title>
+${kopf ? kopf + '\n' : ''}<title>${esc(titel)}</title>
 <style>${CSS(config.gestaltung_engine_seiten)}</style>
 </head>
 <body>
@@ -99,8 +110,11 @@ ${skript ? `<script>${skript}</script>` : ''}
 function heuteSeite({ datum, kanal, social, vorrat }, config) {
   const teile = [`<h1>Heute posten</h1>`, `<p class="datum">${esc(datumLang(datum))}</p>`];
   if (kanal) {
-    teile.push(`<pre class="box" id="kanal">${esc(kanal)}</pre>`, `<button class="knopf" type="button" data-kopiere="kanal">Text kopieren</button>`);
-    if (config.kanal_url) teile.push(`<a class="knopf zwei" href="${esc(config.kanal_url)}" target="_blank" rel="noopener">Kanal öffnen</a>`);
+    teile.push(`<pre class="box" id="kanal">${esc(kanal)}</pre>`);
+    // Ein Knopf: kopieren und gleich den Kanal öffnen (ohne Kanal-Link nur kopieren)
+    teile.push(config.kanal_url
+      ? `<button class="knopf" type="button" data-kopiere="kanal" data-dann="${esc(config.kanal_url)}">Kopieren und Kanal öffnen</button>`
+      : `<button class="knopf" type="button" data-kopiere="kanal">Text kopieren</button>`);
   } else {
     teile.push(`<p class="box leer">Heute ist kein Fund geplant.</p>`);
   }
@@ -112,7 +126,7 @@ function heuteSeite({ datum, kanal, social, vorrat }, config) {
   teile.push(vorrat.length
     ? `<ul class="vorrat">${vorrat.map((v) => `<li><span class="d">${esc(datumKurz(v.datum))}</span><span>${esc(v.titel)}</span></li>`).join('')}</ul>`
     : `<p class="box leer">Nichts geplant.</p>`);
-  return seite('Heute posten · Papillons Fund des Tages', teile.join('\n'), config, kanal || social ? KOPIEREN : '');
+  return seite('Heute posten · Papillons Fund des Tages', teile.join('\n'), config, kanal || social ? KOPIEREN : '', STARTBILDSCHIRM);
 }
 
 // ---------- Tagesbau ----------
@@ -190,6 +204,7 @@ export function bauen({ daten = join(WURZEL, 'daten'), docs = join(WURZEL, 'docs
   schreibenJson(join(docs, 'feed', 'heute.json'), { datum: heute, art: heuteZeile ? heuteZeile.art : null, fund: fundHeute, kanal_text: kanal, social_text: social });
   schreibenJson(join(docs, 'status.json'), status);
   datei(join(docs, 'heute', 'index.html'), heuteSeite({ datum: heute, kanal, social, vorrat }, config));
+  datei(join(docs, 'heute', 'manifest.webmanifest'), MANIFEST(config.gestaltung_engine_seiten));
   datei(join(docs, 'robots.txt'), ROBOTS);
   datei(join(docs, '.nojekyll'), '');
   return { neueZeile, status, kanal, social };

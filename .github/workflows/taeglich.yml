@@ -1,8 +1,13 @@
 # Täglicher Lauf der Amazon-Engine (Paket AE-06): planen, prüfen, bauen, Änderungen sichern.
+# Selbstheilung: drei Zeitpläne am Morgen (05:10, 06:40, 08:10 Uhr Berlin im Winter). Der erste baut,
+# die beiden späteren holen nur nach, wenn heute noch nichts gebaut wurde (--nur-wenn-fehlt).
+# Zusätzlich prüft YGGDRASILs Automatiken-Wächter um 07:20 Uhr und startet den Lauf bei Bedarf selbst.
 name: Tageslauf
 on:
   schedule:
     - cron: '10 4 * * *'
+    - cron: '40 5 * * *'
+    - cron: '10 7 * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -18,7 +23,12 @@ jobs:
         with:
           node-version: 20
       - name: Planen, prüfen, bauen
-        run: node werkzeug/taeglich.mjs
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ github.event.schedule }}" != "10 4 * * *" ]; then
+            node werkzeug/taeglich.mjs --nur-wenn-fehlt
+          else
+            node werkzeug/taeglich.mjs
+          fi
       - name: Änderungen sichern
         run: |
           git add docs daten protokoll 2>/dev/null || git add docs daten

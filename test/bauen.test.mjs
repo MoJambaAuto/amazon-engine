@@ -7,7 +7,7 @@ import { join } from 'node:path';
 import { WURZEL, lesenJson, schreibenJson } from '../werkzeug/lib.mjs';
 import { pruefeText } from '../werkzeug/regeln.mjs';
 import { bauen, vorschau } from '../werkzeug/bauen.mjs';
-import { taeglich } from '../werkzeug/taeglich.mjs';
+import { taeglich, schonGelaufen } from '../werkzeug/taeglich.mjs';
 import { plusTage } from '../werkzeug/planen.mjs';
 
 const config = lesenJson(join(WURZEL, 'config.json'));
@@ -70,6 +70,13 @@ test('Fund-Tag: Kanal- und Social-Text mit Pflichtteilen, Feed ohne Link und Ken
     const html = readFileSync(join(t.docs, 'heute', 'index.html'), 'utf8');
     for (const s of ['<h1>Heute posten</h1>', 'Text kopieren', 'Für Instagram und Facebook', 'noindex', 'Mittwoch, 25.11.2026']) assert.ok(html.includes(s), s);
     assert.ok(!/<script[^>]+src=/.test(html), 'keine Fremd-Skripte');
+    // ein Knopf: kopieren und Kanal öffnen; Startbildschirm-Symbol
+    assert.ok(html.includes(`data-dann="${config.kanal_url}">Kopieren und Kanal öffnen</button>`));
+    assert.ok(html.includes('<link rel="manifest" href="manifest.webmanifest">'));
+    const m = lesenJson(join(t.docs, 'heute', 'manifest.webmanifest'));
+    assert.equal(m.name, 'Heute posten');
+    assert.equal(m.icons.length, 2);
+    for (const i of m.icons) assert.ok(existsSync(join(WURZEL, 'docs', i.src.replace('../', ''))), i.src);
   } finally { t.weg(); }
 });
 
@@ -141,5 +148,15 @@ test('taeglich: plant, baut, protokolliert einmal; zweiter Lauf ändert nichts',
     assert.equal(prot().length, 1);
     assert.equal(verlaufZeilen(t.daten).length, 1);
     assert.deepEqual(alleDateien(t.docs), docs);
+  } finally { t.weg(); }
+});
+
+test('Ersatzlauf: schonGelaufen erkennt, ob heute schon gebaut wurde', () => {
+  const t = ordner();
+  try {
+    assert.equal(schonGelaufen({ docs: t.docs, heute: HEUTE }), false);
+    bauen({ daten: t.daten, docs: t.docs, config, heute: HEUTE, jetzt: JETZT });
+    assert.equal(schonGelaufen({ docs: t.docs, heute: HEUTE }), true);
+    assert.equal(schonGelaufen({ docs: t.docs, heute: plusTage(HEUTE, 1) }), false);
   } finally { t.weg(); }
 });
