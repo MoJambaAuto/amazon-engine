@@ -51,7 +51,7 @@ function argWert(name) {
   return i > 0 ? process.argv[i + 1] : undefined;
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   if (!process.argv.includes('--fehlende')) {
     console.log('Aufruf: node werkzeug/texten.mjs --fehlende [--daten <ordner>]');
     process.exit(1);

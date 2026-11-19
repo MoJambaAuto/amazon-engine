@@ -171,7 +171,7 @@ function argWert(name) {
   return i > 0 ? process.argv[i + 1] : undefined;
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const ordner = resolve(argWert('--daten') ?? join(WURZEL, 'daten'));
   const heute = argWert('--heute') ?? heuteBerlin();
   if (!/^\d{4}-\d{2}-\d{2}$/.test(heute)) { console.error('--heute braucht JJJJ-MM-TT'); process.exit(1); }

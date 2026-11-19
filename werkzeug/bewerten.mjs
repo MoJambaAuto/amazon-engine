@@ -54,7 +54,7 @@ function argWert(name) {
   return i > 0 ? process.argv[i + 1] : undefined;
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const ordner = resolve(argWert('--daten') ?? join(WURZEL, 'daten'));
   const config = lesenJson(join(WURZEL, 'config.json'));
   const pfad = join(ordner, 'funde.json');

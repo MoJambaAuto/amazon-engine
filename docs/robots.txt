@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /heute/
+Disallow: /vorschau/
+Disallow: /social/
+Disallow: /amazon-engine/heute/
+Disallow: /amazon-engine/vorschau/
+Disallow: /amazon-engine/social/

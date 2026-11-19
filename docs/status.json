@@ -1,0 +1,12 @@
+{
+  "letzter_lauf": "2026-11-19T11:09:04.510Z",
+  "datum": "2026-11-19",
+  "heute_art": null,
+  "heute_fund": null,
+  "vorrat_tage": 0,
+  "geplante_tage": 0,
+  "warnungen": [
+    "Vorrat unter 10 Tagen",
+    "Heute kein Fund geplant"
+  ]
+}

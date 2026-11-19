@@ -32,7 +32,7 @@ export function pruefeAlle(funde, config) {
   return fehler;
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const config = lesenJson(join(WURZEL, 'config.json'));
   const funde = lesenJson(join(WURZEL, 'daten', 'funde.json'));
   const fehler = pruefeAlle(funde, config);
