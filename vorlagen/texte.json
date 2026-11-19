@@ -1,0 +1,51 @@
+{
+  "hinweis": "Muster aus dem Bauplan, Abschnitt 6. Platzhalter {titel} und {notiz}. Kanal und Social: nur Mittelteil.",
+  "kanal": {
+    "urteil": [
+      "{titel}. {notiz} Braucht das jemand? Nein. Will man es trotzdem? Sofort.",
+      "Heute vor Gericht: {titel}. {notiz} Urteil: schuldig im Sinne des Schmunzelns.",
+      "{notiz} Das ist: {titel}. Papillons Urteil: unnötig und genau deshalb gut.",
+      "{titel}. {notiz} Nützlichkeit: fraglich. Unterhaltungswert: hoch."
+    ],
+    "frage": [
+      "{titel}. {notiz} Wem würdest du das schenken?",
+      "Hand aufs Herz: Wer in deiner Runde braucht das? {titel}. {notiz}",
+      "{titel}. {notiz} Genial oder Quatsch – was sagst du?",
+      "Es gibt wirklich: {titel}. {notiz} Für wen wäre das genau richtig?"
+    ],
+    "mini-geschichte": [
+      "Montagmorgen, die Laune im Keller. Dann packt jemand das hier aus: {titel}. {notiz}",
+      "Die Wichtelrunde wird still. Im Papier liegt: {titel}. {notiz}",
+      "Irgendwer hat sich das ausgedacht, irgendwer hat es gebaut. Jetzt gibt es: {titel}. {notiz}",
+      "Stell dir das Gesicht beim Auspacken vor: {titel}. {notiz}"
+    ],
+    "steckbrief": [
+      "Name: {titel}\nBesonderheit: {notiz}\nGeeignet für: alle, die schon alles haben.",
+      "Name: {titel}\nBesonderheit: {notiz}\nEinsatzort: Wichtelrunde, Geburtstag, Schreibtisch.",
+      "Fund der Sorte „Gibt es wirklich“: {titel}. {notiz}",
+      "{titel}\nWas es ist: {notiz}\nWarum es hier steht: weil man es weitererzählt."
+    ],
+    "papillon-spricht": [
+      "Papillon hier. Heute bin ich hierüber geflattert: {titel}. {notiz} Ich musste es euch zeigen.",
+      "Ich, Papillon, habe viel gesehen. Das noch nicht: {titel}. {notiz}",
+      "Papillon meldet einen Fund: {titel}. {notiz} Mehr sage ich dazu nicht.",
+      "Beim Flug durchs Netz hängen geblieben: {titel}. {notiz} Gruß, Papillon."
+    ]
+  },
+  "social": [
+    "Fund des Tages: {titel}. {notiz}",
+    "Gibt es wirklich: {titel}. {notiz} Wem schenkst du das?",
+    "{notiz} Das ist: {titel}.",
+    "Papillon hat wieder etwas gefunden: {titel}. {notiz}"
+  ],
+  "web_h": [
+    "{titel}",
+    "Gibt es wirklich: {titel}",
+    "Fund des Tages: {titel}",
+    "{titel} – braucht das jemand?"
+  ],
+  "web_p": [
+    "{notiz} Wir fanden: zu kurios, um es nicht zu zeigen. Über den Knopf siehst du die Auswahl bei Amazon.",
+    "{notiz} Ob als Wichtelgeschenk oder einfach so: Über den Knopf geht es zur Auswahl bei Amazon."
+  ]
+}

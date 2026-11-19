@@ -18,7 +18,11 @@ export const SCHEMA = {
 const FREMDE_BEZUEGE = ['mojamba', 'interfloh', 'alaner', 'bmw-alfter'];
 
 const DATUM = /^\d{4}-\d{2}-\d{2}$/;
-const ARTEN = ['web_h', 'web_p', 'kanal', 'social'];
+// kanal / social = fertig zusammengesetzte Texte (bauen.mjs); *_mitte = Mittelteile in daten/funde.json (STIL.md).
+const ARTEN = ['web_h', 'web_p', 'kanal', 'social', 'kanal_mitte', 'social_mitte'];
+const LAENGE = { web_h: 'web_h', web_p: 'web_p', kanal_mitte: 'kanal', social_mitte: 'social' };
+// STIL.md Regel 10
+export const ERLAUBTE_HASHTAGS = ['#funddestages', '#geschenkidee', '#kurios', '#wichteln', '#wichtelgeschenk', '#lustigegeschenke', '#gibteswirklich', '#papillon'];
 
 function escapeRe(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -53,14 +57,27 @@ function textVon(eintrag) {
   return null;
 }
 
-// art: web_h | web_p | kanal | social
+// art: web_h | web_p | kanal_mitte | social_mitte (Texte in funde.json) | kanal | social (fertige Texte)
 export function pruefeText(text, art, config) {
   const f = [];
   if (!ARTEN.includes(art)) return [`unbekannte Textart '${art}'`];
   if (typeof text !== 'string') return [`${art}: Text fehlt oder ist kein Text`];
   const p = config.pflichttexte;
-  const max = config.textlaengen[art];
-  if ([...text].length > max) f.push(`${art}: zu lang (${[...text].length} > ${max} Zeichen)`);
+  if (LAENGE[art]) {
+    const max = config.textlaengen[LAENGE[art]];
+    if ([...text].length > max) f.push(`${art}: zu lang (${[...text].length} > ${max} Zeichen)`);
+    // STIL.md Regel 5
+    const emojis = (text.match(/\p{Extended_Pictographic}/gu) || []).length;
+    if (emojis > 1) f.push(`${art}: mehr als ein Emoji (${emojis})`);
+    const ausrufe = (text.match(/!/g) || []).length;
+    if (ausrufe > 1) f.push(`${art}: mehr als ein Ausrufezeichen (${ausrufe})`);
+  }
+  if (art === 'kanal_mitte' || art === 'social_mitte') {
+    // STIL.md Regel 4: im Mittelteil kein Amazon, kein Link, keine Hashtags
+    if (/amazon/i.test(text)) f.push(`${art}: Wort 'Amazon' im Mittelteil`);
+    if (/https?:\/\/|www\.|\.(de|com)\b/i.test(text)) f.push(`${art}: Link im Mittelteil`);
+    if (/#[\p{L}\p{N}_]/u.test(text)) f.push(`${art}: Hashtag im Mittelteil`);
+  }
   for (const w of sperrTreffer(text, config)) f.push(`${art}: Sperr-Wort '${w}'`);
   for (const m of musterTreffer(text, config)) f.push(`${art}: verbotenes Muster /${m}/`);
   for (const w of fremdTreffer(text)) f.push(`${art}: Bezug zu '${w}' nicht erlaubt`);
@@ -167,15 +184,26 @@ export function pruefeFund(fund, config) {
       if (!leer) {
         if (t.web.h) f.push(...pruefeText(t.web.h, 'web_h', config));
         if (t.web.p) f.push(...pruefeText(t.web.p, 'web_p', config));
+        // Kanal-Fassung: { format, ton, text } – nur Mittelteil
         t.kanal.forEach((e, i) => {
-          const s = textVon(e);
-          if (s === null) f.push(`kanal[${i}]: kein Text`);
-          else f.push(...pruefeText(s, 'kanal', config).map((x) => `kanal[${i}] ${x}`));
+          if (!e || typeof e !== 'object' || typeof e.text !== 'string') { f.push(`kanal[${i}]: braucht format, ton und text`); return; }
+          if (!config.formate.includes(e.format)) f.push(`kanal[${i}]: format '${e.format}' nicht erlaubt`);
+          if (!config.toene.includes(e.ton)) f.push(`kanal[${i}]: ton '${e.ton}' nicht erlaubt`);
+          f.push(...pruefeText(e.text, 'kanal_mitte', config).map((x) => `kanal[${i}] ${x}`));
         });
+        // STIL.md Regel 9: verschiedene Formate und Töne je Fund
+        const formate = t.kanal.map((e) => e && e.format);
+        const toene = t.kanal.map((e) => e && e.ton);
+        if (new Set(formate).size !== formate.length) f.push('kanal: Formate der Fassungen nicht verschieden');
+        if (new Set(toene).size !== toene.length) f.push('kanal: Töne der Fassungen nicht verschieden');
+        // Social-Fassung: { text, hashtags } – Mittelteil, Hashtags im eigenen Feld
         t.social.forEach((e, i) => {
-          const s = textVon(e);
-          if (s === null) f.push(`social[${i}]: kein Text`);
-          else f.push(...pruefeText(s, 'social', config).map((x) => `social[${i}] ${x}`));
+          if (!e || typeof e !== 'object' || typeof e.text !== 'string' || typeof e.hashtags !== 'string') { f.push(`social[${i}]: braucht text und hashtags`); return; }
+          f.push(...pruefeText(e.text, 'social_mitte', config).map((x) => `social[${i}] ${x}`));
+          const tags = e.hashtags.trim().split(/\s+/).filter(Boolean);
+          if (tags.length < 3 || tags.length > config.textlaengen.hashtags_max) f.push(`social[${i}]: ${tags.length} Hashtags (erlaubt 3 bis ${config.textlaengen.hashtags_max})`);
+          if (!tags.includes('#funddestages')) f.push(`social[${i}]: #funddestages fehlt`);
+          for (const tag of tags) if (!ERLAUBTE_HASHTAGS.includes(tag)) f.push(`social[${i}]: Hashtag ${tag} nicht in der Liste`);
         });
       }
     }

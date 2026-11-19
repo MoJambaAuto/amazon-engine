@@ -47,11 +47,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Gibt es wirklich: Notfall-Unterhose in der Dose",
+        "p": "Eine Unterhose, verpackt wie eine Konserve. Der Witz steht schon auf der Dose, du musst sie nur noch überreichen. Passt zu jeder Wichtelrunde mit Kollegen. Über den Knopf siehst du die Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "urteil",
+          "ton": "trocken",
+          "text": "Eine Unterhose, verpackt wie eine Konserve. Der Witz steht schon auf der Dose. Braucht das jemand? Im Notfall ja. Sonst zum Lachen."
+        },
+        {
+          "format": "mini-geschichte",
+          "ton": "begeistert",
+          "text": "Wichtelrunde im Büro, alle schauen auf die kleine Konserve. Drin steckt eine Notfall-Unterhose, und der Witz stand längst außen drauf."
+        },
+        {
+          "format": "frage",
+          "ton": "absurd",
+          "text": "Vorratskammer, Fach für Notfälle: Kerzen, Wasser, Konserven. Und jetzt eine Unterhose in der Dose. Was gehört bei dir noch in den Notvorrat?"
+        }
+      ],
+      "social": [
+        {
+          "text": "Eine Unterhose, verpackt wie eine Konserve. Der Witz steht schon auf der Dose.",
+          "hashtags": "#funddestages #wichtelgeschenk #lustigegeschenke"
+        },
+        {
+          "text": "Für den Notvorrat: eine Unterhose in der Dose. Wem in deiner Wichtelrunde würdest du sie überreichen?",
+          "hashtags": "#funddestages #wichteln #kurios"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -104,11 +129,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Toiletten-Golf: Putten auf dem stillen Örtchen",
+        "p": "Putting-Grün, Schläger und Bälle für das stille Örtchen. Golf dort, wo man ohnehin sitzt. Für alle, die keine Minute ungenutzt lassen wollen. Über den Knopf geht es zur Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "steckbrief",
+          "ton": "pruefend",
+          "text": "Name: Toiletten-Golf\nBesonderheit: Putting-Grün, Schläger und Bälle fürs stille Örtchen\nGeeignet für: alle, deren Handicap im Bad bleibt"
+        },
+        {
+          "format": "frage",
+          "ton": "begeistert",
+          "text": "Golf spielen, ohne aufzustehen: Toiletten-Golf bringt Putting-Grün, Schläger und Bälle aufs stille Örtchen. Wer in deinem Freundeskreis würde damit sofort trainieren?"
+        },
+        {
+          "format": "papillon-spricht",
+          "ton": "absurd",
+          "text": "Ich, Papillon, habe heute einen Golfplatz entdeckt. Er liegt vor einer Toilette, hat ein Putting-Grün und Bälle, und der Spieler sitzt die ganze Zeit. Golf dort, wo man ohnehin sitzt. Ich flattere lieber, aber ich verstehe den Reiz."
+        }
+      ],
+      "social": [
+        {
+          "text": "Putting-Grün, Schläger und Bälle für das stille Örtchen. Golf dort, wo man ohnehin sitzt.",
+          "hashtags": "#funddestages #kurios #gibteswirklich"
+        },
+        {
+          "text": "Toiletten-Golf: Wer bei dir zu Hause würde dafür extra länger im Bad bleiben?",
+          "hashtags": "#funddestages #lustigegeschenke #wichtelgeschenk"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -162,11 +212,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Schreibtisch-Boxsack für Tage voller Besprechungen",
+        "p": "Ein kleiner Boxsack mit Saugnapf für den Schreibtisch. Für Tage mit zu vielen Besprechungen. Ein Wichtelgeschenk für Kolleginnen und Kollegen mit vollem Kalender. Über den Knopf siehst du die Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "urteil",
+          "ton": "absurd",
+          "text": "Ein kleiner Boxsack mit Saugnapf, mitten auf dem Schreibtisch. Braucht das jemand? Urteil: unverzichtbar ab der dritten Besprechung am Tag."
+        },
+        {
+          "format": "mini-geschichte",
+          "ton": "trocken",
+          "text": "Dienstag, 14 Uhr, der Kalender ist voll. Statt einer Antwort auf die nächste Einladung gibt es drei kurze Schläge auf den Schreibtisch-Boxsack."
+        },
+        {
+          "format": "steckbrief",
+          "ton": "begeistert",
+          "text": "Name: Schreibtisch-Boxsack\nBesonderheit: klein, mit Saugnapf für den Schreibtisch\nGeeignet für: Tage mit zu vielen Besprechungen"
+        }
+      ],
+      "social": [
+        {
+          "text": "Kleiner Boxsack mit Saugnapf für den Schreibtisch. Für Tage mit zu vielen Besprechungen.",
+          "hashtags": "#funddestages #wichtelgeschenk #kurios"
+        },
+        {
+          "text": "Welche Kollegin oder welcher Kollege bräuchte diesen Schreibtisch-Boxsack ab Montag?",
+          "hashtags": "#funddestages #wichteln #lustigegeschenke"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -220,11 +295,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Taco-Halter als Dinosaurier: Abendessen auf dem Rücken",
+        "p": "Ein Dinosaurier, der zwei Tacos auf dem Rücken trägt. Er hält das Essen aufrecht und die Laune gleich mit. Für Taco-Abende mit Familie oder Freunden. Über den Knopf geht es zur Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "frage",
+          "ton": "trocken",
+          "text": "Ein Dinosaurier trägt zwei Tacos auf dem Rücken und hält sie aufrecht. Die Laune auch. Gibt es bei euch einen Taco-Abend, der so einen Helfer verdient?"
+        },
+        {
+          "format": "papillon-spricht",
+          "ton": "begeistert",
+          "text": "Papillon meldet: Die Dinosaurier sind zurück, und sie servieren. Dieser hier trägt zwei Tacos auf dem Rücken und hält das Essen aufrecht. Ich bin entzückt."
+        },
+        {
+          "format": "urteil",
+          "ton": "pruefend",
+          "text": "Prüfbericht Taco-Halter: Dinosaurier-Form bestätigt, zwei Tacos aufrecht, Laune gehoben. Braucht das jemand? Ergebnis der Prüfung: jeder, dem schon mal ein Taco umgekippt ist."
+        }
+      ],
+      "social": [
+        {
+          "text": "Ein Dinosaurier, der zwei Tacos auf dem Rücken trägt. Hält das Essen aufrecht und die Laune auch.",
+          "hashtags": "#funddestages #kurios #geschenkidee"
+        },
+        {
+          "text": "Zwei Tacos auf einem Dinosaurier-Rücken. Wer bekommt den bei dir zum Wichteln?",
+          "hashtags": "#funddestages #wichtelgeschenk #lustigegeschenke"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -278,11 +378,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Suppenkelle als Seeungeheuer: Es taucht im Topf auf",
+        "p": "Die Kelle steht im Topf und schaut heraus wie das Ungeheuer aus dem See. Ein kleiner Gruselmoment für jeden Suppenabend. Über den Knopf siehst du die Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "mini-geschichte",
+          "ton": "absurd",
+          "text": "Sonntagabend, die Suppe dampft, der Deckel geht auf. Aus dem Topf blickt ein Seeungeheuer zurück, und niemand traut sich, als Erster nachzuschöpfen."
+        },
+        {
+          "format": "steckbrief",
+          "ton": "trocken",
+          "text": "Name: Suppenkelle als Seeungeheuer\nBesonderheit: steht im Topf und schaut heraus\nGeeignet für: alle, deren Suppe Gesellschaft braucht"
+        },
+        {
+          "format": "frage",
+          "ton": "begeistert",
+          "text": "Eine Kelle, die im Topf steht und herausschaut wie das Ungeheuer aus dem See. Welche Suppe würdest du damit zuerst servieren?"
+        }
+      ],
+      "social": [
+        {
+          "text": "Die Kelle steht im Topf und schaut heraus wie das Ungeheuer aus dem See.",
+          "hashtags": "#funddestages #kurios #geschenkidee"
+        },
+        {
+          "text": "Sichtung im Suppentopf: ein Seeungeheuer mit Stiel. Wer bei dir kocht, braucht das?",
+          "hashtags": "#funddestages #gibteswirklich #wichtelgeschenk"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -335,11 +460,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Gibt es wirklich: Eierschalensollbruchstellenverursacher",
+        "p": "Eine Kugel fällt am Stab herunter und knackt das Frühstücksei sauber auf. Der Name ist das halbe Geschenk – die andere Hälfte ist das Gesicht beim Vorlesen. Über den Knopf geht es zur Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "papillon-spricht",
+          "ton": "pruefend",
+          "text": "Mein Prüfprotokoll vom Frühstückstisch: Eine Kugel fällt am Stab herunter, das Ei knackt sauber auf. Am Namen bin ich zweimal gescheitert. Ergebnis: Ei offen, Zunge verknotet. Gruß, Papillon."
+        },
+        {
+          "format": "urteil",
+          "ton": "begeistert",
+          "text": "Eierschalensollbruchstellenverursacher. Eine Kugel fällt am Stab herunter und knackt das Ei sauber auf. Braucht das jemand? Ja, alle, die beim Frühstück gern etwas vorlesen."
+        },
+        {
+          "format": "frage",
+          "ton": "absurd",
+          "text": "Was, wenn der Name länger ist als das Frühstück? Eine Kugel fällt am Stab herunter, das Ei knackt sauber auf, und du bist noch nicht fertig mit Sprechen. Schaffst du den Namen in einem Atemzug?"
+        }
+      ],
+      "social": [
+        {
+          "text": "Eine Kugel fällt am Stab herunter und knackt das Frühstücksei sauber auf. Der Name ist das halbe Geschenk.",
+          "hashtags": "#funddestages #gibteswirklich #kurios"
+        },
+        {
+          "text": "Eierschalensollbruchstellenverursacher. Wer sagt es dir fehlerfrei nach?",
+          "hashtags": "#funddestages #wichtelgeschenk #lustigegeschenke"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -393,11 +543,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Tortilla-Decke: Wer sich einrollt, ist die Füllung",
+        "p": "Eine runde Kuscheldecke, bedruckt wie ein Weizenfladen. Wer sich einrollt, ist die Füllung. Herrlich albern fürs Schrottwichteln oder für lange Sofaabende. Über den Knopf siehst du die Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "steckbrief",
+          "ton": "absurd",
+          "text": "Name: Tortilla-Decke\nBesonderheit: rund, bedruckt wie ein Weizenfladen\nGeeignet für: alle, die abends gern selbst die Füllung sind"
+        },
+        {
+          "format": "urteil",
+          "ton": "trocken",
+          "text": "Runde Kuscheldecke, bedruckt wie ein Weizenfladen. Braucht das jemand? Nein. Rollt man sich trotzdem ein? Jeden Abend."
+        },
+        {
+          "format": "mini-geschichte",
+          "ton": "begeistert",
+          "text": "Filmabend, draußen ist es kalt. Auf dem Sofa liegt ein Wickel aus Tortilla-Decke, und oben schaut nur noch ein Kopf heraus."
+        }
+      ],
+      "social": [
+        {
+          "text": "Runde Kuscheldecke, bedruckt wie ein Weizenfladen. Wer sich einrollt, ist die Füllung.",
+          "hashtags": "#funddestages #kurios #lustigegeschenke"
+        },
+        {
+          "text": "Heute Abend gibt es Wrap, und die Füllung bist du. Wer bei dir würde sich sofort einrollen?",
+          "hashtags": "#funddestages #geschenkidee #wichteln"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -451,11 +626,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Fisch-Badelatschen: Der Fuß steckt im Maul",
+        "p": "Badeschuhe in Form zweier Fische, der Fuß steckt im Maul. Ein Paar Latschen, über das am Beckenrand gesprochen wird. Über den Knopf geht es zur Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "papillon-spricht",
+          "ton": "trocken",
+          "text": "Heute bin ich über zwei Fische geflattert, in denen Füße steckten. Badelatschen sind das, der Fuß steckt im Maul. Ich habe nicht weiter nachgefragt. Papillon."
+        },
+        {
+          "format": "frage",
+          "ton": "pruefend",
+          "text": "Prüfung am Beckenrand: zwei Fische, zwei Füße, beide im Maul. Fazit: Badeschuhe mit Blickkontakt. Würdest du sie im Schwimmbad tragen oder lieber am Strand?"
+        },
+        {
+          "format": "urteil",
+          "ton": "begeistert",
+          "text": "Fisch-Badelatschen: Badeschuhe in Form zweier Fische, der Fuß steckt im Maul. Braucht das jemand? Ja, jedes Schwimmbad mit zu wenig Humor."
+        }
+      ],
+      "social": [
+        {
+          "text": "Badeschuhe in Form zweier Fische. Der Fuß steckt im Maul.",
+          "hashtags": "#funddestages #gibteswirklich #kurios"
+        },
+        {
+          "text": "Zwei Fische an den Füßen. Wer bei dir würde sich das trauen?",
+          "hashtags": "#funddestages #lustigegeschenke #wichtelgeschenk"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -509,11 +709,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Wecker, der wegläuft: Ausschalten nur im Stehen",
+        "p": "Er klingelt, springt vom Nachttisch und rollt davon. Ausschalten geht nur im Stehen. Für alle, die morgens die Schlummertaste zu gut kennen. Über den Knopf siehst du die Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "mini-geschichte",
+          "ton": "trocken",
+          "text": "Sechs Uhr, es klingelt. Der Wecker springt vom Nachttisch, rollt unter den Schrank, und der Tag beginnt auf Knien."
+        },
+        {
+          "format": "steckbrief",
+          "ton": "pruefend",
+          "text": "Name: Wecker, der wegläuft\nBesonderheit: klingelt, springt vom Nachttisch, rollt davon\nGeeignet für: alle, die nur im Stehen wach werden"
+        },
+        {
+          "format": "frage",
+          "ton": "begeistert",
+          "text": "Ein Wecker mit Fluchtplan: Er klingelt, springt vom Nachttisch und rollt davon. Ausschalten geht nur im Stehen. Wen kennst du, der den dringend bräuchte?"
+        }
+      ],
+      "social": [
+        {
+          "text": "Klingelt, springt vom Nachttisch und rollt davon. Ausschalten geht nur im Stehen.",
+          "hashtags": "#funddestages #gibteswirklich #geschenkidee"
+        },
+        {
+          "text": "Dieser Wecker wartet nicht. Wer in deiner Familie würde ihn bis in den Flur jagen?",
+          "hashtags": "#funddestages #kurios #lustigegeschenke"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -566,11 +791,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Schneeballzange: Schneebälle wie vom Fließband",
+        "p": "Sie formt Schneebälle wie vom Fließband. Kalte Finger gibt es nur noch beim Gegner. Für den ersten Schnee mit Familie oder Freunden. Über den Knopf geht es zur Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "urteil",
+          "ton": "pruefend",
+          "text": "Prüfung im Vorgarten: Die Schneeballzange formt Schneebälle wie vom Fließband, die eigenen Finger bleiben warm. Braucht das jemand? Ergebnis: ja, sobald der erste Schnee liegt."
+        },
+        {
+          "format": "papillon-spricht",
+          "ton": "absurd",
+          "text": "Ich, Papillon, fliege im Winter nicht. Aber ich habe gehört, es gibt jetzt Schneebälle wie vom Fließband. Die Zange formt sie, kalte Finger hat nur noch der Gegner. Ich beobachte das aus sicherer Entfernung."
+        },
+        {
+          "format": "frage",
+          "ton": "trocken",
+          "text": "Schneeballzange. Formt Schneebälle wie vom Fließband. Gegen wen würdest du sie als Erstes einsetzen?"
+        }
+      ],
+      "social": [
+        {
+          "text": "Formt Schneebälle wie vom Fließband. Kalte Finger gibt es nur noch beim Gegner.",
+          "hashtags": "#funddestages #wichtelgeschenk #geschenkidee"
+        },
+        {
+          "text": "Schneeballschlacht, aber mit Werkzeug. Gegen wen trittst du an?",
+          "hashtags": "#funddestages #wichteln #kurios"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -623,11 +873,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Sudoku-Toilettenpapier: ein Rätsel pro Blatt",
+        "p": "Auf jedem Blatt steht ein Rätsel. Für Sitzungen, die länger dauern. Ein kleines Wichtelgeschenk mit viel Gesprächsstoff. Über den Knopf siehst du die Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "frage",
+          "ton": "absurd",
+          "text": "Sudoku-Toilettenpapier hat ein Rätsel auf jedem Blatt. Was machst du, wenn das Rätsel halb gelöst ist und das Blatt schon gebraucht wird?"
+        },
+        {
+          "format": "urteil",
+          "ton": "trocken",
+          "text": "Ein Rätsel auf jedem Blatt. Für Sitzungen, die länger dauern. Braucht das jemand? Wer Sudoku mag, schon. Alle anderen lernen es jetzt."
+        },
+        {
+          "format": "steckbrief",
+          "ton": "begeistert",
+          "text": "Name: Sudoku-Toilettenpapier\nBesonderheit: ein Rätsel auf jedem Blatt\nGeeignet für: Sitzungen, die länger dauern"
+        }
+      ],
+      "social": [
+        {
+          "text": "Rätsel auf jedem Blatt. Für Sitzungen, die länger dauern.",
+          "hashtags": "#funddestages #gibteswirklich #lustigegeschenke"
+        },
+        {
+          "text": "Sudoku an einem Ort, an dem man ohnehin Zeit hat. Für wen wäre das genau richtig?",
+          "hashtags": "#funddestages #wichtelgeschenk #kurios"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -679,11 +954,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Quietsche-Huhn: empört auf Druck",
+        "p": "Ein Gummihuhn, das beim Drücken empört schreit. Es hebt jede Stimmung, außer die des Sitznachbarn. Für Büros, Wichtelrunden und Familienabende mit Humor. Über den Knopf geht es zur Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "mini-geschichte",
+          "ton": "pruefend",
+          "text": "Besprechung, Minute 47, niemand sagt etwas. Dann drückt jemand das Gummihuhn, es schreit empört, und das Protokoll vermerkt: Stimmung gehoben, Sitznachbar nicht."
+        },
+        {
+          "format": "papillon-spricht",
+          "ton": "begeistert",
+          "text": "Papillon hat einen neuen Freund. Er ist aus Gummi, ein Huhn, und schreit empört, sobald man ihn drückt. Die Stimmung steigt sofort, nur mein Sitznachbar schaut streng."
+        },
+        {
+          "format": "urteil",
+          "ton": "absurd",
+          "text": "Ein Gummihuhn, das beim Drücken empört schreit. Braucht das jemand? Jede Besprechung, die zu leise geworden ist. Das Huhn hat schließlich auch eine Meinung."
+        }
+      ],
+      "social": [
+        {
+          "text": "Ein Gummihuhn, das beim Drücken empört schreit. Hebt jede Stimmung, außer die des Sitznachbarn.",
+          "hashtags": "#funddestages #wichtelgeschenk #lustigegeschenke"
+        },
+        {
+          "text": "Wer in deinem Büro würde das Quietsche-Huhn in der nächsten Besprechung drücken?",
+          "hashtags": "#funddestages #wichteln #kurios"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -736,11 +1036,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Teesieb als Faultier: Es hängt, der Tee zieht",
+        "p": "Das Faultier hängt am Tassenrand und lässt den Tee für sich arbeiten. Ein ruhiges kleines Geschenk für alle, die es gern gemütlich mögen. Über den Knopf siehst du die Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "steckbrief",
+          "ton": "trocken",
+          "text": "Name: Teesieb als Faultier\nBesonderheit: hängt am Tassenrand\nGeeignet für: alle, die den Tee lieber arbeiten lassen"
+        },
+        {
+          "format": "frage",
+          "ton": "begeistert",
+          "text": "Ein Faultier hängt am Tassenrand und lässt den Tee für sich arbeiten. Wer bei dir hat genau diese Arbeitshaltung?"
+        },
+        {
+          "format": "papillon-spricht",
+          "ton": "absurd",
+          "text": "Gestern habe ich einem Faultier bei der Arbeit zugesehen. Es hing am Tassenrand und tat nichts, während der Tee alles erledigte. Ich, Papillon, nenne das gute Führung."
+        }
+      ],
+      "social": [
+        {
+          "text": "Das Faultier hängt am Tassenrand und lässt den Tee für sich arbeiten.",
+          "hashtags": "#funddestages #geschenkidee #wichtelgeschenk"
+        },
+        {
+          "text": "Teepause mit Vorbild: ein Faultier, das am Tassenrand hängt. Wem würdest du es schenken?",
+          "hashtags": "#funddestages #kurios #wichteln"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -794,11 +1119,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "WC-Nachtlicht: bunte Schüssel bei Nacht",
+        "p": "Es beleuchtet die Schüssel in bunten Farben, sobald sich nachts jemand nähert. Ein Geschenk für Badezimmer mit Humor, etwa zum Einzug oder zum Wichteln. Über den Knopf geht es zur Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "urteil",
+          "ton": "begeistert",
+          "text": "Nachts, im Bad, und plötzlich leuchtet die Schüssel bunt: das WC-Nachtlicht mit Bewegungsmelder. Braucht das jemand? Alle, die nachts unterwegs sind und gern ein kleines Lichtspiel sehen."
+        },
+        {
+          "format": "mini-geschichte",
+          "ton": "absurd",
+          "text": "Drei Uhr nachts, leise Schritte im Flur. Im Bad geht ein Farbenspiel an, und für einen Moment fühlt sich der Weg zur Toilette an wie der Auftritt auf einer Bühne."
+        },
+        {
+          "format": "frage",
+          "ton": "pruefend",
+          "text": "Testergebnis aus dem Bad: Bewegung erkannt, Schüssel leuchtet bunt, Besucher überrascht. Wer bei dir würde nachts extra noch mal aufstehen, nur um es zu sehen?"
+        }
+      ],
+      "social": [
+        {
+          "text": "Beleuchtet die Schüssel in bunten Farben, sobald sich nachts jemand nähert.",
+          "hashtags": "#funddestages #gibteswirklich #kurios"
+        },
+        {
+          "text": "Nachts im Bad: Disco in der Schüssel. Für wen wäre das genau richtig?",
+          "hashtags": "#funddestages #lustigegeschenke #wichtelgeschenk"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -850,11 +1200,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Mini-Fingerhände: Hände für deine Finger",
+        "p": "Winzige Hände zum Aufstecken auf die Finger. Sinnlos und sofort im Einsatz – zum Winken, Zeigen oder Klatschen im Kleinformat. Über den Knopf siehst du die Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "papillon-spricht",
+          "ton": "trocken",
+          "text": "Ich habe keine Hände. Jetzt weiß ich, dass man Hände für die Finger kaufen kann. Winzig, zum Aufstecken, sinnlos und sofort im Einsatz. Papillon nimmt das zur Kenntnis."
+        },
+        {
+          "format": "steckbrief",
+          "ton": "absurd",
+          "text": "Name: Mini-Fingerhände\nBesonderheit: winzige Hände für die Finger\nGeeignet für: alle, deren Hände mehr Hände brauchen"
+        },
+        {
+          "format": "urteil",
+          "ton": "begeistert",
+          "text": "Mini-Fingerhände: winzige Hände zum Aufstecken auf die Finger. Braucht das jemand? Nein. Aber sie sind sofort im Einsatz, und das Lachen auch."
+        }
+      ],
+      "social": [
+        {
+          "text": "Winzige Hände zum Aufstecken auf die Finger. Sinnlos und sofort im Einsatz.",
+          "hashtags": "#funddestages #wichtelgeschenk #lustigegeschenke"
+        },
+        {
+          "text": "Hände für die Finger. Wer winkt dir damit beim nächsten Videoanruf?",
+          "hashtags": "#funddestages #kurios #gibteswirklich"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -907,11 +1282,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Unnütze Maschine: Sie schaltet sich selbst aus",
+        "p": "Ein Kasten mit Schalter. Legt man ihn um, kommt ein Finger heraus und schaltet wieder aus. Mehr kann sie nicht – und genau das macht sie zum Klassiker fürs Schrottwichteln. Über den Knopf geht es zur Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "frage",
+          "ton": "absurd",
+          "text": "Ein Kasten mit Schalter. Du legst ihn um, ein Finger kommt heraus und schaltet wieder aus. Mehr kann sie nicht. Wer gewinnt bei euch das Duell, Mensch oder Maschine?"
+        },
+        {
+          "format": "mini-geschichte",
+          "ton": "begeistert",
+          "text": "Bescherung, das letzte Päckchen ist ein schlichter Kasten. Der Beschenkte legt den Schalter um, ein Finger fährt heraus und schaltet zurück, und der Abend hat sein neues Lieblingsspiel."
+        },
+        {
+          "format": "urteil",
+          "ton": "pruefend",
+          "text": "Funktionsprüfung: Schalter umgelegt, Finger erscheint, Schalter wieder aus. Weitere Funktionen: keine. Braucht das jemand? Laut Prüfung niemand, laut Wichtelrunde alle."
+        }
+      ],
+      "social": [
+        {
+          "text": "Ein Kasten mit Schalter. Legt man ihn um, kommt ein Finger heraus und schaltet wieder aus. Mehr kann sie nicht.",
+          "hashtags": "#funddestages #gibteswirklich #wichteln"
+        },
+        {
+          "text": "Eine Maschine, die nur sich selbst ausschaltet. Wie oft würdest du es versuchen?",
+          "hashtags": "#funddestages #kurios #lustigegeschenke"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -965,11 +1365,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Pizza-Socken: verpackt wie zum Mitnehmen",
+        "p": "Socken, gefaltet und verpackt wie eine Pizza im Karton. Beim Öffnen wartet jeder auf den Duft – und bekommt Socken. Ein Geschenk für Pizza-Fans in der Wichtelrunde. Über den Knopf siehst du die Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "urteil",
+          "ton": "trocken",
+          "text": "Socken, gefaltet und verpackt wie eine Pizza im Karton. Braucht das jemand? Kalte Füße sagen ja, der Magen ist enttäuscht."
+        },
+        {
+          "format": "papillon-spricht",
+          "ton": "begeistert",
+          "text": "Papillon war heute hungrig und hat einen Pizzakarton gefunden. Drin lag keine Pizza, sondern Socken, gefaltet wie eine. Ich war kurz traurig, dann begeistert."
+        },
+        {
+          "format": "steckbrief",
+          "ton": "pruefend",
+          "text": "Name: Pizza-Socken im Karton\nBesonderheit: gefaltet und verpackt wie eine Pizza\nGeeignet für: alle, die beim Auspacken an Essen denken"
+        }
+      ],
+      "social": [
+        {
+          "text": "Socken, gefaltet und verpackt wie eine Pizza im Lieferkarton.",
+          "hashtags": "#funddestages #wichtelgeschenk #lustigegeschenke"
+        },
+        {
+          "text": "Der Karton sagt Pizza, der Inhalt sagt Socken. Wer in deiner Runde würde darauf hereinfallen?",
+          "hashtags": "#funddestages #wichteln #kurios"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -1022,11 +1447,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Kopfmassage-Spinne: Drahtfinger für die Kopfhaut",
+        "p": "Drahtfinger, die über die Kopfhaut gleiten. Wer es einmal probiert, gibt sie nicht mehr her. Ein kleines Geschenk, das beim Wichteln sofort die Runde macht. Über den Knopf geht es zur Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "mini-geschichte",
+          "ton": "begeistert",
+          "text": "Wichtelabend, das Päckchen ist klein und sieht aus wie eine Spinne aus Draht. Zwei Minuten später will jeder am Tisch einmal, und die Beschenkte gibt sie nicht mehr her."
+        },
+        {
+          "format": "frage",
+          "ton": "trocken",
+          "text": "Drahtfinger, die über die Kopfhaut gleiten. Wer es einmal probiert, gibt sie nicht mehr her. Wem würdest du sie als Erstes aufsetzen?"
+        },
+        {
+          "format": "papillon-spricht",
+          "ton": "absurd",
+          "text": "Achtung, eine Spinne. Ich, Papillon, bin sonst vorsichtig bei Spinnen, aber diese hat Drahtfinger und gleitet nur über die Kopfhaut. Wer sie einmal probiert hat, gibt sie nicht mehr her, sagt man. Ich halte trotzdem Abstand."
+        }
+      ],
+      "social": [
+        {
+          "text": "Drahtfinger, die über die Kopfhaut gleiten. Wer es einmal probiert, gibt sie nicht mehr her.",
+          "hashtags": "#funddestages #wichtelgeschenk #kurios"
+        },
+        {
+          "text": "Sieht aus wie eine Spinne, ist aber Draht für die Kopfhaut. Wer traut sich zuerst?",
+          "hashtags": "#funddestages #wichteln #gibteswirklich"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -1079,11 +1529,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Tisch-Staubsauger als Marienkäfer: Krümel weg",
+        "p": "Ein Käfer, der Krümel vom Schreibtisch saugt. Nützlich und albern zugleich, also genau richtig fürs Wichteln im Büro. Über den Knopf siehst du die Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "steckbrief",
+          "ton": "begeistert",
+          "text": "Name: Tisch-Staubsauger als Marienkäfer\nBesonderheit: saugt Krümel vom Schreibtisch\nGeeignet für: alle, die über der Tastatur frühstücken"
+        },
+        {
+          "format": "urteil",
+          "ton": "absurd",
+          "text": "Ein Marienkäfer, der Krümel vom Schreibtisch saugt. Braucht das jemand? Die Krümel nicht. Aber dein Schreibtisch hat endlich ein Haustier, das aufräumt."
+        },
+        {
+          "format": "frage",
+          "ton": "pruefend",
+          "text": "Prüfung am Schreibtisch: Krümel vorhanden, Käfer angesetzt, Krümel weg. Nützlich und albern zugleich. Wie viele Krümel liegen gerade neben deiner Tastatur?"
+        }
+      ],
+      "social": [
+        {
+          "text": "Ein Käfer, der Krümel vom Schreibtisch saugt. Nützlich und albern zugleich.",
+          "hashtags": "#funddestages #wichtelgeschenk #geschenkidee"
+        },
+        {
+          "text": "Krümel auf dem Schreibtisch? Dafür gibt es jetzt einen Marienkäfer. Wer bei dir bräuchte ihn?",
+          "hashtags": "#funddestages #wichteln #kurios"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -1135,11 +1610,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Bananenschneider: gleiche Scheiben mit einem Druck",
+        "p": "Er schneidet eine Banane mit einem Druck in gleiche Scheiben. Ein Werkzeug für ein Problem, das niemand hatte – und trotzdem will es jeder einmal ausprobieren. Über den Knopf geht es zur Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "papillon-spricht",
+          "ton": "pruefend",
+          "text": "Ich habe nachgezählt: Ein Druck, und die Banane liegt in gleichen Scheiben vor mir. Ein Werkzeug für ein Problem, das niemand hatte. Mein Prüfergebnis: Problem trotzdem gelöst. Papillon."
+        },
+        {
+          "format": "urteil",
+          "ton": "trocken",
+          "text": "Bananenschneider. Ein Druck, gleiche Scheiben. Braucht das jemand? Nein, das Problem hatte niemand. Gelöst ist es trotzdem."
+        },
+        {
+          "format": "mini-geschichte",
+          "ton": "begeistert",
+          "text": "Frühstück mit der Familie, alle wollen Banane im Müsli. Ein Druck auf den Bananenschneider, gleiche Scheiben für jeden, und niemand streitet über die dickeren."
+        }
+      ],
+      "social": [
+        {
+          "text": "Schneidet eine Banane mit einem Druck in gleiche Scheiben. Ein Werkzeug für ein Problem, das niemand hatte.",
+          "hashtags": "#funddestages #gibteswirklich #kurios"
+        },
+        {
+          "text": "Gleiche Bananenscheiben mit einem einzigen Druck. Wem in deiner Runde schenkst du das?",
+          "hashtags": "#funddestages #wichtelgeschenk #lustigegeschenke"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -1192,11 +1692,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Entscheidungskugel fürs Büro: Frage, Stoß, Antwort",
+        "p": "Frage stellen, anstoßen, Antwort ablesen. Sie trifft Entscheidungen so gut wie manche Besprechung. Ein Wichtelgeschenk für Teams mit Humor. Über den Knopf siehst du die Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "frage",
+          "ton": "begeistert",
+          "text": "Frage stellen, anstoßen, Antwort ablesen: die Entscheidungskugel fürs Büro. Welche Frage würdest du ihr am Montag zuerst stellen?"
+        },
+        {
+          "format": "steckbrief",
+          "ton": "trocken",
+          "text": "Name: Entscheidungskugel fürs Büro\nBesonderheit: Frage stellen, anstoßen, Antwort ablesen\nGeeignet für: Entscheidungen, die sonst eine Besprechung brauchen"
+        },
+        {
+          "format": "urteil",
+          "ton": "absurd",
+          "text": "Eine Kugel, die Entscheidungen trifft, so gut wie manche Besprechung. Braucht das jemand? Die Kugel sagt ja. Wir haben vorsichtshalber noch einmal gefragt."
+        }
+      ],
+      "social": [
+        {
+          "text": "Frage stellen, anstoßen, Antwort ablesen. Trifft Entscheidungen so gut wie manche Besprechung.",
+          "hashtags": "#funddestages #wichtelgeschenk #kurios"
+        },
+        {
+          "text": "Statt einer Besprechung: einmal anstoßen. Welche Frage stellst du der Kugel?",
+          "hashtags": "#funddestages #wichteln #lustigegeschenke"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -1250,11 +1775,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Wärmflasche im Kuscheltier: warm und zum Festhalten",
+        "p": "Die Wärmflasche steckt im Bauch eines Stofftiers. Warm und zum Festhalten, für kalte Abende auf dem Sofa. Über den Knopf geht es zur Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "mini-geschichte",
+          "ton": "trocken",
+          "text": "Winterabend, die Heizung braucht noch. Auf dem Sofa sitzt jemand mit einem Stofftier im Arm, in dessen Bauch eine Wärmflasche steckt, und will nicht mehr aufstehen."
+        },
+        {
+          "format": "papillon-spricht",
+          "ton": "begeistert",
+          "text": "Papillon friert im Winter. Darum habe ich mich heute neben ein Stofftier gesetzt, in dessen Bauch eine Wärmflasche steckt. Warm und zum Festhalten. Ich bleibe hier."
+        },
+        {
+          "format": "frage",
+          "ton": "pruefend",
+          "text": "Prüfbericht Kuscheltier: Bauch enthält Wärmflasche, Ergebnis warm, Festhalten ausdrücklich erlaubt. Wer bei dir hat im Winter immer kalte Hände?"
+        }
+      ],
+      "social": [
+        {
+          "text": "Die Wärmflasche steckt im Bauch eines Stofftiers. Warm und zum Festhalten.",
+          "hashtags": "#funddestages #geschenkidee #kurios"
+        },
+        {
+          "text": "Ein Kuscheltier mit warmem Bauch. Wer bei dir würde es den ganzen Winter nicht mehr hergeben?",
+          "hashtags": "#funddestages #geschenkidee #gibteswirklich"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -1307,11 +1857,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Einhorn-Hausschuhe für Erwachsene: Plüsch für Große",
+        "p": "Plüsch, Horn und Regenbogenmähne in Schuhgröße für Große. Für alle, die zu Hause gern ein bisschen Fabelwesen sind. Über den Knopf siehst du die Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "urteil",
+          "ton": "begeistert",
+          "text": "Plüsch, Horn und Regenbogenmähne, und das in Schuhgröße für Große. Braucht das jemand? Jeder Flur, der mehr Farbe vertragen kann."
+        },
+        {
+          "format": "steckbrief",
+          "ton": "absurd",
+          "text": "Name: Einhorn-Hausschuhe für Erwachsene\nBesonderheit: Plüsch, Horn und Regenbogenmähne in groß\nGeeignet für: Erwachsene, die heimlich Fabelwesen sind"
+        },
+        {
+          "format": "frage",
+          "ton": "trocken",
+          "text": "Einhorn-Hausschuhe für Erwachsene. Plüsch, Horn, Regenbogenmähne. Wer in deiner Familie würde sie tragen, ohne mit der Wimper zu zucken?"
+        }
+      ],
+      "social": [
+        {
+          "text": "Plüsch, Horn und Regenbogenmähne in Schuhgröße für Große.",
+          "hashtags": "#funddestages #lustigegeschenke #geschenkidee"
+        },
+        {
+          "text": "Einhörner gibt es doch. Zumindest an den Füßen. Wer bei dir bekommt ein Paar?",
+          "hashtags": "#funddestages #gibteswirklich #kurios"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -1365,11 +1940,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Popcorn-Schüssel für die Mikrowelle, faltbar",
+        "p": "Mais hinein, Deckel drauf, in die Mikrowelle. Danach flach zusammenfalten und verstauen. Für Filmabende zu zweit oder mit der ganzen Familie. Über den Knopf geht es zur Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "steckbrief",
+          "ton": "trocken",
+          "text": "Name: Faltbare Popcorn-Schüssel\nBesonderheit: Mais hinein, Deckel drauf, in die Mikrowelle\nGeeignet für: Filmabende mit wenig Platz im Schrank"
+        },
+        {
+          "format": "mini-geschichte",
+          "ton": "begeistert",
+          "text": "Freitag, Filmabend, alle sitzen schon. Mais in die Schüssel, Deckel drauf, ab in die Mikrowelle, und nach dem Abspann ist die Schüssel flach gefaltet wieder im Schrank."
+        },
+        {
+          "format": "papillon-spricht",
+          "ton": "pruefend",
+          "text": "Ich habe heute eine Schüssel geprüft, die sich flach machen kann. Mais hinein, Deckel drauf, Mikrowelle, danach zusammenfalten. Papillons Befund: Popcorn gelungen, Schrankplatz gerettet."
+        }
+      ],
+      "social": [
+        {
+          "text": "Mais hinein, Deckel drauf, in die Mikrowelle. Danach flach zusammenfalten.",
+          "hashtags": "#funddestages #geschenkidee #kurios"
+        },
+        {
+          "text": "Popcorn ohne Topf und danach flach in die Schublade. Wer macht bei dir den nächsten Filmabend?",
+          "hashtags": "#funddestages #geschenkidee #lustigegeschenke"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -1423,11 +2023,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Tisch-Bowling: eine Bahn zwischen Tastatur und Tasse",
+        "p": "Bahn, Kegel und Kugel im Kleinformat. Passt zwischen Tastatur und Kaffeetasse. Ein Wichtelgeschenk für die Mittagspause. Über den Knopf siehst du die Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "urteil",
+          "ton": "pruefend",
+          "text": "Prüfung der Bahn: Kegel stehen, Kugel rollt, Kaffeetasse unversehrt. Braucht das jemand? Ergebnis: ja, für jede Mittagspause."
+        },
+        {
+          "format": "frage",
+          "ton": "absurd",
+          "text": "Bahn, Kegel und Kugel im Kleinformat, genau zwischen Tastatur und Kaffeetasse. Wer bei euch hält den Rekord, bevor die Chefin zurück ist?"
+        },
+        {
+          "format": "mini-geschichte",
+          "ton": "trocken",
+          "text": "Mittagspause, drei Leute am Schreibtisch. Die Kugel rollt zwischen Tastatur und Kaffeetasse hindurch, und alle Kegel fallen um."
+        }
+      ],
+      "social": [
+        {
+          "text": "Bahn, Kegel und Kugel im Kleinformat. Passt zwischen Tastatur und Kaffeetasse.",
+          "hashtags": "#funddestages #wichtelgeschenk #kurios"
+        },
+        {
+          "text": "Bowling am Schreibtisch, ganz ohne Schuhwechsel. Wer fordert dich heraus?",
+          "hashtags": "#funddestages #wichteln #lustigegeschenke"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -1481,11 +2106,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Türstopper: ein Männchen hält die Tür auf",
+        "p": "Eine kleine Figur stemmt sich mit aller Kraft gegen die Tür. Sie sieht aus, als bräuchte sie Hilfe, und sorgt bei jedem Besuch für einen zweiten Blick. Über den Knopf geht es zur Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "papillon-spricht",
+          "ton": "absurd",
+          "text": "Ich, Papillon, wollte helfen. Da stemmt sich eine kleine Figur mit aller Kraft gegen die Tür, seit Stunden schon. Dann habe ich verstanden: Das ist ihr Beruf. Türstopper."
+        },
+        {
+          "format": "urteil",
+          "ton": "trocken",
+          "text": "Eine kleine Figur stemmt sich mit aller Kraft gegen die Tür. Braucht das jemand? Die Tür nicht. Der Flur schon."
+        },
+        {
+          "format": "steckbrief",
+          "ton": "begeistert",
+          "text": "Name: Türstopper als eingeklemmtes Männchen\nBesonderheit: stemmt sich mit aller Kraft gegen die Tür\nGeeignet für: neue Wohnungen und Büros mit Humor"
+        }
+      ],
+      "social": [
+        {
+          "text": "Eine kleine Figur stemmt sich mit aller Kraft gegen die Tür.",
+          "hashtags": "#funddestages #gibteswirklich #wichtelgeschenk"
+        },
+        {
+          "text": "Er hält die Tür, du hältst den Kaffee. Wem würdest du ihn zum Einzug schenken?",
+          "hashtags": "#funddestages #geschenkidee #kurios"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -1538,11 +2188,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Eiswürfelform als Gehirn: kühl und irritierend",
+        "p": "Eiswürfel in Hirnform. Sie kühlen das Getränk und irritieren die Gäste. Ein Spaß für Partys und alle, die ihre Limo gern mit Gänsehaut servieren. Über den Knopf siehst du die Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "frage",
+          "ton": "begeistert",
+          "text": "Eiswürfel in Hirnform: Sie kühlen das Getränk und irritieren die Gäste. Bei welcher Feier würdest du sie zuerst servieren?"
+        },
+        {
+          "format": "urteil",
+          "ton": "absurd",
+          "text": "Ein Gehirn im Glas, und es schmilzt. Braucht das jemand? Jeder Gastgeber, der kühle Getränke und verwirrte Gesichter mag."
+        },
+        {
+          "format": "steckbrief",
+          "ton": "pruefend",
+          "text": "Name: Eiswürfelform als Gehirn\nBesonderheit: Eiswürfel in Hirnform\nGeeignet für: Gäste, die gern zweimal hinschauen"
+        }
+      ],
+      "social": [
+        {
+          "text": "Eiswürfel in Hirnform. Kühlt das Getränk und irritiert die Gäste.",
+          "hashtags": "#funddestages #kurios #gibteswirklich"
+        },
+        {
+          "text": "Heute im Glas: ein Gehirn, das langsam schmilzt. Wen würdest du damit überraschen?",
+          "hashtags": "#funddestages #lustigegeschenke #wichtelgeschenk"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -1595,11 +2270,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Handyhalter als Liegestuhl: Urlaub fürs Telefon",
+        "p": "Das Telefon liegt im winzigen Strandstuhl. Urlaub für das Gerät, wenn schon nicht für den Besitzer. Ein kleines Wichtelgeschenk für den Schreibtisch. Über den Knopf geht es zur Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "mini-geschichte",
+          "ton": "absurd",
+          "text": "Montagmorgen, der Kalender ist voll, der Urlaub weit weg. Nur das Telefon liegt entspannt im winzigen Strandstuhl auf dem Schreibtisch und schaut dir beim Arbeiten zu."
+        },
+        {
+          "format": "frage",
+          "ton": "trocken",
+          "text": "Das Telefon liegt im winzigen Strandstuhl. Urlaub für das Gerät, wenn schon nicht für den Besitzer. Wer hat das bei dir nötiger: du oder dein Handy?"
+        },
+        {
+          "format": "urteil",
+          "ton": "begeistert",
+          "text": "Ein Liegestuhl in Miniatur, und das Handy darf hinein. Braucht das jemand? Jeder Schreibtisch, der ein bisschen Sommer gebrauchen kann."
+        }
+      ],
+      "social": [
+        {
+          "text": "Das Telefon liegt im winzigen Strandstuhl. Urlaub für das Gerät, wenn schon nicht für den Besitzer.",
+          "hashtags": "#funddestages #wichtelgeschenk #kurios"
+        },
+        {
+          "text": "Wenigstens dein Handy hat Urlaub. Wem in deinem Büro gönnst du das?",
+          "hashtags": "#funddestages #wichteln #lustigegeschenke"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -1653,11 +2353,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Tasse mit Keksfach: Kaffee oben, Vorrat unten",
+        "p": "Unten im Becher ist ein Fach für Kekse. Kaffee oben, Vorrat unten. Für alle, die zur Kaffeepause nicht extra aufstehen wollen. Über den Knopf siehst du die Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "steckbrief",
+          "ton": "begeistert",
+          "text": "Name: Tasse mit Keksfach\nBesonderheit: unten im Becher ein Fach für Kekse\nGeeignet für: Kaffeepausen ohne Umweg zur Keksdose"
+        },
+        {
+          "format": "papillon-spricht",
+          "ton": "trocken",
+          "text": "Papillon trinkt keinen Kaffee. Trotzdem gefällt mir diese Tasse: oben Kaffee, unten ein Fach für Kekse. Vorrat und Getränk in einem Stück. Ordentlich."
+        },
+        {
+          "format": "frage",
+          "ton": "absurd",
+          "text": "Kaffee oben, Vorrat unten: eine Tasse mit Keksfach im Becher. Was kommt als Nächstes, der Teller mit Nachschlagfach?"
+        }
+      ],
+      "social": [
+        {
+          "text": "Unten im Becher ist ein Fach für Kekse. Kaffee oben, Vorrat unten.",
+          "hashtags": "#funddestages #wichtelgeschenk #geschenkidee"
+        },
+        {
+          "text": "Eine Tasse mit Geheimfach für Kekse. Wer in deinem Büro bräuchte sie ab morgen?",
+          "hashtags": "#funddestages #wichteln #kurios"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",
@@ -1711,11 +2436,36 @@
     "paket": "start",
     "texte": {
       "web": {
-        "h": "",
-        "p": ""
+        "h": "Weihnachtspullover mit Lichtern: hässlich mit Absicht",
+        "p": "Strick mit eingebauten Lämpchen. Je hässlicher, desto besser für die Weihnachtsfeier – und dieser leuchtet sogar dabei. Über den Knopf geht es zur Auswahl bei Amazon."
       },
-      "kanal": [],
-      "social": []
+      "kanal": [
+        {
+          "format": "urteil",
+          "ton": "trocken",
+          "text": "Strick mit eingebauten Lämpchen. Braucht das jemand? Für die Weihnachtsfeier gilt: je hässlicher, desto besser. Also ja."
+        },
+        {
+          "format": "papillon-spricht",
+          "ton": "begeistert",
+          "text": "Gestern Abend hat mich etwas angeleuchtet, und es war kein Stern. Es war ein Weihnachtspullover mit eingebauten Lämpchen. Ich, Papillon, bin geblendet und erfreut."
+        },
+        {
+          "format": "mini-geschichte",
+          "ton": "pruefend",
+          "text": "Weihnachtsfeier, die Pullover-Jury tagt. Als die Lämpchen im Strick angehen, ist das Urteil gefallen: hässlich genug, und er leuchtet."
+        }
+      ],
+      "social": [
+        {
+          "text": "Strick mit eingebauten Lämpchen. Je hässlicher, desto besser für die Weihnachtsfeier.",
+          "hashtags": "#funddestages #wichteln #lustigegeschenke"
+        },
+        {
+          "text": "Ein Weihnachtspullover, der leuchtet. Wer trägt ihn bei eurer Feier?",
+          "hashtags": "#funddestages #wichtelgeschenk #kurios"
+        }
+      ]
     },
     "freigabe": "",
     "angelegt": "2026-11-19",

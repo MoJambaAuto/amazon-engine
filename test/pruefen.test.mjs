@@ -41,7 +41,7 @@ test('Pflichtfeld fehlt', () => {
 test('Werte außerhalb der erlaubten Listen', () => {
   const fehler = pruefeFund(fund({ status: 'live', preisklasse: 'teuer', haendler: 'ebay', kategorie: 'tabakwaren' }), config);
   for (const teil of ['status', 'preisklasse', 'haendler', 'kategorie']) assert.ok(fehler.some((x) => x.startsWith(teil)), teil);
-  assert.deepEqual(pruefeFund(fund({ status: 'freigegeben', texte: { web: { h: 'Kekse im Keller', p: 'Ein Fach unten im Becher.' }, kanal: [kanal('Kaffee oben, Kekse unten.')], social: [] } }), config), []);
+  assert.deepEqual(pruefeFund(fund({ status: 'freigegeben', texte: { web: { h: 'Kekse im Keller', p: 'Ein Fach unten im Becher.' }, kanal: [{ format: 'urteil', ton: 'trocken', text: 'Kaffee oben, Kekse unten.' }], social: [] } }), config), []);
 });
 
 test('Titel ohne Amazon', () => {
@@ -71,7 +71,11 @@ test('verbotene Muster in Texten', () => {
 test('Textlängen', () => {
   assert.ok(pruefeText('x'.repeat(61), 'web_h', config).some((x) => x.includes('zu lang')));
   assert.deepEqual(pruefeText('x'.repeat(60), 'web_h', config), []);
-  assert.ok(pruefeText(kanal('y'.repeat(350)), 'kanal', config).some((x) => x.includes('zu lang')));
+  // Kanal- und Social-Längen gelten für den Mittelteil (STIL.md Regel 6), nicht für den fertigen Text
+  assert.ok(pruefeText('y'.repeat(351), 'kanal_mitte', config).some((x) => x.includes('zu lang')));
+  assert.deepEqual(pruefeText('y'.repeat(350), 'kanal_mitte', config), []);
+  assert.ok(pruefeText('y'.repeat(301), 'social_mitte', config).some((x) => x.includes('zu lang')));
+  assert.deepEqual(pruefeText(kanal('y'.repeat(350)), 'kanal', config), []);
 });
 
 test('Kanal-Text: Anfang und Pflichtsatz', () => {
