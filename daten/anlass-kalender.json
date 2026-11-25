@@ -1,0 +1,19 @@
+[
+  { "schluessel": "wichteln", "name": "Wichteln", "von": "2026-11-15", "bis": "2026-12-23" },
+  { "schluessel": "nikolaus", "name": "Nikolaus", "von": "2026-11-22", "bis": "2026-12-06" },
+  { "schluessel": "weihnachten", "name": "Weihnachten", "von": "2026-11-15", "bis": "2026-12-24" },
+  { "schluessel": "silvester", "name": "Silvester", "von": "2026-12-10", "bis": "2026-12-31" },
+  { "schluessel": "winter", "name": "Winter", "von": "2026-12-01", "bis": "2027-02-28" },
+  { "schluessel": "valentinstag", "name": "Valentinstag", "von": "2027-01-15", "bis": "2027-02-14" },
+  { "schluessel": "karneval", "name": "Karneval", "von": "2027-01-10", "bis": "2027-02-09" },
+  { "schluessel": "ostern", "name": "Ostern", "von": "2027-03-01", "bis": "2027-03-28" },
+  { "schluessel": "vatertag", "name": "Vatertag", "von": "2027-04-20", "bis": "2027-05-06" },
+  { "schluessel": "muttertag", "name": "Muttertag", "von": "2027-04-20", "bis": "2027-05-09" },
+  { "schluessel": "sommer", "name": "Sommer", "von": "2027-06-01", "bis": "2027-08-31" },
+  { "schluessel": "einschulung", "name": "Einschulung", "von": "2027-08-01", "bis": "2027-09-05" },
+  { "schluessel": "halloween", "name": "Halloween", "von": "2027-10-01", "bis": "2027-10-31" },
+  { "schluessel": "wichteln", "name": "Wichteln", "von": "2027-11-15", "bis": "2027-12-23" },
+  { "schluessel": "nikolaus", "name": "Nikolaus", "von": "2027-11-22", "bis": "2027-12-06" },
+  { "schluessel": "weihnachten", "name": "Weihnachten", "von": "2027-11-15", "bis": "2027-12-24" },
+  { "schluessel": "silvester", "name": "Silvester", "von": "2027-12-10", "bis": "2027-12-31" }
+]

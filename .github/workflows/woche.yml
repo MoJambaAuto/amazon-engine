@@ -1,0 +1,32 @@
+# Wöchentliche Signale für die Auswahl neuer Funde (Paket AE-11): Google-Trends-Schlagzeilen (DE) und Anlässe
+# der nächsten 45 Tage nach daten/signale/<Datum>.json. Sonntag 04:00 Uhr Berlin (Winter), vor der Wochen-Sitzung
+# der geplanten Claude-Aufgabe amazon-engine-woche um 10:00 Uhr. Schlägt der Abruf fehl, steht das in der Datei.
+name: Wochensignale
+on:
+  schedule:
+    - cron: '0 3 * * 0'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: tageslauf
+  cancel-in-progress: false
+jobs:
+  signale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Signale sammeln
+        run: node werkzeug/signale.mjs
+      - name: Änderungen sichern
+        run: |
+          git add daten/signale
+          if git diff --cached --quiet; then
+            echo "keine Änderungen"
+          else
+            git -c user.name="Claude (MoJambaAuto)" -c user.email="mojamba.automation@gmail.com" commit -m "Signale $(TZ=Europe/Berlin date +%F)"
+            git pull --rebase -q && git push
+          fi

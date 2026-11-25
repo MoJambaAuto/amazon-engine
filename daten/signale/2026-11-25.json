@@ -1,0 +1,78 @@
+{
+  "quelle": "https://trends.google.com/trending/rss?geo=DE",
+  "abgerufen": "2026-11-25T14:20:30.060Z",
+  "eintraege": [
+    {
+      "titel": "willem-alexander",
+      "datum": "Wed, 25 Nov 2026 06:00:00 -0800"
+    },
+    {
+      "titel": "türkiye futbol federasyonu",
+      "datum": "Wed, 25 Nov 2026 06:00:00 -0800"
+    },
+    {
+      "titel": "christian ulmen",
+      "datum": "Wed, 25 Nov 2026 05:50:00 -0800"
+    },
+    {
+      "titel": "alejandro balde",
+      "datum": "Wed, 25 Nov 2026 05:50:00 -0800"
+    },
+    {
+      "titel": "kronprinzessin",
+      "datum": "Wed, 25 Nov 2026 05:40:00 -0800"
+    },
+    {
+      "titel": "vw id. cross",
+      "datum": "Wed, 25 Nov 2026 05:40:00 -0800"
+    },
+    {
+      "titel": "nathanael liminski",
+      "datum": "Wed, 25 Nov 2026 05:40:00 -0800"
+    },
+    {
+      "titel": "tennis",
+      "datum": "Wed, 25 Nov 2026 05:30:00 -0800"
+    },
+    {
+      "titel": "mark keller",
+      "datum": "Wed, 25 Nov 2026 05:30:00 -0800"
+    },
+    {
+      "titel": "marisa burger ausstieg rosenheim cops",
+      "datum": "Wed, 25 Nov 2026 05:20:00 -0800"
+    }
+  ],
+  "anlaesse_naechste_45_tage": [
+    {
+      "schluessel": "wichteln",
+      "name": "Wichteln",
+      "von": "2026-11-15",
+      "bis": "2026-12-23"
+    },
+    {
+      "schluessel": "nikolaus",
+      "name": "Nikolaus",
+      "von": "2026-11-22",
+      "bis": "2026-12-06"
+    },
+    {
+      "schluessel": "weihnachten",
+      "name": "Weihnachten",
+      "von": "2026-11-15",
+      "bis": "2026-12-24"
+    },
+    {
+      "schluessel": "silvester",
+      "name": "Silvester",
+      "von": "2026-12-10",
+      "bis": "2026-12-31"
+    },
+    {
+      "schluessel": "winter",
+      "name": "Winter",
+      "von": "2026-12-01",
+      "bis": "2027-02-28"
+    }
+  ]
+}
