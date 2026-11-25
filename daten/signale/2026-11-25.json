@@ -1,7 +1,39 @@
 {
   "quelle": "https://trends.google.com/trending/rss?geo=DE",
-  "abgerufen": "2026-11-25T14:20:30.060Z",
+  "abgerufen": "2026-11-25T14:41:47.301Z",
   "eintraege": [
+    {
+      "titel": "donald trump jr.",
+      "datum": "Wed, 25 Nov 2026 06:30:00 -0800"
+    },
+    {
+      "titel": "kampfflugzeug",
+      "datum": "Wed, 25 Nov 2026 06:20:00 -0800"
+    },
+    {
+      "titel": "erdbeben mauritius",
+      "datum": "Wed, 25 Nov 2026 06:20:00 -0800"
+    },
+    {
+      "titel": "pflegeheim",
+      "datum": "Wed, 25 Nov 2026 06:20:00 -0800"
+    },
+    {
+      "titel": "charlie sheen",
+      "datum": "Wed, 25 Nov 2026 06:20:00 -0800"
+    },
+    {
+      "titel": "bermatingen",
+      "datum": "Wed, 25 Nov 2026 06:10:00 -0800"
+    },
+    {
+      "titel": "erbschaft",
+      "datum": "Wed, 25 Nov 2026 06:10:00 -0800"
+    },
+    {
+      "titel": "ps plus dezember 2026",
+      "datum": "Wed, 25 Nov 2026 06:10:00 -0800"
+    },
     {
       "titel": "willem-alexander",
       "datum": "Wed, 25 Nov 2026 06:00:00 -0800"
@@ -9,38 +41,6 @@
     {
       "titel": "türkiye futbol federasyonu",
       "datum": "Wed, 25 Nov 2026 06:00:00 -0800"
-    },
-    {
-      "titel": "christian ulmen",
-      "datum": "Wed, 25 Nov 2026 05:50:00 -0800"
-    },
-    {
-      "titel": "alejandro balde",
-      "datum": "Wed, 25 Nov 2026 05:50:00 -0800"
-    },
-    {
-      "titel": "kronprinzessin",
-      "datum": "Wed, 25 Nov 2026 05:40:00 -0800"
-    },
-    {
-      "titel": "vw id. cross",
-      "datum": "Wed, 25 Nov 2026 05:40:00 -0800"
-    },
-    {
-      "titel": "nathanael liminski",
-      "datum": "Wed, 25 Nov 2026 05:40:00 -0800"
-    },
-    {
-      "titel": "tennis",
-      "datum": "Wed, 25 Nov 2026 05:30:00 -0800"
-    },
-    {
-      "titel": "mark keller",
-      "datum": "Wed, 25 Nov 2026 05:30:00 -0800"
-    },
-    {
-      "titel": "marisa burger ausstieg rosenheim cops",
-      "datum": "Wed, 25 Nov 2026 05:20:00 -0800"
     }
   ],
   "anlaesse_naechste_45_tage": [
