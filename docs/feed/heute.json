@@ -1,7 +1,20 @@
 {
-  "datum": "2026-11-24",
-  "art": null,
-  "fund": null,
-  "kanal_text": null,
-  "social_text": null
+  "datum": "2026-11-25",
+  "art": "fund",
+  "fund": {
+    "id": "f-0001",
+    "slug": "f-0001-notfall-unterhose-in-der-dose",
+    "datum": "2026-11-25",
+    "titel": "Notfall-Unterhose in der Dose",
+    "text_h": "Gibt es wirklich: Notfall-Unterhose in der Dose",
+    "text_p": "Eine Unterhose, verpackt wie eine Konserve. Der Witz steht schon auf der Dose, du musst sie nur noch überreichen. Passt zu jeder Wichtelrunde mit Kollegen. Über den Knopf siehst du die Auswahl bei Amazon.",
+    "suchbegriff": "Notfall Unterhose Dose",
+    "anlaesse": [
+      "wichteln",
+      "geburtstag"
+    ],
+    "kategorie": "bekleidung"
+  },
+  "kanal_text": "Anzeige · Papillons Fund des Tages\n\nEine Unterhose, verpackt wie eine Konserve. Der Witz steht schon auf der Dose. Braucht das jemand? Im Notfall ja. Sonst zum Lachen.\n\n👉 Bei Amazon ansehen: https://www.amazon.de/s?k=Notfall+Unterhose+Dose&tag=schmetterlingsfutter-21\n\nAlle Funde: schmetterlingsfutter.de/funde\n\nAls Amazon-Partner verdiene ich an qualifizierten Verkäufen.",
+  "social_text": "Anzeige · Eine Unterhose, verpackt wie eine Konserve. Der Witz steht schon auf der Dose.\n\nDen Link gibt es im WhatsApp-Kanal „Papillons Fund des Tages“ (Link im Profil).\nAls Amazon-Partner verdiene ich an qualifizierten Verkäufen.\n\n#funddestages #wichtelgeschenk #lustigegeschenke"
 }

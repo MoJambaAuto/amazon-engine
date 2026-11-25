@@ -1,1 +1,92 @@
-{}
+{
+  "2026-11-25": {
+    "art": "fund",
+    "fund": "f-0001",
+    "ton": "trocken",
+    "format": "urteil",
+    "fassung": 0
+  },
+  "2026-11-26": {
+    "art": "fund",
+    "fund": "f-0004",
+    "ton": "trocken",
+    "format": "frage",
+    "fassung": 0
+  },
+  "2026-11-27": {
+    "art": "fund",
+    "fund": "f-0007",
+    "ton": "absurd",
+    "format": "steckbrief",
+    "fassung": 0
+  },
+  "2026-11-28": {
+    "art": "fund",
+    "fund": "f-0008",
+    "ton": "trocken",
+    "format": "papillon-spricht",
+    "fassung": 0
+  },
+  "2026-11-29": {
+    "art": "rueckblick"
+  },
+  "2026-11-30": {
+    "art": "fund",
+    "fund": "f-0014",
+    "ton": "begeistert",
+    "format": "urteil",
+    "fassung": 0
+  },
+  "2026-12-01": {
+    "art": "fund",
+    "fund": "f-0011",
+    "ton": "absurd",
+    "format": "frage",
+    "fassung": 0
+  },
+  "2026-12-02": {
+    "art": "fund",
+    "fund": "f-0030",
+    "ton": "trocken",
+    "format": "urteil",
+    "fassung": 0
+  },
+  "2026-12-03": {
+    "art": "fund",
+    "fund": "f-0013",
+    "ton": "trocken",
+    "format": "steckbrief",
+    "fassung": 0
+  },
+  "2026-12-04": {
+    "art": "fund",
+    "fund": "f-0019",
+    "ton": "begeistert",
+    "format": "steckbrief",
+    "fassung": 0
+  },
+  "2026-12-05": {
+    "art": "fund",
+    "fund": "f-0027",
+    "ton": "begeistert",
+    "format": "frage",
+    "fassung": 0
+  },
+  "2026-12-06": {
+    "art": "rueckblick"
+  },
+  "2026-12-07": {
+    "art": "fund",
+    "fund": "f-0003",
+    "ton": "absurd",
+    "format": "urteil",
+    "fassung": 0
+  },
+  "2026-12-08": {
+    "art": "fund",
+    "fund": "f-0026",
+    "ton": "absurd",
+    "format": "papillon-spricht",
+    "fassung": 0
+  }
+}

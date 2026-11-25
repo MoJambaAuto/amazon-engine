@@ -1,12 +1,9 @@
 {
-  "letzter_lauf": "2026-11-24T14:45:23.027Z",
-  "datum": "2026-11-24",
-  "heute_art": null,
-  "heute_fund": null,
-  "vorrat_tage": 0,
-  "geplante_tage": 0,
-  "warnungen": [
-    "Vorrat unter 10 Tagen",
-    "Heute kein Fund geplant"
-  ]
+  "letzter_lauf": "2026-11-25T11:26:34.935Z",
+  "datum": "2026-11-25",
+  "heute_art": "fund",
+  "heute_fund": "f-0001",
+  "vorrat_tage": 18,
+  "geplante_tage": 14,
+  "warnungen": []
 }

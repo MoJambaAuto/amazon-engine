@@ -43,7 +43,7 @@
       "kauf": 25,
       "grund": 65
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -78,9 +78,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0002",
@@ -125,7 +125,7 @@
       "kauf": 19,
       "grund": 59
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -160,9 +160,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0003",
@@ -208,7 +208,7 @@
       "kauf": 19,
       "grund": 59
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -243,9 +243,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0004",
@@ -291,7 +291,7 @@
       "kauf": 25,
       "grund": 65
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -326,9 +326,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0005",
@@ -374,7 +374,7 @@
       "kauf": 25,
       "grund": 65
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -409,9 +409,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0006",
@@ -456,7 +456,7 @@
       "kauf": 25,
       "grund": 60
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -491,9 +491,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0007",
@@ -539,7 +539,7 @@
       "kauf": 25,
       "grund": 65
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -574,9 +574,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0008",
@@ -622,7 +622,7 @@
       "kauf": 25,
       "grund": 65
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -657,9 +657,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0009",
@@ -705,7 +705,7 @@
       "kauf": 19,
       "grund": 59
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -740,9 +740,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0010",
@@ -787,7 +787,7 @@
       "kauf": 19,
       "grund": 54
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -822,9 +822,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0011",
@@ -869,7 +869,7 @@
       "kauf": 25,
       "grund": 65
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -904,9 +904,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0012",
@@ -950,7 +950,7 @@
       "kauf": 19,
       "grund": 54
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -985,9 +985,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0013",
@@ -1032,7 +1032,7 @@
       "kauf": 25,
       "grund": 65
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -1067,9 +1067,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0014",
@@ -1115,7 +1115,7 @@
       "kauf": 25,
       "grund": 65
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -1150,9 +1150,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0015",
@@ -1196,7 +1196,7 @@
       "kauf": 19,
       "grund": 59
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -1231,9 +1231,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0016",
@@ -1278,7 +1278,7 @@
       "kauf": 19,
       "grund": 59
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -1313,9 +1313,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0017",
@@ -1361,7 +1361,7 @@
       "kauf": 25,
       "grund": 65
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -1396,9 +1396,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0018",
@@ -1443,7 +1443,7 @@
       "kauf": 25,
       "grund": 60
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -1478,9 +1478,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0019",
@@ -1525,7 +1525,7 @@
       "kauf": 25,
       "grund": 65
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -1560,9 +1560,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0020",
@@ -1606,7 +1606,7 @@
       "kauf": 25,
       "grund": 60
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -1641,9 +1641,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0021",
@@ -1688,7 +1688,7 @@
       "kauf": 19,
       "grund": 54
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -1723,9 +1723,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0022",
@@ -1771,7 +1771,7 @@
       "kauf": 25,
       "grund": 55
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -1806,9 +1806,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0023",
@@ -1853,7 +1853,7 @@
       "kauf": 25,
       "grund": 65
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -1888,9 +1888,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0024",
@@ -1936,7 +1936,7 @@
       "kauf": 25,
       "grund": 50
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -1971,9 +1971,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0025",
@@ -2019,7 +2019,7 @@
       "kauf": 19,
       "grund": 54
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -2054,9 +2054,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0026",
@@ -2102,7 +2102,7 @@
       "kauf": 25,
       "grund": 65
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -2137,9 +2137,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0027",
@@ -2184,7 +2184,7 @@
       "kauf": 25,
       "grund": 65
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -2219,9 +2219,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0028",
@@ -2266,7 +2266,7 @@
       "kauf": 19,
       "grund": 59
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -2301,9 +2301,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0029",
@@ -2349,7 +2349,7 @@
       "kauf": 25,
       "grund": 65
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -2384,9 +2384,9 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   },
   {
     "id": "f-0030",
@@ -2432,7 +2432,7 @@
       "kauf": 25,
       "grund": 65
     },
-    "status": "vorschlag",
+    "status": "freigegeben",
     "paket": "start",
     "texte": {
       "web": {
@@ -2467,8 +2467,8 @@
         }
       ]
     },
-    "freigabe": "",
+    "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-19"
+    "geaendert": "2026-11-25"
   }
 ]

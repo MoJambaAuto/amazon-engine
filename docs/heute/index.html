@@ -35,11 +35,33 @@ h2{color:var(--cyan);margin-top:20px}
 <body>
 <main>
 <h1>Heute posten</h1>
-<p class="datum">Dienstag, 24.11.2026</p>
-<p class="box leer">Heute ist kein Fund geplant.</p>
-<h2>Vorrat</h2>
-<p class="box leer">Nichts geplant.</p>
-</main>
+<p class="datum">Mittwoch, 25.11.2026</p>
+<pre class="box" id="kanal">Anzeige · Papillons Fund des Tages
 
+Eine Unterhose, verpackt wie eine Konserve. Der Witz steht schon auf der Dose. Braucht das jemand? Im Notfall ja. Sonst zum Lachen.
+
+👉 Bei Amazon ansehen: https://www.amazon.de/s?k=Notfall+Unterhose+Dose&amp;tag=schmetterlingsfutter-21
+
+Alle Funde: schmetterlingsfutter.de/funde
+
+Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</pre>
+<button class="knopf" type="button" data-kopiere="kanal" data-dann="https://whatsapp.com/channel/0029Vb9gGpbId7nS5nRT380l">Kopieren und Kanal öffnen</button>
+<h2>Für Instagram und Facebook</h2>
+<pre class="box" id="social">Anzeige · Eine Unterhose, verpackt wie eine Konserve. Der Witz steht schon auf der Dose.
+
+Den Link gibt es im WhatsApp-Kanal „Papillons Fund des Tages“ (Link im Profil).
+Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.
+
+#funddestages #wichtelgeschenk #lustigegeschenke</pre>
+<button class="knopf zwei" type="button" data-kopiere="social">Text kopieren</button>
+<h2>Vorrat</h2>
+<ul class="vorrat"><li><span class="d">Do 26.11.</span><span>Taco-Halter in Dinosaurier-Form</span></li><li><span class="d">Fr 27.11.</span><span>Tortilla-Decke</span></li><li><span class="d">Sa 28.11.</span><span>Fisch-Badelatschen</span></li><li><span class="d">So 29.11.</span><span>Wochenrückblick</span></li><li><span class="d">Mo 30.11.</span><span>WC-Nachtlicht mit Bewegungsmelder</span></li><li><span class="d">Di 01.12.</span><span>Sudoku-Toilettenpapier</span></li><li><span class="d">Mi 02.12.</span><span>Weihnachtspullover mit Lichtern</span></li></ul>
+</main>
+<script>document.querySelectorAll('[data-kopiere]').forEach(function(b){b.addEventListener('click',function(){
+var q=document.getElementById(b.getAttribute('data-kopiere'));var t=q.textContent;var alt=b.textContent;
+var dann=b.getAttribute('data-dann');
+function ok(){b.textContent='Kopiert ✓';if(dann){setTimeout(function(){window.location.href=dann},500)}setTimeout(function(){b.textContent=alt},2500)}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,function(){waehle(q);ok()})}else{waehle(q);ok()}});});
+function waehle(q){var r=document.createRange();r.selectNodeContents(q);var s=window.getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy')}catch(e){}}</script>
 </body>
 </html>
