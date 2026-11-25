@@ -966,7 +966,7 @@
         {
           "format": "papillon-spricht",
           "ton": "begeistert",
-          "text": "Papillon hat einen neuen Freund. Er ist aus Gummi, ein Huhn, und schreit empört, sobald man ihn drückt. Die Stimmung steigt sofort, nur mein Sitznachbar schaut streng."
+          "text": "Ich habe einen neuen Freund. Er ist aus Gummi, ein Huhn, und schreit empört, sobald man ihn drückt. Die Stimmung steigt sofort, nur mein Sitznachbar schaut streng. Gruß, Papillon."
         },
         {
           "format": "urteil",
@@ -1201,13 +1201,13 @@
     "texte": {
       "web": {
         "h": "Mini-Fingerhände: Hände für deine Finger",
-        "p": "Winzige Hände zum Aufstecken auf die Finger. Sinnlos und sofort im Einsatz – zum Winken, Zeigen oder Klatschen im Kleinformat. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Winzige Hände zum Aufstecken auf die Finger. Sinnlos und sofort im Einsatz. Über den Knopf siehst du die Auswahl bei Amazon."
       },
       "kanal": [
         {
           "format": "papillon-spricht",
           "ton": "trocken",
-          "text": "Ich habe keine Hände. Jetzt weiß ich, dass man Hände für die Finger kaufen kann. Winzig, zum Aufstecken, sinnlos und sofort im Einsatz. Papillon nimmt das zur Kenntnis."
+          "text": "Ich habe keine Hände. Jetzt weiß ich, dass man Hände für die Finger kaufen kann. Winzig, zum Aufstecken, sinnlos und sofort im Einsatz. Ich, Papillon, nehme das zur Kenntnis."
         },
         {
           "format": "steckbrief",
@@ -1377,7 +1377,7 @@
         {
           "format": "papillon-spricht",
           "ton": "begeistert",
-          "text": "Papillon war heute hungrig und hat einen Pizzakarton gefunden. Drin lag keine Pizza, sondern Socken, gefaltet wie eine. Ich war kurz traurig, dann begeistert."
+          "text": "Heute war ich hungrig und habe einen Pizzakarton gefunden. Drin lag keine Pizza, sondern Socken, gefaltet wie eine. Ich war kurz traurig, dann begeistert. Papillon."
         },
         {
           "format": "steckbrief",
@@ -1611,7 +1611,7 @@
     "texte": {
       "web": {
         "h": "Bananenschneider: gleiche Scheiben mit einem Druck",
-        "p": "Er schneidet eine Banane mit einem Druck in gleiche Scheiben. Ein Werkzeug für ein Problem, das niemand hatte – und trotzdem will es jeder einmal ausprobieren. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Er schneidet eine Banane mit einem Druck in gleiche Scheiben. Ein Werkzeug für ein Problem, das niemand hatte. Über den Knopf geht es zur Auswahl bei Amazon."
       },
       "kanal": [
         {
@@ -1787,7 +1787,7 @@
         {
           "format": "papillon-spricht",
           "ton": "begeistert",
-          "text": "Papillon friert im Winter. Darum habe ich mich heute neben ein Stofftier gesetzt, in dessen Bauch eine Wärmflasche steckt. Warm und zum Festhalten. Ich bleibe hier."
+          "text": "Im Winter friere ich. Darum habe ich mich heute neben ein Stofftier gesetzt, in dessen Bauch eine Wärmflasche steckt. Warm und zum Festhalten. Ich, Papillon, bleibe hier."
         },
         {
           "format": "frage",
@@ -1957,7 +1957,7 @@
         {
           "format": "papillon-spricht",
           "ton": "pruefend",
-          "text": "Ich habe heute eine Schüssel geprüft, die sich flach machen kann. Mais hinein, Deckel drauf, Mikrowelle, danach zusammenfalten. Papillons Befund: Popcorn gelungen, Schrankplatz gerettet."
+          "text": "Ich habe heute eine Schüssel geprüft, die sich flach machen kann. Mais hinein, Deckel drauf, Mikrowelle, danach zusammenfalten. Papillons Befund: Schüssel flach zusammenfaltbar."
         }
       ],
       "social": [
@@ -2365,7 +2365,7 @@
         {
           "format": "papillon-spricht",
           "ton": "trocken",
-          "text": "Papillon trinkt keinen Kaffee. Trotzdem gefällt mir diese Tasse: oben Kaffee, unten ein Fach für Kekse. Vorrat und Getränk in einem Stück. Ordentlich."
+          "text": "Ich trinke keinen Kaffee. Trotzdem gefällt mir diese Tasse: oben Kaffee, unten ein Fach für Kekse. Vorrat und Getränk in einem Stück. Ordentlich. Gruß, Papillon."
         },
         {
           "format": "frage",
@@ -2379,7 +2379,7 @@
           "hashtags": "#funddestages #wichtelgeschenk #geschenkidee"
         },
         {
-          "text": "Eine Tasse mit Geheimfach für Kekse. Wer in deinem Büro bräuchte sie ab morgen?",
+          "text": "Eine Tasse mit eigenem Fach für Kekse. Wer in deinem Büro bräuchte sie ab morgen?",
           "hashtags": "#funddestages #wichteln #kurios"
         }
       ]
