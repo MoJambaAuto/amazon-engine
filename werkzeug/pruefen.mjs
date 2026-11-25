@@ -66,6 +66,15 @@ export function pruefeAusgaben({ daten = join(WURZEL, 'daten'), docs = join(WURZ
   }
   pruefeAusgabe('feed/heute.json', lies(join(docs, 'feed', 'heute.json')));
   pruefeAusgabe('heute/index.html', lies(join(docs, 'heute', 'index.html')));
+  // AE-14 Nachtrag: Liste der geprüften Funde – nur gültig geprüfte, jeder mit Produkt-Link
+  const geprueftText = lies(join(docs, 'feed', 'geprueft.json'));
+  pruefeAusgabe('feed/geprueft.json', geprueftText);
+  if (geprueftText) {
+    for (const e of JSON.parse(geprueftText)) {
+      if (!istGeprueft(nachId.get(e.id), heute, config)) fehler.push(`feed/geprueft.json ${e.id}: ohne gültige Sichtprüfung`);
+      fehler.push(...pruefeFundLink(e.link, config).map((x) => `feed/geprueft.json ${e.id}: ${x}`));
+    }
+  }
   return fehler;
 }
 

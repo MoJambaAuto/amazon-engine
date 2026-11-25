@@ -234,6 +234,12 @@ export function bauen({ daten = join(WURZEL, 'daten'), docs = join(WURZEL, 'docs
     if (`${t.kanal}\n${t.social ?? ''}`.includes('amazon.de/s?')) fehler.push(`${t.datum}: Suchlink im Text`);
   }
   for (const e of feed) if (e.link) fehler.push(...pruefeFundLink(e.link, config).map((x) => `Feed ${e.id}: ${x}`));
+  // AE-14 Nachtrag: alle freigegebenen Funde mit am Bautag gültiger Sichtprüfung (für die Wichtel-Seite), nach id
+  const geprueftListe = funde.filter((f) => f.status === 'freigegeben' && istGeprueft(f, heute, config))
+    .sort((a, b) => (a.id < b.id ? -1 : 1))
+    .map((f) => ({ id: f.id, titel: f.titel, asin: f.asin, link: produktLink(f.asin, config.kennungen.web, config),
+      geprueft_am: f.produkt.geprueft_am, gueltig_bis: plusTage(f.produkt.geprueft_am, config.sichtpruefung_gueltig_tage ?? 90) }));
+  for (const e of geprueftListe) fehler.push(...pruefeFundLink(e.link, config).map((x) => `geprueft.json ${e.id}: ${x}`));
   if (fehler.length) throw new Error('Prüfung fehlgeschlagen: ' + fehler.join(' | '));
 
   // 5. Status und Vorrat
@@ -260,6 +266,7 @@ export function bauen({ daten = join(WURZEL, 'daten'), docs = join(WURZEL, 'docs
   // 6. Schreiben
   for (const z of neueZeilen) appendFileSync(verlaufPfad, JSON.stringify(z) + '\n', 'utf8');
   schreibenJson(join(docs, 'feed', 'funde.json'), feed);
+  schreibenJson(join(docs, 'feed', 'geprueft.json'), geprueftListe);
   schreibenJson(join(docs, 'feed', 'heute.json'), { datum: heute, art: heuteZeile ? heuteZeile.art : null, fund: fundHeute, kanal_text: kanal, social_text: social });
   schreibenJson(join(docs, 'status.json'), status);
   datei(join(docs, 'heute', 'index.html'), heuteSeite({ datum: heute, tage: seitenTage, plan: planListe }, config));

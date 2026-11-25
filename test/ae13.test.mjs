@@ -119,3 +119,27 @@ test('pruefeAusgaben: meldet Suchlinks und ungeprüfte Funde im Plan', () => {
     assert.ok(f.some((x) => x.includes("Suchlink 'amazon.de/s?'")));
   } finally { rmSync(o, { recursive: true, force: true }); }
 });
+
+test('geprueft.json (AE-14 Nachtrag): nur freigegebene Funde mit gültiger Prüfung, nach id, mit Produkt-Link und gueltig_bis', () => {
+  const o = mkdtempSync(join(tmpdir(), 'ae14g-'));
+  try {
+    const daten = join(o, 'daten'), docs = join(o, 'docs');
+    const funde = ungeprueft().map((f) => {
+      if (f.id === 'f-0003') return { ...f, produkt: { ...f.produkt, ...geprueft('2026-11-20') } };
+      if (f.id === 'f-0002') return { ...f, produkt: { ...f.produkt, ...geprueft('2026-11-21') } };
+      if (f.id === 'f-0004') return { ...f, produkt: { ...f.produkt, ...geprueft('2026-08-01') } }; // abgelaufen
+      if (f.id === 'f-0005') return { ...f, status: 'vorschlag', produkt: { ...f.produkt, ...geprueft('2026-11-20') } };
+      return f;
+    });
+    schreibenJson(join(daten, 'funde.json'), funde);
+    schreibenJson(join(daten, 'plan.json'), {});
+    writeFileSync(join(daten, 'verlauf.jsonl'), '');
+    bauen({ daten, docs, config, heute: HEUTE, jetzt: new Date('2026-11-25T04:10:00Z') });
+    const g = lesenJson(join(docs, 'feed', 'geprueft.json'));
+    assert.deepEqual(g.map((e) => e.id), ['f-0002', 'f-0003']);
+    assert.deepEqual(g[1], { id: 'f-0003', titel: funde[2].titel, asin: funde[2].asin, link: produktLink(funde[2].asin, 'schmetterlingsfutter-21', config), geprueft_am: '2026-11-20', gueltig_bis: '2027-02-18' });
+    assert.deepEqual(pruefeAusgaben({ daten, docs, funde, config, heute: HEUTE }), []);
+    schreibenJson(join(docs, 'feed', 'geprueft.json'), [...g, { id: 'f-0004', link: produktLink(funde[3].asin, 'schmetterlingsfutter-21', config) }]);
+    assert.ok(pruefeAusgaben({ daten, docs, funde, config, heute: HEUTE }).some((x) => x.includes('geprueft.json f-0004: ohne gültige Sichtprüfung')));
+  } finally { rmSync(o, { recursive: true, force: true }); }
+});
