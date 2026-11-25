@@ -17,6 +17,7 @@ import { join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { WURZEL, lesenJson, schreibenJson, heuteBerlin } from './lib.mjs';
 import { BEWERTUNG } from './bewerten.mjs';
+import { istGeprueft } from './regeln.mjs';
 
 const NOTFALL_FUND_TAGE = 60;
 const TAG_MS = 86400000;
@@ -130,10 +131,19 @@ function waehleFund(datum, freigegeben, belegung, config) {
 }
 
 // Reine Funktion: liefert den neuen Plan (alte Einträge unverändert) und den Vorrat.
+// AE-13: Kandidaten sind nur freigegebene Funde mit gültiger Sichtprüfung am jeweiligen Tag. Gibt es keinen,
+// bekommt der Tag die Art 'pause'. Geplante, noch nicht veröffentlichte Tage, deren Fund am Tag nicht (mehr)
+// geprüft ist, und frühere Pausen werden neu berechnet. Der Vorrat zählt nur geprüfte Funde.
 export function planen({ funde, plan = {}, verlauf = [], config, heute }) {
   const nachId = new Map(funde.map((f) => [f.id, f]));
   const freigegeben = funde.filter((f) => f.status === 'freigegeben');
+  const imVerlauf = new Set(verlauf.map((v) => v.datum));
   const neu = { ...plan };
+  for (const [d, e] of Object.entries(neu)) {
+    if (d < heute || imVerlauf.has(d) || !e) continue;
+    // Rückblicke ebenfalls neu bestimmen: ihre Woche kann sich durch entfernte Funde geändert haben
+    if (e.art === 'pause' || e.art === 'rueckblick' || (e.art === 'fund' && !istGeprueft(nachId.get(e.fund), d, config))) delete neu[d];
+  }
   const belegung = belegungAus(neu, verlauf, nachId);
   for (let n = 0; n < config.planung_tage_voraus; n++) {
     const datum = plusTage(heute, n);
@@ -143,15 +153,15 @@ export function planen({ funde, plan = {}, verlauf = [], config, heute }) {
       const funde6 = [1, 2, 3, 4, 5, 6].filter((k) => (belegung.get(plusTage(datum, -k)) || {}).art === 'fund').length;
       if (funde6 >= 3) eintrag = { art: 'rueckblick' };
     }
-    if (!eintrag) eintrag = waehleFund(datum, freigegeben, belegung, config);
-    if (!eintrag) continue; // Tag bleibt leer
+    if (!eintrag) eintrag = waehleFund(datum, freigegeben.filter((f) => istGeprueft(f, datum, config)), belegung, config);
+    if (!eintrag) eintrag = { art: 'pause' }; // AE-13: kein geprüfter Kandidat
     neu[datum] = eintrag;
     const f = eintrag.art === 'fund' ? nachId.get(eintrag.fund) : null;
     belegung.set(datum, f ? { ...eintrag, gattung: f.gattung, kategorie: f.kategorie } : eintrag);
   }
   const sortiert = Object.fromEntries(Object.entries(neu).sort(([a], [b]) => (a < b ? -1 : 1)));
   const benutzt = new Set(fundEintraege(belegung).map(([, e]) => e.fund));
-  const vorrat = freigegeben.filter((f) => !benutzt.has(f.id)).length;
+  const vorrat = freigegeben.filter((f) => !benutzt.has(f.id) && istGeprueft(f, heute, config)).length;
   return { plan: sortiert, vorrat };
 }
 

@@ -5,8 +5,8 @@
 import { appendFileSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { WURZEL, lesenJson, schreibenJson, heuteBerlin, slug, amazonLink } from './lib.mjs';
-import { pruefeText, pruefeLink } from './regeln.mjs';
+import { WURZEL, lesenJson, schreibenJson, heuteBerlin, slug, produktLink, pruefLink } from './lib.mjs';
+import { pruefeText, pruefeFundLink, istGeprueft } from './regeln.mjs';
 import { lesenVerlauf, plusTage, abstand } from './planen.mjs';
 
 const ROBOTS = ['User-agent: *', 'Disallow: /heute/', 'Disallow: /vorschau/', 'Disallow: /social/',
@@ -24,13 +24,13 @@ export function kanalText(fund, fassung, config) {
   const p = config.pflichttexte;
   const k = fund.texte.kanal[Number.isInteger(fassung) ? fassung : 0];
   if (!k || !k.text) throw new Error(`${fund.id}: Kanal-Fassung ${fassung} fehlt`);
-  const link = amazonLink(fund.suchbegriff, config.kennungen.kanal, 0, config);
+  const link = produktLink(fund.asin, config.kennungen.kanal, config); // AE-13: direkt zum Produkt
   return { text: [p.anfang_kanal, k.text, p.link_zeile.replace('{link}', link), p.alle_funde, p.ende].join('\n\n'), links: [link] };
 }
 
 export function rueckblickText(funde, config) {
   const p = config.pflichttexte;
-  const links = funde.map((f) => amazonLink(f.suchbegriff, config.kennungen.kanal, 0, config));
+  const links = funde.map((f) => produktLink(f.asin, config.kennungen.kanal, config));
   const zeilen = funde.map((f, i) => `${i + 1}. ${f.titel} – ${links[i]}`);
   return { text: [p.anfang_rueckblick, ['Die drei Funde der Woche:', ...zeilen].join('\n'), p.alle_funde, p.ende].join('\n\n'), links };
 }
@@ -42,9 +42,14 @@ export function socialText(fund, config) {
   return `${p.anfang_social} · ${s.text}\n\n${p.social_verweis}\n${p.ende}\n\n${s.hashtags}`;
 }
 
-function feedEintrag(v, fund) {
+// AE-13: Feed mit asin und fertigem Web-Link (kein Suchbegriff mehr). Ist die Sichtprüfung am Bautag
+// nicht (mehr) gültig: link null und link_status 'wird_neu_geprueft' – die Website zeigt dann keinen Knopf.
+function feedEintrag(v, fund, heute, config) {
+  const geprueft = istGeprueft(fund, heute, config);
   return { id: fund.id, slug: `${fund.id}-${slug(fund.titel)}`, datum: v.datum, titel: fund.titel,
-    text_h: fund.texte.web.h, text_p: fund.texte.web.p, suchbegriff: fund.suchbegriff, anlaesse: fund.anlaesse, kategorie: fund.kategorie };
+    text_h: fund.texte.web.h, text_p: fund.texte.web.p, asin: fund.asin ?? null,
+    link: geprueft ? produktLink(fund.asin, config.kennungen.web, config) : null,
+    ...(geprueft ? {} : { link_status: 'wird_neu_geprueft' }), anlaesse: fund.anlaesse, kategorie: fund.kategorie };
 }
 
 // ---------- Seiten ----------
@@ -134,7 +139,7 @@ function heuteSeite({ datum, tage, plan }, config) {
     config.kanal_url
       ? `<button class="knopf" type="button" id="kanalknopf" data-kopiere="kanal" data-dann="${esc(config.kanal_url)}"${aus(t)}>Kopieren und Kanal öffnen</button>`
       : `<button class="knopf" type="button" id="kanalknopf" data-kopiere="kanal"${aus(t)}>Text kopieren</button>`,
-    `<p class="box leer" id="leer"${aus(!t)}>Heute ist kein Fund geplant.</p>`,
+    `<p class="box leer" id="leer"${aus(!t)}>Heute kein neuer Fund. Alle Funde: ${esc(config.funde_seite)}</p>`,
     `<h2 id="socialkopf"${aus(t && t.social)}>Für Instagram und Facebook</h2>`,
     `<pre class="box" id="social"${aus(t && t.social)}>${esc(t && t.social ? t.social : '')}</pre>`,
     `<button class="knopf zwei" type="button" id="socialknopf" data-kopiere="social"${aus(t && t.social)}>Text kopieren</button>`,
@@ -148,18 +153,21 @@ function heuteSeite({ datum, tage, plan }, config) {
 // Texte eines Tages aus seinem Eintrag (Verlauf oder Plan). zeitleiste: Map Datum → Eintrag mit fund.
 function texteFuer(datum, e, zeitleiste, nachId, config) {
   if (!e) return null;
+  // AE-13: Pause (kein geprüfter Fund) oder ein Fund ohne gültige Sichtprüfung → kein Text, kein Link.
+  // Die Kopierseite zeigt dann „Heute kein neuer Fund“ mit Verweis auf config.funde_seite.
   if (e.art === 'fund') {
     const f = nachId.get(e.fund);
     if (!f) throw new Error(`${datum}: Fund ${e.fund} unbekannt`);
+    if (!istGeprueft(f, datum, config)) return null;
     const k = kanalText(f, e.fassung, config);
     return { datum, art: 'fund', fund: f, titel: f.titel, kanal: k.text, social: socialText(f, config), links: k.links };
   }
   if (e.art === 'rueckblick') {
-    const woche = [...zeitleiste.entries()].filter(([d, v]) => v.art === 'fund' && nachId.has(v.fund) && abstand(d, datum) >= 1 && abstand(d, datum) <= 6)
+    const woche = [...zeitleiste.entries()].filter(([d, v]) => v.art === 'fund' && nachId.has(v.fund) && istGeprueft(nachId.get(v.fund), datum, config) && abstand(d, datum) >= 1 && abstand(d, datum) <= 6)
       .map(([d, v]) => ({ d, f: nachId.get(v.fund) }))
       .sort((a, b) => (b.f.score?.grund ?? 0) - (a.f.score?.grund ?? 0) || (a.d < b.d ? 1 : -1))
       .slice(0, 3).map((x) => x.f);
-    if (woche.length === 0) throw new Error(`Rückblick ${datum}: keine Funde in den 6 Tagen davor`);
+    if (woche.length === 0) return null; // AE-13: keine geprüften Funde in den 6 Tagen davor → wie Pause
     const r = rueckblickText(woche, config);
     return { datum, art: 'rueckblick', fund: null, titel: 'Wochenrückblick', kanal: r.text, social: null, links: r.links };
   }
@@ -199,7 +207,7 @@ export function bauen({ daten = join(WURZEL, 'daten'), docs = join(WURZEL, 'docs
   // 2. Feed (ohne Link, ohne Kennung), neueste zuerst
   const feed = alleZeilen.filter((v) => v.art === 'fund' && nachId.has(v.fund))
     .sort((a, b) => (a.datum < b.datum ? 1 : a.datum > b.datum ? -1 : 0))
-    .map((v) => feedEintrag(v, nachId.get(v.fund)));
+    .map((v) => feedEintrag(v, nachId.get(v.fund), heute, config));
 
   // 3. Tagestexte für heute und alle geplanten Folgetage (die Kopierseite wählt im Browser den richtigen Tag)
   const zeitleiste = new Map();
@@ -214,28 +222,36 @@ export function bauen({ daten = join(WURZEL, 'daten'), docs = join(WURZEL, 'docs
   const heuteTexte = tage.find((t) => t.datum === heute) || null;
   const kanal = heuteTexte ? heuteTexte.kanal : null;
   const social = heuteTexte ? heuteTexte.social : null;
-  const fundHeute = heuteTexte && heuteTexte.fund ? feed.find((e) => e.id === heuteTexte.fund.id && e.datum === heute) || null : null;
+  // Fund von heute aus dem Feed (mit link oder link null + link_status, wenn die Sichtprüfung fehlt)
+  const fundHeute = heuteZeile && heuteZeile.art === 'fund' ? feed.find((e) => e.id === heuteZeile.fund && e.datum === heute) || null : null;
 
   // 4. Prüfen – alle vorab gebauten Texte und Links; bei Fehlern nichts schreiben
   const fehler = [];
   for (const t of tage) {
     fehler.push(...pruefeText(t.kanal, 'kanal', config).map((x) => `${t.datum} ${x}`));
     if (t.social) fehler.push(...pruefeText(t.social, 'social', config).map((x) => `${t.datum} ${x}`));
-    for (const l of t.links) fehler.push(...pruefeLink(l, config).map((x) => `${t.datum} ${x}`));
+    for (const l of t.links) fehler.push(...pruefeFundLink(l, config).map((x) => `${t.datum} ${x}`));
+    if (`${t.kanal}\n${t.social ?? ''}`.includes('amazon.de/s?')) fehler.push(`${t.datum}: Suchlink im Text`);
   }
+  for (const e of feed) if (e.link) fehler.push(...pruefeFundLink(e.link, config).map((x) => `Feed ${e.id}: ${x}`));
   if (fehler.length) throw new Error('Prüfung fehlgeschlagen: ' + fehler.join(' | '));
 
   // 5. Status und Vorrat
   const benutzt = new Set([...alleZeilen.filter((v) => v.art === 'fund').map((v) => v.fund),
     ...Object.values(plan).filter((e) => e && e.art === 'fund').map((e) => e.fund)]);
-  const vorratTage = funde.filter((f) => f.status === 'freigegeben' && !benutzt.has(f.id)).length;
-  const geplant = Object.keys(plan).filter((d) => d >= heute).length;
+  // AE-13: Vorrat zählt nur Funde mit gültiger Sichtprüfung; warten_auf_sichtpruefung = freigegeben, aber nicht geprüft
+  const vorratTage = funde.filter((f) => f.status === 'freigegeben' && !benutzt.has(f.id) && istGeprueft(f, heute, config)).length;
+  const wartend = funde.filter((f) => f.status === 'freigegeben' && !istGeprueft(f, heute, config)).length;
+  const geplant = Object.keys(plan).filter((d) => d >= heute && plan[d] && plan[d].art !== 'pause').length;
   const warnungen = [];
   if (vorratTage < config.vorrat_warnung_tage) warnungen.push(`Vorrat unter ${config.vorrat_warnung_tage} Tagen`);
   if (!eintrag) warnungen.push('Heute kein Fund geplant');
+  else if (eintrag.art === 'pause') warnungen.push('Heute Pause: kein Fund mit gültiger Sichtprüfung');
+  if (wartend > 0) warnungen.push(`${wartend} Funde warten auf Mos Sichtprüfung`);
   const status = { letzter_lauf: jetzt.toISOString(), datum: heute, heute_art: heuteZeile ? heuteZeile.art : null,
-    heute_fund: heuteZeile ? heuteZeile.fund : null, vorrat_tage: vorratTage, geplante_tage: geplant, warnungen };
-  const planListe = Object.keys(plan).filter((d) => d >= heute && plan[d]).sort().map((d) => {
+    heute_fund: heuteZeile ? heuteZeile.fund : null, vorrat_tage: vorratTage, vorrat_geprueft_tage: vorratTage,
+    warten_auf_sichtpruefung: wartend, geplante_tage: geplant, warnungen };
+  const planListe = Object.keys(plan).filter((d) => d >= heute && plan[d] && plan[d].art !== 'pause').sort().map((d) => {
     const e = plan[d];
     return { datum: d, titel: e.art === 'fund' ? (nachId.get(e.fund)?.titel ?? e.fund) : 'Wochenrückblick' };
   });
@@ -265,15 +281,17 @@ export function vorschau({ paket, daten = join(WURZEL, 'daten'), docs = join(WUR
   if (funde.length === 0) throw new Error(`Paket ${paket}: keine Funde`);
   const fehler = [];
   const karten = funde.map((f) => {
-    const link = amazonLink(f.suchbegriff, config.kennungen.web, 0, config);
-    fehler.push(...pruefeLink(link, config).map((x) => `${f.id}: ${x}`));
+    // AE-13: Vorschau verlinkt die Produktseite ohne Kennung – nur für Mos Sichtprüfung
+    let link = null;
+    try { link = pruefLink(f.asin, config); } catch { fehler.push(`${f.id}: keine gültige asin`); }
     const t = f.texte;
     return `<section class="fund"><h2>${esc(f.titel)}</h2>
 <p><span class="marke">Grundscore ${esc(f.score?.grund ?? 0)}</span> · ${esc(f.id)} · ${esc(f.status)}</p>
 <div class="box"><b>${esc(t.web.h)}</b>\n${esc(t.web.p)}</div>
 ${t.kanal.map((k) => `<p class="klein">Kanal · ${esc(k.format)} · ${esc(k.ton)}</p><div class="box">${esc(k.text)}</div>`).join('\n')}
 ${t.social.map((s) => `<p class="klein">Social</p><div class="box">${esc(s.text)}\n${esc(s.hashtags)}</div>`).join('\n')}
-<a class="knopf zwei" href="${esc(link)}" target="_blank" rel="sponsored noopener">Link testen</a></section>`;
+${f.produkt && f.produkt.titel_gesehen ? `<p class="klein">Gefunden: ${esc(f.produkt.titel_gesehen)}</p>` : ''}
+<a class="knopf zwei" href="${esc(link ?? '')}" target="_blank" rel="noopener">Produktseite prüfen</a></section>`;
   });
   if (fehler.length) throw new Error('Prüfung fehlgeschlagen: ' + fehler.join(' | '));
   const pfad = join(docs, 'vorschau', paket, 'index.html');

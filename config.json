@@ -12,6 +12,9 @@
     "social": "schmetterlingsfutter-21"
   },
   "link_muster": "https://www.amazon.de/s?k={suchbegriff_plus}&tag={kennung}",
+  "link_muster_produkt": "https://www.amazon.de/dp/{asin}/ref=nosim?tag={kennung}",
+  "pruef_link_muster": "https://www.amazon.de/dp/{asin}",
+  "sichtpruefung_gueltig_tage": 90,
   "pflichttexte": {
     "anfang_kanal": "Anzeige · Papillons Fund des Tages",
     "anfang_rueckblick": "Anzeige · Papillons Wochenrückblick",

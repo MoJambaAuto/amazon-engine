@@ -55,7 +55,24 @@ export function schluessel(titel) {
     .join('-');
 }
 
-// Suchlink nach config.link_muster. maxCent > 0 fügt den Preisfilter vor &tag= ein.
+// AE-13: Link direkt auf die Produktseite nach config.link_muster_produkt – für jeden Fund.
+export function produktLink(asin, kennung, config = null) {
+  const cfg = config ?? lesenJson(join(WURZEL, 'config.json'));
+  if (typeof asin !== 'string' || !/^[A-Z0-9]{10}$/.test(asin)) throw new Error(`produktLink: asin '${asin}' ungültig`);
+  const link = cfg.link_muster_produkt.replace('{asin}', asin);
+  if (cfg.kennung_aktiv === false) return link.replace(/\?tag=\{kennung\}$/, '');
+  return link.replace('{kennung}', kennung);
+}
+
+// AE-13: Prüf-Link ohne Kennung (nur für Mos Sichtprüfung).
+export function pruefLink(asin, config = null) {
+  const cfg = config ?? lesenJson(join(WURZEL, 'config.json'));
+  if (typeof asin !== 'string' || !/^[A-Z0-9]{10}$/.test(asin)) throw new Error(`pruefLink: asin '${asin}' ungültig`);
+  return cfg.pruef_link_muster.replace('{asin}', asin);
+}
+
+// Suchlink nach config.link_muster – seit AE-13 nur noch für Auswahl-Knöpfe ohne genanntes Produkt.
+// maxCent > 0 fügt den Preisfilter vor &tag= ein.
 export function amazonLink(suchbegriff, kennung, maxCent = 0, config = null) {
   const cfg = config ?? lesenJson(join(WURZEL, 'config.json'));
   const plus = String(suchbegriff).trim().split(/\s+/).map(encodeURIComponent).join('+');

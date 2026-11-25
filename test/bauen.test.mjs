@@ -15,10 +15,13 @@ const P = config.pflichttexte;
 const HEUTE = '2026-11-25'; // Mittwoch
 const JETZT = new Date('2026-11-25T04:10:00Z');
 
-function ordner({ freigegeben = [], plan = {}, verlauf = [] } = {}) {
+// AE-13: freigegebene Test-Funde gelten als von Mo geprüft (ungeprueft: Liste der ids ohne Sichtprüfung)
+const GEPRUEFT = { geprueft_am: '2026-11-20', geprueft_von: 'Mo', pruef_beleg: 'Test' };
+function ordner({ freigegeben = [], plan = {}, verlauf = [], ungeprueft = [] } = {}) {
   const o = mkdtempSync(join(tmpdir(), 'ae06-'));
   const daten = join(o, 'daten');
-  const funde = lesenJson(join(WURZEL, 'daten', 'funde.json')).map((f) => (({ ...f, status: freigegeben.includes(f.id) ? 'freigegeben' : 'vorschlag' })));
+  const funde = lesenJson(join(WURZEL, 'daten', 'funde.json')).map((f) => ({ ...f, status: freigegeben.includes(f.id) ? 'freigegeben' : 'vorschlag',
+    produkt: { ...f.produkt, ...(freigegeben.includes(f.id) && !ungeprueft.includes(f.id) ? GEPRUEFT : {}) } }));
   schreibenJson(join(daten, 'funde.json'), funde);
   schreibenJson(join(daten, 'plan.json'), plan);
   writeFileSync(join(daten, 'verlauf.jsonl'), verlauf.map((v) => JSON.stringify(v) + '\n').join(''));
@@ -50,7 +53,7 @@ test('bauen zweimal am selben Tag: identische Dateien und nur eine Verlaufszeile
   } finally { t.weg(); }
 });
 
-test('Fund-Tag: Kanal- und Social-Text mit Pflichtteilen, Feed ohne Link und Kennung', () => {
+test('Fund-Tag: Kanal- und Social-Text mit Pflichtteilen, Feed mit Produkt-Link', () => {
   const t = ordner({ freigegeben: ['f-0001'], plan: { [HEUTE]: { art: 'fund', fund: 'f-0001', ton: 'absurd', format: 'frage', fassung: 2 } } });
   try {
     bauen({ daten: t.daten, docs: t.docs, config, heute: HEUTE, jetzt: JETZT });
@@ -58,14 +61,17 @@ test('Fund-Tag: Kanal- und Social-Text mit Pflichtteilen, Feed ohne Link und Ken
     const f1 = lesenJson(join(t.daten, 'funde.json'))[0];
     assert.ok(h.kanal_text.startsWith(P.anfang_kanal) && h.kanal_text.endsWith(P.ende));
     assert.ok(h.kanal_text.includes(f1.texte.kanal[2].text));
-    assert.ok(h.kanal_text.includes('https://www.amazon.de/s?k=Notfall+Unterhose+Dose&tag=schmetterlingsfutter-21'));
+    assert.ok(h.kanal_text.includes('https://www.amazon.de/dp/B0DGPL4SGB/ref=nosim?tag=schmetterlingsfutter-21'));
+    assert.ok(!h.kanal_text.includes('amazon.de/s?'));
     assert.ok(h.social_text.startsWith(P.anfang_social + ' · ' + f1.texte.social[0].text));
     assert.ok(h.social_text.endsWith(f1.texte.social[0].hashtags));
     assert.deepEqual(pruefeText(h.kanal_text, 'kanal', config), []);
     assert.deepEqual(pruefeText(h.social_text, 'social', config), []);
     const feed = readFileSync(join(t.docs, 'feed', 'funde.json'), 'utf8');
     assert.equal(JSON.parse(feed).length, 1);
-    assert.ok(!feed.includes('amazon.de') && !feed.includes('schmetterlingsfutter-21'));
+    assert.ok(!feed.includes('amazon.de/s?') && !feed.includes('suchbegriff'));
+    assert.equal(JSON.parse(feed)[0].link, 'https://www.amazon.de/dp/B0DGPL4SGB/ref=nosim?tag=schmetterlingsfutter-21');
+    assert.equal(JSON.parse(feed)[0].asin, 'B0DGPL4SGB');
     assert.equal(JSON.parse(feed)[0].slug, 'f-0001-notfall-unterhose-in-der-dose');
     const html = readFileSync(join(t.docs, 'heute', 'index.html'), 'utf8');
     for (const s of ['<h1>Heute posten</h1>', 'Text kopieren', 'Für Instagram und Facebook', 'noindex', 'Mittwoch, 25.11.2026']) assert.ok(html.includes(s), s);
@@ -86,7 +92,8 @@ test('Rückblick-Text enthält genau drei Links', () => {
   const t = ordner({ freigegeben: funde, plan: { [HEUTE]: { art: 'rueckblick' } }, verlauf });
   try {
     const { kanal, social } = bauen({ daten: t.daten, docs: t.docs, config, heute: HEUTE, jetzt: JETZT });
-    assert.equal(zaehle(kanal, 'https://www.amazon.de/s?k='), 3);
+    assert.equal(zaehle(kanal, '/ref=nosim?tag=schmetterlingsfutter-21'), 3);
+    assert.equal(zaehle(kanal, 'amazon.de/s?'), 0);
     assert.ok(kanal.startsWith(P.anfang_rueckblick) && kanal.includes('Die drei Funde der Woche:') && kanal.endsWith(P.ende));
     assert.equal(social, null);
     assert.deepEqual(pruefeText(kanal, 'kanal', config), []);
@@ -105,7 +112,7 @@ test('ohne freigegebene Funde: Warnung „Heute kein Fund geplant“ und leerer 
     assert.deepEqual(lesenJson(join(t.docs, 'feed', 'funde.json')), []);
     assert.equal(readFileSync(join(t.docs, 'robots.txt'), 'utf8').includes('Disallow: /heute/'), true);
     assert.ok(existsSync(join(t.docs, '.nojekyll')));
-    assert.ok(readFileSync(join(t.docs, 'heute', 'index.html'), 'utf8').includes('Heute ist kein Fund geplant.'));
+    assert.ok(readFileSync(join(t.docs, 'heute', 'index.html'), 'utf8').includes('Heute kein neuer Fund. Alle Funde: ' + config.funde_seite));
   } finally { t.weg(); }
 });
 
@@ -121,13 +128,14 @@ test('Prüffehler bricht ab, ohne docs oder Verlauf zu ändern', () => {
   } finally { t.weg(); }
 });
 
-test('Vorschau eines Pakets: alle Funde mit Texten und „Link testen“', () => {
+test('Vorschau eines Pakets: alle Funde mit Texten und „Produktseite prüfen“ (ohne Kennung)', () => {
   const t = ordner();
   try {
     const { anzahl, pfad } = vorschau({ paket: 'start', daten: t.daten, docs: t.docs, config });
     const html = readFileSync(pfad, 'utf8');
     assert.equal(anzahl, 30);
-    assert.equal(zaehle(html, '>Link testen</a>'), 30);
+    assert.equal(zaehle(html, '>Produktseite prüfen</a>'), 30);
+    assert.ok(html.includes('href="https://www.amazon.de/dp/B0DGPL4SGB"') && !html.includes('tag=') && !html.includes('amazon.de/s?'));
     assert.ok(html.includes('noindex') && html.includes('Grundscore'));
     assert.throws(() => vorschau({ paket: 'KW-2099-01', daten: t.daten, docs: t.docs, config }), /keine Funde/);
   } finally { t.weg(); }

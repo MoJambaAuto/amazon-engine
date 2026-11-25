@@ -1,11 +1,13 @@
 // Regel-Prüfer der Amazon-Engine. Reine Funktionen: jede liefert eine Liste von Fehlertexten.
 // Kein Aufruf von amazon.de – Links werden nur nach ihrer Form geprüft.
+import { heuteBerlin } from './lib.mjs';
 
 export const SCHEMA = {
   pflicht: ['id', 'titel', 'gattung', 'suchbegriff', 'haendler', 'kategorie', 'preisklasse', 'anlaesse',
     'zielgruppe', 'notiz', 'quelle', 'kriterien', 'score', 'status', 'paket', 'texte', 'freigabe',
     'angelegt', 'geaendert'],
-  optional: ['asin', 'wichtel_max_cent', 'kriterien_begruendung'],
+  optional: ['asin', 'wichtel_max_cent', 'kriterien_begruendung', 'produkt', 'notiz_intern'],
+  produkt: ['titel_gesehen', 'gefunden_am', 'gefunden_ueber', 'ersatz', 'geprueft_am', 'geprueft_von', 'pruef_beleg', 'hinweis'],
   status: ['vorschlag', 'freigegeben', 'gesperrt', 'verworfen'],
   preisklasse: ['bis_40', '40_bis_80', 'ueber_80'],
   haendler: ['amazon'],
@@ -111,10 +113,37 @@ export function linkRegex(config) {
   return new RegExp('^' + escapeRe(vor) + '[A-Za-z0-9%+\\-_.!~*\'()]+' + rest + '$');
 }
 
+// Suchlink (Auswahl-Knöpfe ohne genanntes Produkt).
 export function pruefeLink(link, config) {
   if (typeof link !== 'string' || !link) return ['Link fehlt'];
   if (!linkRegex(config).test(link)) return [`Link passt nicht auf link_muster: ${link}`];
   return [];
+}
+
+// AE-13: Produkt-Link eines Fundes: ^https://www.amazon.de/dp/<ASIN>/ref=nosim?tag=<Kennung aus config>$
+export function produktLinkRegex(config) {
+  const kennungen = [...new Set(Object.values(config.kennungen))].map(escapeRe).join('|');
+  const [vor, nach] = config.link_muster_produkt.split('{asin}');
+  const rest = config.kennung_aktiv === false ? escapeRe(nach.replace('?tag={kennung}', '')) : escapeRe(nach.replace('{kennung}', '')) + `(?:${kennungen})`;
+  return new RegExp('^' + escapeRe(vor) + '[A-Z0-9]{10}' + rest + '$');
+}
+
+// Link in einem Fund-Text oder einer Fund-Ausgabe: nur das Produkt-Muster ist erlaubt.
+export function pruefeFundLink(link, config) {
+  if (typeof link !== 'string' || !link) return ['Link fehlt'];
+  if (link.includes('amazon.de/s?')) return [`Suchlink statt Produkt-Link: ${link}`];
+  if (!produktLinkRegex(config).test(link)) return [`Link passt nicht auf link_muster_produkt: ${link}`];
+  return [];
+}
+
+const tagMs = (d) => Date.UTC(+d.slice(0, 4), +d.slice(5, 7) - 1, +d.slice(8, 10));
+// AE-13: wahr, wenn ein Mensch die Produktseite geprüft hat und tag höchstens sichtpruefung_gueltig_tage danach liegt.
+export function istGeprueft(fund, tag, config) {
+  const am = fund && fund.produkt && fund.produkt.geprueft_am;
+  if (typeof am !== 'string' || !DATUM.test(am) || !fund.produkt.geprueft_von) return false;
+  if (!fund.asin || !/^[A-Z0-9]{10}$/.test(fund.asin)) return false;
+  const tage = Math.round((tagMs(tag) - tagMs(am)) / 86400000);
+  return tage >= 0 && tage <= (config.sichtpruefung_gueltig_tage ?? 90);
 }
 
 function istListeAus(wert, erlaubt) {
@@ -145,6 +174,21 @@ export function pruefeFund(fund, config) {
     if (feld in fund && !DATUM.test(fund[feld])) f.push(`${feld} ist kein Datum JJJJ-MM-TT`);
   }
   if ('asin' in fund && fund.asin !== null && !/^[A-Z0-9]{10}$/.test(fund.asin)) f.push(`asin '${fund.asin}' ungültig`);
+  // AE-13: freigegebene Funde brauchen eine Produktseite; Sichtprüfung nur mit Datum (nicht in der Zukunft) und Prüfer
+  if (fund.status === 'freigegeben' && !(typeof fund.asin === 'string' && /^[A-Z0-9]{10}$/.test(fund.asin))) f.push('freigegebener Fund braucht eine gültige asin');
+  if (fund.produkt !== undefined) {
+    const p = fund.produkt;
+    if (!p || typeof p !== 'object' || Array.isArray(p)) f.push('produkt muss ein Objekt sein');
+    else {
+      for (const k of Object.keys(p)) if (!SCHEMA.produkt.includes(k)) f.push(`produkt: unbekanntes Feld '${k}'`);
+      if (p.ersatz !== undefined && !(Array.isArray(p.ersatz) && p.ersatz.every((a) => /^[A-Z0-9]{10}$/.test(a)))) f.push('produkt.ersatz muss eine Liste gültiger asin sein');
+      if (p.geprueft_am !== null && p.geprueft_am !== undefined) {
+        if (typeof p.geprueft_am !== 'string' || !DATUM.test(p.geprueft_am)) f.push('produkt.geprueft_am ist kein Datum JJJJ-MM-TT');
+        else if (p.geprueft_am > heuteBerlin()) f.push('produkt.geprueft_am liegt in der Zukunft');
+        if (!p.geprueft_von) f.push('produkt.geprueft_am ohne geprueft_von');
+      }
+    }
+  }
   if ('wichtel_max_cent' in fund && !(Number.isInteger(fund.wichtel_max_cent) && fund.wichtel_max_cent >= 0)) f.push('wichtel_max_cent muss eine ganze Zahl ab 0 sein');
 
   if (typeof fund.titel === 'string' && /amazon/i.test(fund.titel)) f.push("titel enthält 'Amazon'");

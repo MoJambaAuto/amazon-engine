@@ -11,7 +11,7 @@ import { rssLesen, anlaesseNaechste, signale } from '../werkzeug/signale.mjs';
 
 const config = lesenJson(join(WURZEL, 'config.json'));
 const startliste = () => lesenJson(join(WURZEL, 'daten', 'funde.json'));
-const testPaket = () => startliste().slice(0, 3).map((f, i) => ({ ...f, id: `f-90${i + 1}0`, titel: f.titel + ' Test ' + i, status: 'vorschlag', paket: 'KW-2026-49', freigabe: '' }));
+const testPaket = () => startliste().slice(0, 3).map((f, i) => ({ ...f, id: `f-90${i + 1}0`, titel: f.titel + ' Test ' + i, asin: `B0WOCHE00${i + 1}`, status: 'vorschlag', paket: 'KW-2026-49', freigabe: '' }));
 
 test('freigeben: Vorschläge des Pakets werden freigegeben, --ohne verworfen, andere Pakete bleiben', () => {
   const alt = startliste();
