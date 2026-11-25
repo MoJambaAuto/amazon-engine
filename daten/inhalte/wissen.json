@@ -469,5 +469,325 @@
     "angelegt": "2026-11-25",
     "von": "Claude",
     "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0040",
+    "t": "Das Tagpfauenauge überwintert als fertiger Falter – in Höhlen, Kellern, Garagen oder auf Dachböden.",
+    "anlaesse": [],
+    "monate": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-tagpfauenauge-im-portraet",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0041",
+    "t": "Die vier bunten Augen auf den Flügeln des Tagpfauenauges sollen Fressfeinde abschrecken. Die graubraune Unterseite dient der Tarnung.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-tagpfauenauge-im-portraet",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0042",
+    "t": "Das Tagpfauenauge ist nicht wählerisch: An mehr als 200 verschiedenen Nektarpflanzen wurde es schon beobachtet.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-tagpfauenauge-im-portraet",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0043",
+    "t": "Ein Tagpfauenaugen-Weibchen legt im Schnitt 400 Eier an junge Brennnesseln.",
+    "anlaesse": [],
+    "monate": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-tagpfauenauge-im-portraet",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0044",
+    "t": "Zur Paarungszeit bewacht ein Tagpfauenaugen-Männchen nachmittags ein 20 bis 50 Meter langes Revier am Waldrand.",
+    "anlaesse": [],
+    "monate": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-tagpfauenauge-im-portraet",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0045",
+    "t": "Tagpfauenaugen können mit den Flügeln knisternd-zischende Geräusche machen, um Feinde zu erschrecken.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-tagpfauenauge-im-portraet",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0046",
+    "t": "Die Raupen des Tagpfauenauges leben gemeinsam in großen Nestern auf sonnigen Brennnesseln.",
+    "anlaesse": [],
+    "monate": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-tagpfauenauge-im-portraet",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0047",
+    "t": "Tagpfauenaugen verlassen ihr Winterquartier, wenn die Weidenkätzchen blühen.",
+    "anlaesse": [],
+    "monate": [
+      2,
+      3,
+      4
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-tagpfauenauge-im-portraet",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0048",
+    "t": "Im Herbst tanken Tagpfauenaugen an Astern, Efeu und Fallobst auf.",
+    "anlaesse": [],
+    "monate": [
+      9,
+      10,
+      11
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-tagpfauenauge-im-portraet",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0049",
+    "t": "Das Tagpfauenauge hat fünf bis sechs Zentimeter Spannweite.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-tagpfauenauge-im-portraet",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0050",
+    "t": "Die Puppe des Tagpfauenauges hängt kopfüber frei an der Pflanze – Fachleute nennen das Stürzpuppe.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-tagpfauenauge-im-portraet",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0051",
+    "t": "Beim Tagfalter-Monitoring zählen Freiwillige seit 2005 Falter auf festen Strecken. Fast 4,4 Millionen Tagfalter sind so schon zusammengekommen.",
+    "anlaesse": [],
+    "quelle": "https://www.ufz.de/index.php?de=36336&webc_pm=08/2025",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0052",
+    "t": "Wärmeliebende Falter wie Mauerfuchs, Kleiner Perlmutterfalter und Aurorafalter werden in Deutschland häufiger.",
+    "anlaesse": [],
+    "quelle": "https://www.ufz.de/index.php?de=36336&webc_pm=08/2025",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0053",
+    "t": "Von 82 Tagfalterarten mit genug Daten werden seit 2005 in Deutschland 36 seltener und nur 18 häufiger.",
+    "anlaesse": [],
+    "quelle": "https://www.ufz.de/index.php?de=36336&webc_pm=08/2025",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0054",
+    "t": "Die Freiwilligen des Tagfalter-Monitorings sind zusammen fast 55.000 Kilometer Zählstrecke abgelaufen.",
+    "anlaesse": [],
+    "quelle": "https://www.ufz.de/index.php?de=36336&webc_pm=08/2025",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0055",
+    "t": "Seit 2003 wird jedes Jahr ein „Schmetterling des Jahres“ gekürt – von der BUND NRW Naturschutzstiftung und Fachleuten für Schmetterlinge.",
+    "anlaesse": [],
+    "monate": [
+      1
+    ],
+    "quelle": "https://www.bund-nrw.de/themen/alle-tiere-pflanzen/insekten/schmetterling-des-jahres/",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0056",
+    "t": "Der Kaisermantel ist der größte Perlmuttfalter Mitteleuropas.",
+    "anlaesse": [],
+    "quelle": "https://www.bund-nrw.de/themen/alle-tiere-pflanzen/insekten/schmetterling-des-jahres/",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0057",
+    "t": "Der Braune Bär ist ein Nachtfalter. Künstliches Licht in der Nacht macht ihm besonders zu schaffen.",
+    "anlaesse": [],
+    "quelle": "https://www.bund-nrw.de/themen/alle-tiere-pflanzen/insekten/schmetterling-des-jahres/",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0058",
+    "t": "Schachbrettfalter-Weibchen lassen ihre Eier einzeln zu Boden fallen – manchmal sogar im Flug.",
+    "anlaesse": [],
+    "monate": [
+      6,
+      7,
+      8
+    ],
+    "quelle": "https://www.bund-nrw.de/themen/alle-tiere-pflanzen/insekten/schmetterling-des-jahres/",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0059",
+    "t": "Der Große Schillerfalter lebt vor allem in den Baumkronen naturnaher Mischwälder. Deshalb sieht man ihn selten.",
+    "anlaesse": [],
+    "quelle": "https://www.bund-nrw.de/themen/alle-tiere-pflanzen/insekten/schmetterling-des-jahres/",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0060",
+    "t": "Der Mosel-Apollofalter kommt nur im unteren Moseltal in Rheinland-Pfalz vor.",
+    "anlaesse": [],
+    "quelle": "https://www.bund-nrw.de/themen/alle-tiere-pflanzen/insekten/schmetterling-des-jahres/",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0061",
+    "t": "Die Raupen des Wolfsmilchschwärmers fressen an Zypressen-Wolfsmilch.",
+    "anlaesse": [],
+    "quelle": "https://www.bund-nrw.de/themen/alle-tiere-pflanzen/insekten/schmetterling-des-jahres/",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0062",
+    "t": "Der Grüne Zipfelfalter ist klein, schimmert grün und ist anspruchslos: Er kann sich von vielen verschiedenen Pflanzen ernähren.",
+    "anlaesse": [],
+    "quelle": "https://www.bund-nrw.de/themen/alle-tiere-pflanzen/insekten/schmetterling-des-jahres/",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok (nach Präzisierung)"
+  },
+  {
+    "id": "wi-0063",
+    "t": "Der Schachbrettfalter braucht blütenreiche Wiesen, die bis Ende Juli nicht gemäht werden.",
+    "anlaesse": [],
+    "monate": [
+      5,
+      6,
+      7
+    ],
+    "quelle": "https://www.bund-nrw.de/themen/alle-tiere-pflanzen/insekten/schmetterling-des-jahres/",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0064",
+    "t": "Das Ampfergrünwidderchen saugt Nektar an Kuckucks-Lichtnelke, Disteln und Flockenblumen.",
+    "anlaesse": [],
+    "quelle": "https://www.bund-nrw.de/themen/alle-tiere-pflanzen/insekten/schmetterling-des-jahres/",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0065",
+    "t": "Werden Wiesen stark gedüngt, verdrängen schnell wachsende Gräser die Blumen – und damit das Futter vieler Falter.",
+    "anlaesse": [],
+    "quelle": "https://www.bund-nrw.de/themen/alle-tiere-pflanzen/insekten/schmetterling-des-jahres/",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0066",
+    "t": "Der Große Fuchs ist in Deutschland langfristig sehr stark zurückgegangen.",
+    "anlaesse": [],
+    "quelle": "https://www.bund-nrw.de/themen/alle-tiere-pflanzen/insekten/schmetterling-des-jahres/",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "status": "freigegeben",
+    "pruefung": "Claude (Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
   }
 ]
