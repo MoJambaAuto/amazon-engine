@@ -29,6 +29,11 @@ jobs:
           else
             node werkzeug/taeglich.mjs
           fi
+      - name: Telegram senden
+        # Mo 25.11.2026: Fund des Tages automatisch in den Telegram-Kanal (je Tag einmal; ohne Token passiert nichts)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: node werkzeug/telegram.mjs
       - name: Änderungen sichern
         run: |
           git add docs daten protokoll 2>/dev/null || git add docs daten
