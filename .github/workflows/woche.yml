@@ -1,11 +1,18 @@
 # Wöchentliche Signale für die Auswahl neuer Funde (Paket AE-11): Google-Trends-Schlagzeilen (DE) und Anlässe
 # der nächsten 45 Tage nach daten/signale/<Datum>.json. Sonntag 04:00 Uhr Berlin (Winter), vor der Wochen-Sitzung
 # der geplanten Claude-Aufgabe amazon-engine-woche um 10:00 Uhr. Schlägt der Abruf fehl, steht das in der Datei.
+# AE-12: Von Hand mit Eingabe paket gestartet (gh workflow run woche.yml -f paket=KW-2026-49) baut der Lauf statt der
+# Signale die Bildkarten des Pakets (docs/social/<paket>/) mit dem vorinstallierten Chrome des Runners.
 name: Wochensignale
 on:
   schedule:
     - cron: '0 3 * * 0'
   workflow_dispatch:
+    inputs:
+      paket:
+        description: 'Paket für die Bildkarten (leer = Signale sammeln)'
+        required: false
+        default: ''
 permissions:
   contents: write
 concurrency:
@@ -13,6 +20,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   signale:
+    if: ${{ github.event_name == 'schedule' || inputs.paket == '' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,5 +36,30 @@ jobs:
             echo "keine Änderungen"
           else
             git -c user.name="Claude (MoJambaAuto)" -c user.email="mojamba.automation@gmail.com" commit -m "Signale $(TZ=Europe/Berlin date +%F)"
+            git pull --rebase -q && git push
+          fi
+  karten:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.paket != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Bildkarten bauen
+        env:
+          PAKET: ${{ inputs.paket }}
+        run: |
+          case "$PAKET" in *[!A-Za-z0-9-]*) echo "Paketname ungültig"; exit 1;; esac
+          node werkzeug/karten.mjs "$PAKET"
+      - name: Änderungen sichern
+        env:
+          PAKET: ${{ inputs.paket }}
+        run: |
+          git add docs/social
+          if git diff --cached --quiet; then
+            echo "keine Änderungen"
+          else
+            git -c user.name="Claude (MoJambaAuto)" -c user.email="mojamba.automation@gmail.com" commit -m "Karten $PAKET"
             git pull --rebase -q && git push
           fi

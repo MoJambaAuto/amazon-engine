@@ -76,7 +76,7 @@ h2{color:var(--cyan);margin-top:20px}
 .marke{font-weight:800;color:var(--gruen)}
 .klein{font-size:20px;font-weight:700;color:var(--cyan)}`;
 
-const KOPIEREN = `document.querySelectorAll('[data-kopiere]').forEach(function(b){b.addEventListener('click',function(){
+export const KOPIEREN = `document.querySelectorAll('[data-kopiere]').forEach(function(b){b.addEventListener('click',function(){
 var q=document.getElementById(b.getAttribute('data-kopiere'));var t=q.textContent;var alt=b.textContent;
 var dann=b.getAttribute('data-dann');
 function ok(){b.textContent='Kopiert ✓';if(dann){setTimeout(function(){window.location.href=dann},500)}setTimeout(function(){b.textContent=alt},2500)}
@@ -93,7 +93,7 @@ const MANIFEST = (g) => JSON.stringify({ name: 'Heute posten', short_name: 'Heut
   background_color: g.hintergrund, theme_color: g.hintergrund, lang: 'de',
   icons: [{ src: '../papillon-192.png', sizes: '192x192', type: 'image/png' }, { src: '../papillon-512.png', sizes: '512x512', type: 'image/png' }] }, null, 2) + '\n';
 
-function seite(titel, inhalt, config, skript = '', kopf = '') {
+export function seite(titel, inhalt, config, skript = '', kopf = '') {
   return `<!doctype html>
 <html lang="de">
 <head>

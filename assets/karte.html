@@ -1,0 +1,30 @@
+<!doctype html>
+<!-- Bildkarte für Social und Pinterest (Paket AE-12). karten.mjs ersetzt die Platzhalter (BREITE, HOEHE, TITEL, ZEILE, KASTEN in doppelten geschweiften Klammern) und lässt die Seite
+     von einem Browser ohne Fenster als PNG abfotografieren. Keine Fotos, keine Preise. Schriften: Anton und Inter
+     (Google Fonts, OFL), Ersatz Impact/Arial, falls sie nicht laden. -->
+<html lang="de"><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;700&display=block">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:{{BREITE}}px;height:{{HOEHE}}px;overflow:hidden;background:#0B0B14}
+body{display:flex;flex-direction:column;justify-content:space-between;padding:80px 72px;font-family:Inter,Arial,sans-serif;color:#FFFFFF}
+.oben{color:#00E5FF;font-size:34px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
+.mitte{flex:1;display:flex;flex-direction:column;justify-content:center;gap:40px}
+h1{font-family:Anton,Impact,"Arial Black",sans-serif;font-weight:400;font-size:150px;line-height:1.05;text-transform:uppercase;
+  text-shadow:0 0 18px #FF2E88,0 0 42px rgba(255,46,136,.65);overflow-wrap:normal;hyphens:manual}
+.zeile{font-size:44px;font-weight:500;line-height:1.3;color:#FFFFFF}
+.kasten{border:4px solid #39FF14;border-radius:24px;padding:28px 32px;font-size:40px;font-weight:700;text-align:center;color:#FFFFFF}
+</style></head>
+<body>
+<p class="oben">Anzeige · Papillons Fund des Tages</p>
+<div class="mitte"><h1 id="t">{{TITEL}}</h1><p class="zeile">{{ZEILE}}</p></div>
+<p class="kasten">{{KASTEN}}</p>
+<script>
+// Titel so groß wie möglich bei höchstens 4 Zeilen: ab 150 px in 6er-Schritten verkleinern, bis er passt.
+// Wörter werden nicht mitten im Wort getrennt; erst wenn selbst 48 px nicht reichen, darf ein Wort umbrechen.
+(function(){var t=document.getElementById('t');function passt(){var lh=parseFloat(getComputedStyle(t).lineHeight);return t.scrollHeight<=lh*4+2&&t.scrollWidth<=t.clientWidth+1&&document.body.scrollHeight<={{HOEHE}}+1}
+function los(){var g=150;t.style.fontSize=g+'px';while(!passt()&&g>48){g-=6;t.style.fontSize=g+'px'}if(!passt()){t.style.overflowWrap='anywhere'}document.body.setAttribute('data-titel-px',g)}
+if(document.fonts&&document.fonts.ready){document.fonts.ready.then(los)}else{los()}})();
+</script>
+</body></html>
