@@ -1,0 +1,473 @@
+[
+  {
+    "id": "wi-0001",
+    "t": "Weltweit sind rund 160.000 Schmetterlingsarten bekannt.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/schmetterlinge",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0002",
+    "t": "Die Muster auf Falterflügeln entstehen wie ein Bild aus Pixeln – aus winzigen, farbigen Schuppen.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/schmetterlinge",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0003",
+    "t": "Tagfalter erkennt man an ihren keulenförmigen Fühlern. Nachtfalter haben faden- oder federförmige Fühler.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/schmetterlinge",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0004",
+    "t": "Tagfalter klappen ihre Flügel in Ruhe nach oben zusammen. Nachtfalter legen sie an den Körper oder spreizen sie.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/schmetterlinge",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0005",
+    "t": "Raupen sind wählerische Esser: Viele Arten fressen nur an ganz bestimmten Pflanzen.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/schmetterlinge",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0006",
+    "t": "Wo viele verschiedene Falter fliegen, geht es der Landschaft meist gut. Schmetterlinge zeigen an, wie intakt ein Lebensraum ist.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/schmetterlinge",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0007",
+    "t": "Schmetterlinge bestäuben Wild- und Kulturpflanzen und sind Futter für Vögel und Fledermäuse.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/schmetterlinge",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0008",
+    "t": "Das Taubenschwänzchen sieht aus wie ein Kolibri, ist aber ein Schmetterling aus der Familie der Schwärmer.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-taubenschwaenzchen",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0009",
+    "t": "Der Rüssel des Taubenschwänzchens ist gut drei Zentimeter lang – perfekt für Blüten mit langem Kelch.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-taubenschwaenzchen",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0010",
+    "t": "Ein Taubenschwänzchen besucht in fünf Minuten mehr als hundert Blüten.",
+    "anlaesse": [],
+    "monate": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-taubenschwaenzchen",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0011",
+    "t": "Taubenschwänzchen fliegen sogar bei Regen.",
+    "anlaesse": [],
+    "monate": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-taubenschwaenzchen",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0012",
+    "t": "Taubenschwänzchen wandern bis zu 2.000 Kilometer weit – bis nach Skandinavien.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-taubenschwaenzchen",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0013",
+    "t": "Auf Alpengletschern wurden Taubenschwänzchen schon in bis zu 2.500 Metern Höhe beobachtet.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-taubenschwaenzchen",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0014",
+    "t": "Der scheinbare Federschwanz des Taubenschwänzchens besteht aus verlängerten Schuppen. Damit steuert es beim Schweben vor der Blüte.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-taubenschwaenzchen",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0015",
+    "t": "Bleibt ein Taubenschwänzchen zu lange an einer Blüte, kühlt seine Flugmuskulatur aus. Deshalb ist es ständig in Bewegung.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-taubenschwaenzchen",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0016",
+    "t": "Das Taubenschwänzchen überwintert bei uns als einzige Schwärmer-Art als fertiger Falter – Frost verträgt es aber nicht.",
+    "anlaesse": [],
+    "monate": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-taubenschwaenzchen",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0017",
+    "t": "In milden Gegenden Süddeutschlands kann man Taubenschwänzchen inzwischen in jedem Monat des Jahres sehen.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-taubenschwaenzchen",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0018",
+    "t": "An heißen Tagen machen Taubenschwänzchen Mittagspause und fliegen lieber morgens und abends.",
+    "anlaesse": [],
+    "monate": [
+      6,
+      7,
+      8
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-taubenschwaenzchen",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0019",
+    "t": "Edelfalter wie der Admiral stehen nur auf vier Beinen. Die verkürzten Vorderbeine dienen als „Putzpfoten“ – zum Tasten, Riechen und Schmecken.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/der-admiral-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0020",
+    "t": "Der Admiral verdankt seinen Namen der Flügelfärbung, die an eine Uniform erinnert.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/der-admiral-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0021",
+    "t": "Admiral-Männchen warten von Nachmittag bis Abend auf Hügeln, Büschen oder Dächern auf ein Weibchen. Fachleute nennen das „Hill-Topping“.",
+    "anlaesse": [],
+    "monate": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/der-admiral-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0022",
+    "t": "Für die 2.000 bis 3.000 Kilometer von Nordafrika oder Südeuropa bis zu uns brauchten Admirale früher etwa zwei Wochen.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/der-admiral-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0023",
+    "t": "Sommerflieder lockt viele Falter an, stammt aber aus China und breitet sich außerhalb von Gärten gern zu stark aus.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/der-admiral-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0024",
+    "t": "Das Landkärtchen sieht im Frühling ganz anders aus als im Sommer: erst braunorange, später schwarzbraun mit weißen Bändern.",
+    "anlaesse": [],
+    "monate": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-landkaertchen-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0025",
+    "t": "Ob ein Landkärtchen in Frühlings- oder Sommerfarben schlüpft, entscheidet vor allem die Tageslänge während der Puppenruhe.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-landkaertchen-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0026",
+    "t": "Das Landkärtchen hat seinen Namen von der stark geaderten Zeichnung auf der Flügelunterseite.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-landkaertchen-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0027",
+    "t": "Landkärtchen legen ihre grünen Eier als winzige Türmchen an die Unterseite von Brennnesselblättern.",
+    "anlaesse": [],
+    "monate": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-landkaertchen-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0028",
+    "t": "Die Raupe des Landkärtchens ist die einzige an Brennnesseln mit zwei Dornen am Kopf.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-landkaertchen-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0029",
+    "t": "Beim Landkärtchen sehen Männchen und Weibchen gleich aus.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-landkaertchen-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0030",
+    "t": "Landkärtchen-Raupen fressen in Gruppen – bewohnte Brennnesseln sind danach in der Mitte kahl.",
+    "anlaesse": [],
+    "monate": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-landkaertchen-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0031",
+    "t": "Landkärtchen werden regional wieder seltener: Es wird ihnen zu warm und zu trocken.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/das-landkaertchen-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0032",
+    "t": "Der Schwalbenschwanz hat bis zu acht Zentimeter Spannweite und zählt zu den größten Schmetterlingen Mitteleuropas.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/der-schwalbenschwanz-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0033",
+    "t": "Bei Gefahr zeigt die Schwalbenschwanz-Raupe eine orange Nackengabel, die Abwehrstoffe verströmt.",
+    "anlaesse": [],
+    "monate": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/der-schwalbenschwanz-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0034",
+    "t": "Ein Schwalbenschwanz-Weibchen verteilt etwa 150 Eier so, dass jede Pflanze nur wenige Raupen ernähren muss.",
+    "anlaesse": [],
+    "monate": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/der-schwalbenschwanz-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0035",
+    "t": "In den 70er- und 80er-Jahren war der Schwalbenschwanz selten. Heute gilt er nicht mehr als gefährdet – vor allem, weil weniger Gift in Gärten landet.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/der-schwalbenschwanz-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0036",
+    "t": "Der Schwalbenschwanz überwintert als Puppe, grau oder grün getarnt.",
+    "anlaesse": [],
+    "monate": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/der-schwalbenschwanz-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0037",
+    "t": "Wilde Möhre, Dill oder Fenchel im Beet? Dort legt der Schwalbenschwanz gern seine Eier ab.",
+    "anlaesse": [],
+    "monate": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/der-schwalbenschwanz-im-portraet",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0038",
+    "t": "Die Raupen des Ameisenbläulings tarnen sich mit einem Duft und bestechen Ameisen mit Honigdrüsen.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/was-macht-die-schmetterlingsraupe-im-ameisennest",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  },
+  {
+    "id": "wi-0039",
+    "t": "Der Ameisenbläuling schlüpft mitten im Ameisennest – und muss schnell raus, denn seine Tarnung ist dann weg.",
+    "anlaesse": [],
+    "quelle": "https://www.nabu.de/natur-und-artenwissen/insekten/insektenportraets/was-macht-die-schmetterlingsraupe-im-ameisennest",
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude",
+    "pruefung": "Claude (NABU-Quelle) + OpenAI GPT-5.4 mini, 25.11.2026: ok"
+  }
+]

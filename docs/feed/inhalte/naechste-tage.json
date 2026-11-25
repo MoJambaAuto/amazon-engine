@@ -1,0 +1,379 @@
+{
+  "erzeugt": "2026-11-25T17:54:02.660Z",
+  "tage": [
+    {
+      "datum": "2026-11-25",
+      "anlaesse": [
+        "wichteln",
+        "herbst"
+      ],
+      "frage": {
+        "id": "fr-0092",
+        "t": "Was wünschst du dir heimlich zum Wichteln?"
+      },
+      "piek": {
+        "id": "pk-0032",
+        "c": "unaufgefordert",
+        "t": "Reparier heute die eine Kleinigkeit, die schon lange nervt."
+      },
+      "wissen": {
+        "id": "wi-0008",
+        "t": "Das Taubenschwänzchen sieht aus wie ein Kolibri, ist aber ein Schmetterling aus der Familie der Schwärmer."
+      },
+      "quiz": {
+        "id": "qz-0021",
+        "w": 0,
+        "s": "Landkärtchen-Raupen leben einzeln.",
+        "x": "Sie leben in Gruppen an Brennnesseln."
+      }
+    },
+    {
+      "datum": "2026-11-26",
+      "anlaesse": [
+        "wichteln",
+        "herbst"
+      ],
+      "frage": {
+        "id": "fr-0018",
+        "t": "Worauf bist du in letzter Zeit stolz?"
+      },
+      "piek": {
+        "id": "pk-0053",
+        "c": "neu",
+        "t": "Probiert heute ein Getränk oder Gericht, das keiner von euch kennt."
+      },
+      "wissen": {
+        "id": "wi-0035",
+        "t": "In den 70er- und 80er-Jahren war der Schwalbenschwanz selten. Heute gilt er nicht mehr als gefährdet – vor allem, weil weniger Gift in Gärten landet."
+      },
+      "quiz": {
+        "id": "qz-0005",
+        "w": 1,
+        "s": "Der Admiral hat seinen Namen von einer Uniform.",
+        "x": "Seine Flügelfärbung erinnert an eine Admirals-Uniform."
+      }
+    },
+    {
+      "datum": "2026-11-27",
+      "anlaesse": [
+        "wichteln",
+        "herbst"
+      ],
+      "frage": {
+        "id": "fr-0091",
+        "t": "Welches Wichtelgeschenk war das schrägste, das du je bekommen hast?"
+      },
+      "piek": {
+        "id": "pk-0023",
+        "c": "unaufgefordert",
+        "t": "Räum heute die Spülmaschine ein, auch wenn du dran gewesen wärst, zu sitzen."
+      },
+      "wissen": {
+        "id": "wi-0023",
+        "t": "Sommerflieder lockt viele Falter an, stammt aber aus China und breitet sich außerhalb von Gärten gern zu stark aus."
+      },
+      "quiz": {
+        "id": "qz-0004",
+        "w": 0,
+        "s": "Der Admiral steht auf sechs Beinen.",
+        "x": "Er hat sechs, steht aber nur auf vier. Die verkürzten Vorderbeine sind „Putzpfoten“."
+      }
+    },
+    {
+      "datum": "2026-11-28",
+      "anlaesse": [
+        "wichteln",
+        "herbst"
+      ],
+      "frage": {
+        "id": "fr-0061",
+        "t": "Wenn du ein Tier wärst: welches?"
+      },
+      "piek": {
+        "id": "pk-0021",
+        "c": "unaufgefordert",
+        "t": "Bring heute den Müll raus, bevor jemand fragt."
+      },
+      "wissen": {
+        "id": "wi-0038",
+        "t": "Die Raupen des Ameisenbläulings tarnen sich mit einem Duft und bestechen Ameisen mit Honigdrüsen."
+      },
+      "quiz": {
+        "id": "qz-0008",
+        "w": 0,
+        "s": "Beim Landkärtchen sehen Männchen und Weibchen völlig verschieden aus.",
+        "x": "Sie sehen gleich aus. Verschieden sind die Frühjahrs- und die Sommergeneration."
+      }
+    },
+    {
+      "datum": "2026-11-29",
+      "anlaesse": [
+        "advent",
+        "wichteln",
+        "herbst"
+      ],
+      "frage": {
+        "id": "fr-0094",
+        "t": "Welcher Weihnachtsduft bedeutet für dich Zuhause?"
+      },
+      "piek": {
+        "id": "pk-0068",
+        "c": "neu",
+        "t": "Schaut heute zusammen euren Lieblings-Weihnachtsfilm. Mit Decke."
+      },
+      "wissen": {
+        "id": "wi-0025",
+        "t": "Ob ein Landkärtchen in Frühlings- oder Sommerfarben schlüpft, entscheidet vor allem die Tageslänge während der Puppenruhe."
+      },
+      "quiz": {
+        "id": "qz-0015",
+        "w": 1,
+        "s": "Der Ameisenbläuling schlüpft im Nest von Ameisen.",
+        "x": "Seine Raupe lässt sich von Ameisen hineintragen und verpuppt sich dort."
+      }
+    },
+    {
+      "datum": "2026-11-30",
+      "anlaesse": [
+        "advent",
+        "wichteln",
+        "herbst"
+      ],
+      "frage": {
+        "id": "fr-0017",
+        "t": "Was kann ich tun, damit dein Tag morgen leichter wird?"
+      },
+      "piek": {
+        "id": "pk-0050",
+        "c": "frage",
+        "t": "Frag {r} heute, welche Musik {r} gerade am liebsten hört – und hört sie zusammen."
+      },
+      "wissen": {
+        "id": "wi-0013",
+        "t": "Auf Alpengletschern wurden Taubenschwänzchen schon in bis zu 2.500 Metern Höhe beobachtet."
+      },
+      "quiz": {
+        "id": "qz-0001",
+        "w": 1,
+        "s": "Weltweit gibt es mehr als 100.000 Schmetterlingsarten.",
+        "x": "Bekannt sind rund 160.000 Arten."
+      }
+    },
+    {
+      "datum": "2026-12-01",
+      "anlaesse": [
+        "advent",
+        "wichteln",
+        "winter"
+      ],
+      "frage": {
+        "id": "fr-0093",
+        "t": "Welche Adventstradition aus deiner Kindheit vermisst du?"
+      },
+      "piek": {
+        "id": "pk-0065",
+        "c": "neu",
+        "t": "Macht heute einen Spaziergang über einen Weihnachtsmarkt oder durch beleuchtete Straßen."
+      },
+      "wissen": {
+        "id": "wi-0015",
+        "t": "Bleibt ein Taubenschwänzchen zu lange an einer Blüte, kühlt seine Flugmuskulatur aus. Deshalb ist es ständig in Bewegung."
+      },
+      "quiz": {
+        "id": "qz-0024",
+        "w": 1,
+        "s": "Ein Schwalbenschwanz-Weibchen legt etwa 150 Eier.",
+        "x": "Es verteilt sie, damit jede Pflanze nur wenige Raupen ernähren muss."
+      }
+    },
+    {
+      "datum": "2026-12-02",
+      "anlaesse": [
+        "advent",
+        "wichteln",
+        "winter"
+      ],
+      "frage": {
+        "id": "fr-0002",
+        "t": "Was hast du als Kind geliebt, das du heute vermisst?"
+      },
+      "piek": {
+        "id": "pk-0002",
+        "c": "aufmerksamkeit",
+        "t": "Frag {r} heute, wie es wirklich geht – und frag einmal nach."
+      },
+      "wissen": {
+        "id": "wi-0009",
+        "t": "Der Rüssel des Taubenschwänzchens ist gut drei Zentimeter lang – perfekt für Blüten mit langem Kelch."
+      },
+      "quiz": {
+        "id": "qz-0016",
+        "w": 0,
+        "s": "Für die Raupen des Ameisenbläulings sind Ameisen ungefährlich.",
+        "x": "Ameisen gehören zu ihren ärgsten Feinden. Die Raupen tarnen sich mit einem Duft."
+      }
+    },
+    {
+      "datum": "2026-12-03",
+      "anlaesse": [
+        "advent",
+        "wichteln",
+        "winter"
+      ],
+      "frage": {
+        "id": "fr-0097",
+        "t": "Wie sähe unser perfekter Adventssonntag aus?"
+      },
+      "piek": {
+        "id": "pk-0067",
+        "c": "aufmerksamkeit",
+        "t": "Zündet heute eine Kerze an und erzählt euch, was in diesem Jahr gut war."
+      },
+      "wissen": {
+        "id": "wi-0031",
+        "t": "Landkärtchen werden regional wieder seltener: Es wird ihnen zu warm und zu trocken."
+      },
+      "quiz": {
+        "id": "qz-0011",
+        "w": 1,
+        "s": "Schwalbenschwanz-Raupen können bei Gefahr Abwehrstoffe verströmen.",
+        "x": "Dafür haben sie eine orange Nackengabel."
+      }
+    },
+    {
+      "datum": "2026-12-04",
+      "anlaesse": [
+        "advent",
+        "wichteln",
+        "winter"
+      ],
+      "frage": {
+        "id": "fr-0053",
+        "t": "Was war dein peinlichster Moment – den du heute lustig findest?"
+      },
+      "piek": {
+        "id": "pk-0013",
+        "c": "aufmerksamkeit",
+        "t": "Begrüß {r} heute so, als hättest du dich den ganzen Tag gefreut."
+      },
+      "wissen": {
+        "id": "wi-0002",
+        "t": "Die Muster auf Falterflügeln entstehen wie ein Bild aus Pixeln – aus winzigen, farbigen Schuppen."
+      },
+      "quiz": {
+        "id": "qz-0012",
+        "w": 0,
+        "s": "Raupen fressen jede Pflanze, die sie finden.",
+        "x": "Viele Arten sind auf ganz bestimmte Pflanzen spezialisiert."
+      }
+    },
+    {
+      "datum": "2026-12-05",
+      "anlaesse": [
+        "advent",
+        "wichteln",
+        "winter"
+      ],
+      "frage": {
+        "id": "fr-0098",
+        "t": "Welche Plätzchen müssen bei uns unbedingt auf den Teller?"
+      },
+      "piek": {
+        "id": "pk-0066",
+        "c": "unaufgefordert",
+        "t": "Pack heute ein Geschenk für {r} ein – auch wenn es nur eine Kleinigkeit ist."
+      },
+      "wissen": {
+        "id": "wi-0028",
+        "t": "Die Raupe des Landkärtchens ist die einzige an Brennnesseln mit zwei Dornen am Kopf."
+      },
+      "quiz": {
+        "id": "qz-0009",
+        "w": 1,
+        "s": "Der Schwalbenschwanz gehört zu den größten Schmetterlingen Mitteleuropas.",
+        "x": "Er erreicht bis zu acht Zentimeter Spannweite."
+      }
+    },
+    {
+      "datum": "2026-12-06",
+      "anlaesse": [
+        "advent",
+        "wichteln",
+        "winter"
+      ],
+      "frage": {
+        "id": "fr-0005",
+        "t": "Was war unser bester Tag in diesem Jahr?"
+      },
+      "piek": {
+        "id": "pk-0007",
+        "c": "aufmerksamkeit",
+        "t": "Merk dir heute einen Satz von {r} und greif ihn morgen wieder auf."
+      },
+      "wissen": {
+        "id": "wi-0005",
+        "t": "Raupen sind wählerische Esser: Viele Arten fressen nur an ganz bestimmten Pflanzen."
+      },
+      "quiz": {
+        "id": "qz-0022",
+        "w": 1,
+        "s": "Admiral-Männchen warten auf Hügeln auf die Weibchen.",
+        "x": "Das nennt man „Hill-Topping“."
+      }
+    },
+    {
+      "datum": "2026-12-07",
+      "anlaesse": [
+        "advent",
+        "wichteln",
+        "winter"
+      ],
+      "frage": {
+        "id": "fr-0095",
+        "t": "Was war dein schönstes Weihnachten – und warum?"
+      },
+      "piek": {
+        "id": "pk-0063",
+        "c": "aufmerksamkeit",
+        "t": "Schreib {r} heute einen Wunschzettel – nur mit Dingen, die kein Geld kosten."
+      },
+      "wissen": {
+        "id": "wi-0017",
+        "t": "In milden Gegenden Süddeutschlands kann man Taubenschwänzchen inzwischen in jedem Monat des Jahres sehen."
+      },
+      "quiz": {
+        "id": "qz-0023",
+        "w": 0,
+        "s": "Taubenschwänzchen überwintern bei uns als Raupe.",
+        "x": "Sie überwintern als fertige Falter, vertragen aber keinen Frost."
+      }
+    },
+    {
+      "datum": "2026-12-08",
+      "anlaesse": [
+        "advent",
+        "wichteln",
+        "winter"
+      ],
+      "frage": {
+        "id": "fr-0028",
+        "t": "Was macht für dich einen perfekten Sonntag aus?"
+      },
+      "piek": {
+        "id": "pk-0022",
+        "c": "unaufgefordert",
+        "t": "Mach {r} morgen früh den Kaffee oder Tee – genau so, wie {r} ihn mag."
+      },
+      "wissen": {
+        "id": "wi-0020",
+        "t": "Der Admiral verdankt seinen Namen der Flügelfärbung, die an eine Uniform erinnert."
+      },
+      "quiz": {
+        "id": "qz-0014",
+        "w": 0,
+        "s": "Ein Taubenschwänzchen schafft in fünf Minuten höchstens zehn Blüten.",
+        "x": "Es schafft mehr als hundert."
+      }
+    }
+  ]
+}

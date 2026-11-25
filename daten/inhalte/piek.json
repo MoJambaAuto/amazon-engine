@@ -1,0 +1,861 @@
+[
+  {
+    "id": "pk-0001",
+    "c": "aufmerksamkeit",
+    "t": "Schreib {r} heute eine Nachricht, die nur aus einer gemeinsamen Erinnerung besteht.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0002",
+    "c": "aufmerksamkeit",
+    "t": "Frag {r} heute, wie es wirklich geht – und frag einmal nach.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0003",
+    "c": "aufmerksamkeit",
+    "t": "Halte heute zehn Sekunden länger die Hand von {r} als sonst.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0004",
+    "c": "aufmerksamkeit",
+    "t": "Schick {r} heute ein Lied, das dich an {r} erinnert.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0005",
+    "c": "aufmerksamkeit",
+    "t": "Sag {r} heute, was dir an der letzten gemeinsamen Woche gefallen hat.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0006",
+    "c": "aufmerksamkeit",
+    "t": "Leg heute das Handy weg, wenn {r} von der Arbeit erzählt.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0007",
+    "c": "aufmerksamkeit",
+    "t": "Merk dir heute einen Satz von {r} und greif ihn morgen wieder auf.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0008",
+    "c": "aufmerksamkeit",
+    "t": "Lächle {r} heute an, ohne Grund. Mindestens dreimal.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0009",
+    "c": "aufmerksamkeit",
+    "t": "Erzähl {r} heute, wann du zuletzt stolz auf {r} warst.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0010",
+    "c": "aufmerksamkeit",
+    "t": "Gib {r} heute einen Kuss auf die Stirn. Einfach so.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0011",
+    "c": "aufmerksamkeit",
+    "t": "Frag {r} heute nach dem schönsten Moment des Tages.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0012",
+    "c": "aufmerksamkeit",
+    "t": "Schreib {r} mittags eine Nachricht: „Ich denk an dich.“ Mehr nicht.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0013",
+    "c": "aufmerksamkeit",
+    "t": "Begrüß {r} heute so, als hättest du dich den ganzen Tag gefreut.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0014",
+    "c": "aufmerksamkeit",
+    "t": "Mach {r} heute ein Kompliment für etwas, das {r} kann – nicht wie {r} aussieht.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0015",
+    "c": "aufmerksamkeit",
+    "t": "Schau heute mit {r} ein altes gemeinsames Foto an und erzählt euch, was damals los war.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0016",
+    "c": "aufmerksamkeit",
+    "t": "Frag {r} heute: „Was kann ich diese Woche für dich tun?“",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0017",
+    "c": "aufmerksamkeit",
+    "t": "Setz dich heute beim Fernsehen ganz nah zu {r}.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0018",
+    "c": "aufmerksamkeit",
+    "t": "Erinnere {r} heute an etwas, das {r} gut kann.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0019",
+    "c": "aufmerksamkeit",
+    "t": "Hör {r} heute zehn Minuten zu, ohne Ratschläge zu geben.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0020",
+    "c": "aufmerksamkeit",
+    "t": "Schreib {r} heute drei Wörter, die {r} beschreiben.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0021",
+    "c": "unaufgefordert",
+    "t": "Bring heute den Müll raus, bevor jemand fragt.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0022",
+    "c": "unaufgefordert",
+    "t": "Mach {r} morgen früh den Kaffee oder Tee – genau so, wie {r} ihn mag.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0023",
+    "c": "unaufgefordert",
+    "t": "Räum heute die Spülmaschine ein, auch wenn du dran gewesen wärst, zu sitzen.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0024",
+    "c": "unaufgefordert",
+    "t": "Wärm heute das Bett vor, bevor {r} schlafen geht.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0025",
+    "c": "unaufgefordert",
+    "t": "Leg {r} heute die Lieblingsdecke aufs Sofa.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0026",
+    "c": "unaufgefordert",
+    "t": "Kümmer dich heute um eine Sache auf der Liste von {r}.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0027",
+    "c": "unaufgefordert",
+    "t": "Bring heute etwas mit, das {r} ausgegangen ist.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0028",
+    "c": "unaufgefordert",
+    "t": "Mach heute die Wäsche fertig – bis in den Schrank.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0029",
+    "c": "unaufgefordert",
+    "t": "Stell {r} heute ein Glas Wasser hin, bevor {r} Durst hat.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0030",
+    "c": "unaufgefordert",
+    "t": "Übernimm heute das Abendessen. Komplett.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0031",
+    "c": "unaufgefordert",
+    "t": "Mach heute das Auto oder das Rad von {r} sauber.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0032",
+    "c": "unaufgefordert",
+    "t": "Reparier heute die eine Kleinigkeit, die schon lange nervt.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0033",
+    "c": "unaufgefordert",
+    "t": "Bereite heute für {r} die Brotdose oder den Snack für morgen vor.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0034",
+    "c": "unaufgefordert",
+    "t": "Lass {r} heute ausschlafen und kümmer dich um den Morgen.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0035",
+    "c": "unaufgefordert",
+    "t": "Plan heute das Wochenende, damit {r} nicht muss.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0036",
+    "c": "dankbar",
+    "t": "Sag {r} heute Danke für etwas, das {r} jeden Tag macht und nie erwähnt wird.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0037",
+    "c": "dankbar",
+    "t": "Schreib {r} einen Zettel: „Danke, dass du …“ – und vervollständige ihn ehrlich.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0038",
+    "c": "dankbar",
+    "t": "Erzähl heute einer anderen Person, was du an {r} schätzt – und sag {r} davon.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0039",
+    "c": "dankbar",
+    "t": "Bedank dich heute bei {r} für etwas, das schon Jahre her ist.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0040",
+    "c": "dankbar",
+    "t": "Sag {r} heute, wofür du in eurer Beziehung am dankbarsten bist.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0041",
+    "c": "dankbar",
+    "t": "Schreib heute drei Dinge auf, die {r} diese Woche gut gemacht hat – und lies sie vor.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0042",
+    "c": "dankbar",
+    "t": "Danke {r} heute für einen Streit, der euch weitergebracht hat.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0043",
+    "c": "frage",
+    "t": "Frag {r} heute: „Was ist dir gerade wichtig, worüber wir nie reden?“",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0044",
+    "c": "frage",
+    "t": "Frag {r} heute nach dem schönsten Urlaub vor eurer Zeit.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0045",
+    "c": "frage",
+    "t": "Frag {r}: „Was würdest du gern mal ausprobieren, traust dich aber nicht?“",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0047",
+    "c": "frage",
+    "t": "Frag {r}: „Wann warst du zuletzt richtig glücklich?“",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0048",
+    "c": "frage",
+    "t": "Frag {r} heute, was {r} sich für den nächsten Monat wünscht.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0049",
+    "c": "frage",
+    "t": "Frag {r}: „Wovor hattest du als Kind am meisten Angst?“",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0050",
+    "c": "frage",
+    "t": "Frag {r} heute, welche Musik {r} gerade am liebsten hört – und hört sie zusammen.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0051",
+    "c": "frage",
+    "t": "Frag {r}: „Was soll ich mir über dich merken, das ich vergessen habe?“",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0052",
+    "c": "neu",
+    "t": "Geht heute einen Weg, den ihr noch nie gegangen seid. Zehn Minuten reichen.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0053",
+    "c": "neu",
+    "t": "Probiert heute ein Getränk oder Gericht, das keiner von euch kennt.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0054",
+    "c": "neu",
+    "t": "Spielt heute Abend ein Spiel, das ihr seit Jahren nicht gespielt habt.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0055",
+    "c": "neu",
+    "t": "Macht heute ein Foto von euch beiden an einem ungewöhnlichen Ort.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0056",
+    "c": "neu",
+    "t": "Kocht heute zusammen – jeder sucht eine Zutat aus, die andere bestimmt den Rest.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0057",
+    "c": "neu",
+    "t": "Hört heute zusammen ein Album komplett durch, ohne Handy.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0058",
+    "c": "neu",
+    "t": "Schreibt heute zusammen eine Liste mit zehn Dingen, die ihr noch erleben wollt.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0059",
+    "c": "neu",
+    "t": "Verabredet euch heute für ein Date in der nächsten Woche – mit Datum.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0060",
+    "c": "neu",
+    "t": "Lest euch heute gegenseitig etwas vor. Egal was.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0061",
+    "c": "neu",
+    "t": "Tauscht heute für eine Stunde eure Lieblingsbeschäftigung.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0062",
+    "c": "neu",
+    "t": "Sucht euch heute einen Sonnenaufgang oder Sonnenuntergang aus und schaut ihn zusammen an.",
+    "anlaesse": [],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0063",
+    "c": "aufmerksamkeit",
+    "t": "Schreib {r} heute einen Wunschzettel – nur mit Dingen, die kein Geld kosten.",
+    "anlaesse": [
+      "advent"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0064",
+    "c": "neu",
+    "t": "Backt heute zusammen eine Sorte Plätzchen. Wer verliert beim Abschmecken, spült.",
+    "anlaesse": [
+      "advent"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0065",
+    "c": "neu",
+    "t": "Macht heute einen Spaziergang über einen Weihnachtsmarkt oder durch beleuchtete Straßen.",
+    "anlaesse": [
+      "advent"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0066",
+    "c": "unaufgefordert",
+    "t": "Pack heute ein Geschenk für {r} ein – auch wenn es nur eine Kleinigkeit ist.",
+    "anlaesse": [
+      "advent"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0067",
+    "c": "aufmerksamkeit",
+    "t": "Zündet heute eine Kerze an und erzählt euch, was in diesem Jahr gut war.",
+    "anlaesse": [
+      "advent"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0068",
+    "c": "neu",
+    "t": "Schaut heute zusammen euren Lieblings-Weihnachtsfilm. Mit Decke.",
+    "anlaesse": [
+      "advent",
+      "weihnachten"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0069",
+    "c": "unaufgefordert",
+    "t": "Nimm {r} heute eine Weihnachtsbesorgung komplett ab.",
+    "anlaesse": [
+      "advent"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0070",
+    "c": "dankbar",
+    "t": "Sag {r} heute Danke für die Vorbereitung der Feiertage.",
+    "anlaesse": [
+      "weihnachten"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0071",
+    "c": "aufmerksamkeit",
+    "t": "Nehmt euch heute zehn Minuten nur für euch zwei – ohne Familie, ohne Handy.",
+    "anlaesse": [
+      "weihnachten"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0072",
+    "c": "frage",
+    "t": "Frag {r} heute: „Welcher Moment an Weihnachten war dein schönster?“",
+    "anlaesse": [
+      "weihnachten"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0073",
+    "c": "neu",
+    "t": "Schreibt heute zusammen auf, was ihr im neuen Jahr gemeinsam erleben wollt.",
+    "anlaesse": [
+      "silvester"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0074",
+    "c": "dankbar",
+    "t": "Sag {r} heute drei Dinge, für die du in diesem Jahr dankbar bist.",
+    "anlaesse": [
+      "silvester"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0075",
+    "c": "aufmerksamkeit",
+    "t": "Küss {r} heute um Mitternacht, als wäre es das erste Mal.",
+    "anlaesse": [
+      "silvester"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0076",
+    "c": "aufmerksamkeit",
+    "t": "Schreib {r} heute eine richtige Karte. Mit Hand.",
+    "anlaesse": [
+      "valentinstag"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0077",
+    "c": "neu",
+    "t": "Wiederholt heute euer erstes Date – so gut es geht.",
+    "anlaesse": [
+      "valentinstag"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0078",
+    "c": "unaufgefordert",
+    "t": "Deck heute den Tisch so schön, als käme Besuch – nur für euch zwei.",
+    "anlaesse": [
+      "valentinstag"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0079",
+    "c": "frage",
+    "t": "Frag {r} heute: „Was hat dich an mir zuerst angezogen?“",
+    "anlaesse": [
+      "valentinstag"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0080",
+    "c": "neu",
+    "t": "Versteckt heute füreinander eine Kleinigkeit – wie beim Ostereiersuchen.",
+    "anlaesse": [
+      "ostern"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0081",
+    "c": "neu",
+    "t": "Färbt heute zusammen Eier oder bemalt einen Stein.",
+    "anlaesse": [
+      "ostern"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0082",
+    "c": "aufmerksamkeit",
+    "t": "Ruf heute zusammen mit {r} die Mütter an – oder schreibt ihnen etwas Liebes.",
+    "anlaesse": [
+      "muttertag"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0083",
+    "c": "neu",
+    "t": "Macht heute ein Picknick – Decke, Brot, fertig.",
+    "anlaesse": [
+      "sommer"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0084",
+    "c": "neu",
+    "t": "Geht heute Abend noch einmal raus, wenn es kühler ist, und lauft ohne Ziel.",
+    "anlaesse": [
+      "sommer"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0085",
+    "c": "unaufgefordert",
+    "t": "Stell {r} heute ein kühles Getränk hin, bevor {r} danach fragt.",
+    "anlaesse": [
+      "sommer"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0086",
+    "c": "neu",
+    "t": "Sammelt heute zusammen bunte Blätter oder Kastanien.",
+    "anlaesse": [
+      "herbst"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0087",
+    "c": "aufmerksamkeit",
+    "t": "Mach {r} heute einen heißen Tee und bring ihn ans Sofa.",
+    "anlaesse": [
+      "herbst",
+      "winter"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0088",
+    "c": "neu",
+    "t": "Schnitzt heute zusammen einen Kürbis – oder malt ein Gesicht drauf.",
+    "anlaesse": [
+      "halloween"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0089",
+    "c": "aufmerksamkeit",
+    "t": "Wärm heute die kalten Hände von {r} in deinen.",
+    "anlaesse": [
+      "winter"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  },
+  {
+    "id": "pk-0090",
+    "c": "neu",
+    "t": "Macht heute einen Winterspaziergang und danach Kakao.",
+    "anlaesse": [
+      "winter"
+    ],
+    "status": "freigegeben",
+    "angelegt": "2026-11-25",
+    "von": "Claude"
+  }
+]

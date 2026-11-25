@@ -1,0 +1,27 @@
+{
+  "erzeugt": "2026-11-25T17:54:02.660Z",
+  "datum": "2026-11-25",
+  "anlaesse": [
+    "wichteln",
+    "herbst"
+  ],
+  "frage": {
+    "id": "fr-0092",
+    "t": "Was wünschst du dir heimlich zum Wichteln?"
+  },
+  "piek": {
+    "id": "pk-0032",
+    "c": "unaufgefordert",
+    "t": "Reparier heute die eine Kleinigkeit, die schon lange nervt."
+  },
+  "wissen": {
+    "id": "wi-0008",
+    "t": "Das Taubenschwänzchen sieht aus wie ein Kolibri, ist aber ein Schmetterling aus der Familie der Schwärmer."
+  },
+  "quiz": {
+    "id": "qz-0021",
+    "w": 0,
+    "s": "Landkärtchen-Raupen leben einzeln.",
+    "x": "Sie leben in Gruppen an Brennnesseln."
+  }
+}

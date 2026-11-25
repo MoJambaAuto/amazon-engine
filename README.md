@@ -36,3 +36,12 @@ Voraussetzung: Node.js 20 oder neuer, keine weiteren Pakete.
 Die Planung liegt lokal und ist nicht Teil dieses Repos.
 
 Als Amazon-Partner verdienen wir an qualifizierten Verkäufen.
+
+## Futter-Engine Paket 2 – täglich wechselnde Inhalte (25.11.2026)
+
+`werkzeug/inhalte.mjs` wählt jeden Tag je eine Gesprächsfrage, einen Flügelschlag (Paar-Aufgabe), ein Falter-Wissen
+und eine Quizfrage aus `daten/inhalte/*.json` – passend zu Anlässen (Wichteln, Advent, Weihnachten, Silvester,
+Valentinstag, Ostern, Mutter-/Vatertag, Halloween, Jahreszeiten). Gezeigtes ruht bis zu 180 Tage, geplante Tage
+ändern sich nie (`daten/inhalte-plan.json`). Ausgabe: `docs/feed/inhalte/heute.json` und `naechste-tage.json`
+(14 Tage für Offline-Betrieb). Läuft im Tageslauf mit; ein Fehler dort stoppt den Fund des Tages nicht.
+Fakten (wissen, quiz) nur mit Quelle und Gegenprüfung durch ein Modell eines anderen Herstellers (R23).
