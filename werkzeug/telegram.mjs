@@ -11,6 +11,13 @@ import { pathToFileURL } from 'node:url';
 import { WURZEL, lesenJson, schreibenJson } from './lib.mjs';
 import { protokoll } from './protokoll.mjs';
 
+// Kanaltext für Telegram: jeder Amazon-Produkt-Link wird zur Fund-Seite; „Bei Amazon ansehen“ → „Zum Fund“.
+export function telegramText(kanalText, fundSeite) {
+  return String(kanalText)
+    .replace(/https:\/\/www\.amazon\.de\/dp\/([A-Z0-9]{10})\/ref=nosim\?tag=[A-Za-z0-9-]+/g, (_, asin) => fundSeite(asin))
+    .replace('👉 Bei Amazon ansehen:', '👉 Zum Fund:');
+}
+
 export async function telegramSenden({ daten = join(WURZEL, 'daten'), docs = join(WURZEL, 'docs'), config = lesenJson(join(WURZEL, 'config.json')),
   token = process.env.TELEGRAM_BOT_TOKEN, holen = fetch, protokollOrdner, jetzt = new Date() } = {}) {
   const kanal = (config.telegram_kanal || '').trim();
@@ -22,11 +29,27 @@ export async function telegramSenden({ daten = join(WURZEL, 'daten'), docs = joi
   const standPfad = join(daten, 'telegram.json');
   const stand = existsSync(standPfad) ? lesenJson(standPfad) : { gesendet: [] };
   if ((stand.gesendet || []).some((g) => g.datum === heute.datum)) return { gesendet: false, grund: `${heute.datum} schon gesendet` };
+  // Telegram verlinkt nicht direkt auf Amazon, sondern auf die Fund-Seite bei schmetterlingsfutter.de (steht im
+  // Partnerkonto; dort ist der Amazon-Knopf). So muss der Kanal nicht im Partnerkonto eingetragen werden.
+  const feedPfad = join(docs, 'feed', 'funde.json');
+  const nachAsin = new Map((existsSync(feedPfad) ? lesenJson(feedPfad) : []).filter((e) => e.asin).map((e) => [e.asin, e.slug]));
+  const basis = config.funde_seite.replace(/\/$/, '');
+  const fundSeite = (asin) => (nachAsin.has(asin) ? `${basis}/${nachAsin.get(asin)}/` : `${basis}/`);
+  const text = telegramText(heute.kanal_text, fundSeite);
+  // Die Fund-Seite entsteht beim Website-Lauf kurz nach dem Tageslauf. Ist sie noch nicht da, später erneut versuchen
+  // (die nächsten Zeitpläne des Tageslaufs rufen dieses Skript wieder auf).
+  if (heute.art === 'fund' && heute.fund && heute.fund.asin) {
+    const ziel = fundSeite(heute.fund.asin);
+    try {
+      const s = await holen(ziel, { method: 'GET', signal: AbortSignal.timeout(15000) });
+      if (!s.ok) return { gesendet: false, grund: `Fund-Seite noch nicht online (${s.status}) – nächster Lauf versucht es wieder` };
+    } catch (e) { return { gesendet: false, grund: `Fund-Seite nicht erreichbar – nächster Lauf versucht es wieder` }; }
+  }
   let antwort;
   try {
     const r = await holen(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: AbortSignal.timeout(20000),
-      body: JSON.stringify({ chat_id: kanal, text: heute.kanal_text, link_preview_options: { is_disabled: false } }) });
+      body: JSON.stringify({ chat_id: kanal, text, link_preview_options: { is_disabled: false } }) });
     antwort = await r.json();
     if (!r.ok || !antwort || antwort.ok !== true) throw new Error(`Telegram ${r.status}: ${(antwort && antwort.description) || 'kein ok'}`);
   } catch (e) {
