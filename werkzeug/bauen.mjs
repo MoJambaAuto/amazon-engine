@@ -50,6 +50,7 @@ function feedEintrag(v, fund) {
 // ---------- Seiten ----------
 const CSS = (g) => `:root{--bg:${g.hintergrund};--text:${g.text};--gruen:${g.akzent_gruen};--pink:${g.akzent_pink};--cyan:${g.akzent_cyan};--box:#17172a}
 *{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--text);font:500 ${g.schrift_fliesstext_min_px}px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:24px 16px 56px}
 main{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
@@ -107,26 +108,71 @@ ${skript ? `<script>${skript}</script>` : ''}
 `;
 }
 
-function heuteSeite({ datum, kanal, social, vorrat }, config) {
-  const teile = [`<h1>Heute posten</h1>`, `<p class="datum">${esc(datumLang(datum))}</p>`];
-  if (kanal) {
-    teile.push(`<pre class="box" id="kanal">${esc(kanal)}</pre>`);
+// Wählt im Browser den Tag nach Berliner Datum aus den vorab gebauten Tagen (Daten im Block #tage).
+// So stimmt der Text morgens auch dann, wenn der Tageslauf bei GitHub verspätet oder gar nicht kommt.
+const TAGESWAHL = `(function(){var el=document.getElementById('tage');if(!el)return;var D=JSON.parse(el.textContent);
+var heute=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+if(heute===D.gebaut)return;var W=${JSON.stringify(WOCHENTAG)},K=${JSON.stringify(KURZTAG)};
+function wt(d){return new Date(Date.UTC(+d.slice(0,4),+d.slice(5,7)-1,+d.slice(8,10))).getUTCDay()}
+function z(id){return document.getElementById(id)}
+z('datum').textContent=W[wt(heute)]+', '+heute.slice(8,10)+'.'+heute.slice(5,7)+'.'+heute.slice(0,4);
+var t=null;for(var i=0;i<D.tage.length;i++){if(D.tage[i].datum===heute)t=D.tage[i]}
+z('kanal').textContent=t?t.kanal:'';z('kanal').hidden=!t;z('kanalknopf').hidden=!t;z('leer').hidden=!!t;
+var s=t&&t.social;z('social').textContent=s||'';['socialkopf','social','socialknopf'].forEach(function(id){z(id).hidden=!s});
+var v=D.plan.filter(function(p){return p.datum>heute}).slice(0,7);
+z('vorrat').innerHTML='';v.forEach(function(p){var li=document.createElement('li');var a=document.createElement('span');a.className='d';
+a.textContent=K[wt(p.datum)]+' '+p.datum.slice(8,10)+'.'+p.datum.slice(5,7)+'.';var b=document.createElement('span');b.textContent=p.titel;li.appendChild(a);li.appendChild(b);z('vorrat').appendChild(li)});
+z('vorrat').hidden=!v.length;z('vorratleer').hidden=!!v.length;})();`;
+
+function heuteSeite({ datum, tage, plan }, config) {
+  const t = tage.find((x) => x.datum === datum) || null;
+  const vorrat = plan.filter((p) => p.datum > datum).slice(0, 7);
+  const aus = (b) => (b ? '' : ' hidden');
+  const teile = [`<h1>Heute posten</h1>`, `<p class="datum" id="datum">${esc(datumLang(datum))}</p>`,
+    `<pre class="box" id="kanal"${aus(t)}>${esc(t ? t.kanal : '')}</pre>`,
     // Ein Knopf: kopieren und gleich den Kanal öffnen (ohne Kanal-Link nur kopieren)
-    teile.push(config.kanal_url
-      ? `<button class="knopf" type="button" data-kopiere="kanal" data-dann="${esc(config.kanal_url)}">Kopieren und Kanal öffnen</button>`
-      : `<button class="knopf" type="button" data-kopiere="kanal">Text kopieren</button>`);
-  } else {
-    teile.push(`<p class="box leer">Heute ist kein Fund geplant.</p>`);
+    config.kanal_url
+      ? `<button class="knopf" type="button" id="kanalknopf" data-kopiere="kanal" data-dann="${esc(config.kanal_url)}"${aus(t)}>Kopieren und Kanal öffnen</button>`
+      : `<button class="knopf" type="button" id="kanalknopf" data-kopiere="kanal"${aus(t)}>Text kopieren</button>`,
+    `<p class="box leer" id="leer"${aus(!t)}>Heute ist kein Fund geplant.</p>`,
+    `<h2 id="socialkopf"${aus(t && t.social)}>Für Instagram und Facebook</h2>`,
+    `<pre class="box" id="social"${aus(t && t.social)}>${esc(t && t.social ? t.social : '')}</pre>`,
+    `<button class="knopf zwei" type="button" id="socialknopf" data-kopiere="social"${aus(t && t.social)}>Text kopieren</button>`,
+    `<h2>Vorrat</h2>`,
+    `<ul class="vorrat" id="vorrat"${aus(vorrat.length)}>${vorrat.map((v) => `<li><span class="d">${esc(datumKurz(v.datum))}</span><span>${esc(v.titel)}</span></li>`).join('')}</ul>`,
+    `<p class="box leer" id="vorratleer"${aus(!vorrat.length)}>Nichts geplant.</p>`,
+    `<script type="application/json" id="tage">${JSON.stringify({ gebaut: datum, tage, plan }).replace(/</g, '\\u003c')}</script>`];
+  return seite('Heute posten · Papillons Fund des Tages', teile.join('\n'), config, TAGESWAHL + '\n' + KOPIEREN, STARTBILDSCHIRM);
+}
+
+// Texte eines Tages aus seinem Eintrag (Verlauf oder Plan). zeitleiste: Map Datum → Eintrag mit fund.
+function texteFuer(datum, e, zeitleiste, nachId, config) {
+  if (!e) return null;
+  if (e.art === 'fund') {
+    const f = nachId.get(e.fund);
+    if (!f) throw new Error(`${datum}: Fund ${e.fund} unbekannt`);
+    const k = kanalText(f, e.fassung, config);
+    return { datum, art: 'fund', fund: f, titel: f.titel, kanal: k.text, social: socialText(f, config), links: k.links };
   }
-  if (social) {
-    teile.push(`<h2>Für Instagram und Facebook</h2>`, `<pre class="box" id="social">${esc(social)}</pre>`,
-      `<button class="knopf zwei" type="button" data-kopiere="social">Text kopieren</button>`);
+  if (e.art === 'rueckblick') {
+    const woche = [...zeitleiste.entries()].filter(([d, v]) => v.art === 'fund' && nachId.has(v.fund) && abstand(d, datum) >= 1 && abstand(d, datum) <= 6)
+      .map(([d, v]) => ({ d, f: nachId.get(v.fund) }))
+      .sort((a, b) => (b.f.score?.grund ?? 0) - (a.f.score?.grund ?? 0) || (a.d < b.d ? 1 : -1))
+      .slice(0, 3).map((x) => x.f);
+    if (woche.length === 0) throw new Error(`Rückblick ${datum}: keine Funde in den 6 Tagen davor`);
+    const r = rueckblickText(woche, config);
+    return { datum, art: 'rueckblick', fund: null, titel: 'Wochenrückblick', kanal: r.text, social: null, links: r.links };
   }
-  teile.push(`<h2>Vorrat</h2>`);
-  teile.push(vorrat.length
-    ? `<ul class="vorrat">${vorrat.map((v) => `<li><span class="d">${esc(datumKurz(v.datum))}</span><span>${esc(v.titel)}</span></li>`).join('')}</ul>`
-    : `<p class="box leer">Nichts geplant.</p>`);
-  return seite('Heute posten · Papillons Fund des Tages', teile.join('\n'), config, kanal || social ? KOPIEREN : '', STARTBILDSCHIRM);
+  return null;
+}
+
+function zeileAus(datum, e, nachId) {
+  if (e.art === 'fund') {
+    const f = nachId.get(e.fund);
+    if (!f) throw new Error(`Plan ${datum}: Fund ${e.fund} unbekannt`);
+    return { datum, art: 'fund', fund: f.id, gattung: f.gattung, kategorie: f.kategorie, ton: e.ton ?? null, format: e.format ?? null, fassung: e.fassung ?? null };
+  }
+  return { datum, art: e.art, fund: null, gattung: null, kategorie: null, ton: null, format: null, fassung: null };
 }
 
 // ---------- Tagesbau ----------
@@ -139,20 +185,15 @@ export function bauen({ daten = join(WURZEL, 'daten'), docs = join(WURZEL, 'docs
   const verlaufPfad = join(daten, 'verlauf.jsonl');
   const verlauf = lesenVerlauf(verlaufPfad);
 
-  // 1. Heutigen Plan-Eintrag in den Verlauf übernehmen (nur einmal)
+  // 1. Plan-Einträge bis heute in den Verlauf übernehmen (je Tag nur einmal). Verpasste Tage der letzten
+  //    planung_tage_voraus Tage werden nachgetragen – die Kopierseite hat sie an ihrem Tag schon gezeigt.
   const eintrag = plan[heute] || null;
-  let neueZeile = null;
-  if (eintrag && !verlauf.some((v) => v.datum === heute)) {
-    if (eintrag.art === 'fund') {
-      const f = nachId.get(eintrag.fund);
-      if (!f) throw new Error(`Plan ${heute}: Fund ${eintrag.fund} unbekannt`);
-      neueZeile = { datum: heute, art: 'fund', fund: f.id, gattung: f.gattung, kategorie: f.kategorie,
-        ton: eintrag.ton ?? null, format: eintrag.format ?? null, fassung: eintrag.fassung ?? null };
-    } else {
-      neueZeile = { datum: heute, art: eintrag.art, fund: null, gattung: null, kategorie: null, ton: null, format: null, fassung: null };
-    }
-  }
-  const alleZeilen = neueZeile ? [...verlauf, neueZeile] : verlauf;
+  const imVerlauf = new Set(verlauf.map((v) => v.datum));
+  const neueZeilen = Object.keys(plan).sort()
+    .filter((d) => plan[d] && d <= heute && abstand(d, heute) < config.planung_tage_voraus && !imVerlauf.has(d))
+    .map((d) => zeileAus(d, plan[d], nachId));
+  const neueZeile = neueZeilen.find((z) => z.datum === heute) || null;
+  const alleZeilen = [...verlauf, ...neueZeilen];
   const heuteZeile = alleZeilen.find((v) => v.datum === heute) || null;
 
   // 2. Feed (ohne Link, ohne Kennung), neueste zuerst
@@ -160,27 +201,28 @@ export function bauen({ daten = join(WURZEL, 'daten'), docs = join(WURZEL, 'docs
     .sort((a, b) => (a.datum < b.datum ? 1 : a.datum > b.datum ? -1 : 0))
     .map((v) => feedEintrag(v, nachId.get(v.fund)));
 
-  // 3. Tagestexte
-  let kanal = null, social = null, links = [], fundHeute = null;
-  if (heuteZeile && heuteZeile.art === 'fund') {
-    const f = nachId.get(heuteZeile.fund);
-    fundHeute = feed.find((e) => e.id === f.id && e.datum === heute) || null;
-    ({ text: kanal, links } = kanalText(f, heuteZeile.fassung, config));
-    social = socialText(f, config);
-  } else if (heuteZeile && heuteZeile.art === 'rueckblick') {
-    const woche = alleZeilen.filter((v) => v.art === 'fund' && nachId.has(v.fund) && abstand(v.datum, heute) >= 1 && abstand(v.datum, heute) <= 6)
-      .map((v) => ({ v, f: nachId.get(v.fund) }))
-      .sort((a, b) => (b.f.score?.grund ?? 0) - (a.f.score?.grund ?? 0) || (a.v.datum < b.v.datum ? 1 : -1))
-      .slice(0, 3).map((x) => x.f);
-    if (woche.length === 0) throw new Error(`Rückblick ${heute}: keine Funde in den 6 Tagen davor`);
-    ({ text: kanal, links } = rueckblickText(woche, config));
+  // 3. Tagestexte für heute und alle geplanten Folgetage (die Kopierseite wählt im Browser den richtigen Tag)
+  const zeitleiste = new Map();
+  for (const [d, e] of Object.entries(plan)) if (e && d > heute) zeitleiste.set(d, e);
+  for (const v of alleZeilen) zeitleiste.set(v.datum, v);
+  const tage = [];
+  for (let n = 0; n < config.planung_tage_voraus; n++) {
+    const d = plusTage(heute, n);
+    const t = texteFuer(d, zeitleiste.get(d), zeitleiste, nachId, config);
+    if (t) tage.push(t);
   }
+  const heuteTexte = tage.find((t) => t.datum === heute) || null;
+  const kanal = heuteTexte ? heuteTexte.kanal : null;
+  const social = heuteTexte ? heuteTexte.social : null;
+  const fundHeute = heuteTexte && heuteTexte.fund ? feed.find((e) => e.id === heuteTexte.fund.id && e.datum === heute) || null : null;
 
-  // 4. Prüfen – bei Fehlern nichts schreiben
+  // 4. Prüfen – alle vorab gebauten Texte und Links; bei Fehlern nichts schreiben
   const fehler = [];
-  if (kanal) fehler.push(...pruefeText(kanal, 'kanal', config));
-  if (social) fehler.push(...pruefeText(social, 'social', config));
-  for (const l of links) fehler.push(...pruefeLink(l, config));
+  for (const t of tage) {
+    fehler.push(...pruefeText(t.kanal, 'kanal', config).map((x) => `${t.datum} ${x}`));
+    if (t.social) fehler.push(...pruefeText(t.social, 'social', config).map((x) => `${t.datum} ${x}`));
+    for (const l of t.links) fehler.push(...pruefeLink(l, config).map((x) => `${t.datum} ${x}`));
+  }
   if (fehler.length) throw new Error('Prüfung fehlgeschlagen: ' + fehler.join(' | '));
 
   // 5. Status und Vorrat
@@ -193,21 +235,22 @@ export function bauen({ daten = join(WURZEL, 'daten'), docs = join(WURZEL, 'docs
   if (!eintrag) warnungen.push('Heute kein Fund geplant');
   const status = { letzter_lauf: jetzt.toISOString(), datum: heute, heute_art: heuteZeile ? heuteZeile.art : null,
     heute_fund: heuteZeile ? heuteZeile.fund : null, vorrat_tage: vorratTage, geplante_tage: geplant, warnungen };
-  const vorrat = Object.keys(plan).filter((d) => d > heute).sort().slice(0, 7).map((d) => {
+  const planListe = Object.keys(plan).filter((d) => d >= heute && plan[d]).sort().map((d) => {
     const e = plan[d];
     return { datum: d, titel: e.art === 'fund' ? (nachId.get(e.fund)?.titel ?? e.fund) : 'Wochenrückblick' };
   });
+  const seitenTage = tage.map(({ datum, art, titel, kanal: k, social: s }) => ({ datum, art, titel, kanal: k, social: s }));
 
   // 6. Schreiben
-  if (neueZeile) appendFileSync(verlaufPfad, JSON.stringify(neueZeile) + '\n', 'utf8');
+  for (const z of neueZeilen) appendFileSync(verlaufPfad, JSON.stringify(z) + '\n', 'utf8');
   schreibenJson(join(docs, 'feed', 'funde.json'), feed);
   schreibenJson(join(docs, 'feed', 'heute.json'), { datum: heute, art: heuteZeile ? heuteZeile.art : null, fund: fundHeute, kanal_text: kanal, social_text: social });
   schreibenJson(join(docs, 'status.json'), status);
-  datei(join(docs, 'heute', 'index.html'), heuteSeite({ datum: heute, kanal, social, vorrat }, config));
+  datei(join(docs, 'heute', 'index.html'), heuteSeite({ datum: heute, tage: seitenTage, plan: planListe }, config));
   datei(join(docs, 'heute', 'manifest.webmanifest'), MANIFEST(config.gestaltung_engine_seiten));
   datei(join(docs, 'robots.txt'), ROBOTS);
   datei(join(docs, '.nojekyll'), '');
-  return { neueZeile, status, kanal, social };
+  return { neueZeile, neueZeilen, status, kanal, social, tage: seitenTage };
 }
 
 function datei(pfad, inhalt) {

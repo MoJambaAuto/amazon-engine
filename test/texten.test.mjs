@@ -68,7 +68,7 @@ test('höchstens ein Emoji und ein Ausrufezeichen je Text', () => {
 
 test('Kanal-Fassungen: Form, erlaubte Werte, verschiedene Formate und Töne', () => {
   const f = startliste()[0];
-  const mit = (kanal, social = []) => pruefeFund({ ...f, texte: { web: { h: 'Kopf', p: 'Absatz.' }, kanal, social } }, config);
+  const mit = (kanal, social = []) => pruefeFund({ ...f, status: 'vorschlag', texte: { web: { h: 'Kopf', p: 'Absatz.' }, kanal, social } }, config);
   assert.ok(mit(['nur Text']).some((x) => x.startsWith('kanal[0]')));
   assert.ok(mit([{ format: 'gedicht', ton: 'trocken', text: 'A.' }]).some((x) => x.includes("format 'gedicht'")));
   assert.ok(mit([{ format: 'urteil', ton: 'trocken', text: 'A.' }, { format: 'urteil', ton: 'absurd', text: 'B.' }]).some((x) => x.includes('Formate')));
@@ -129,7 +129,7 @@ test('Startpaket: keine Superlative (STIL.md Regel 3)', () => {
 
 test('Social-Fassungen: 3 bis 5 Hashtags aus der Liste, immer #funddestages', () => {
   const f = startliste()[0];
-  const mit = (hashtags) => pruefeFund({ ...f, texte: { web: { h: '', p: '' }, kanal: [], social: [{ text: 'Kekse.', hashtags }] } }, config);
+  const mit = (hashtags) => pruefeFund({ ...f, status: 'vorschlag', texte: { web: { h: '', p: '' }, kanal: [], social: [{ text: 'Kekse.', hashtags }] } }, config);
   assert.ok(mit('#funddestages #kurios').some((x) => x.includes('2 Hashtags')));
   assert.ok(mit('#geschenkidee #kurios #wichteln').some((x) => x.includes('#funddestages fehlt')));
   assert.ok(mit('#funddestages #kurios #rabatt').some((x) => x.includes('#rabatt')));

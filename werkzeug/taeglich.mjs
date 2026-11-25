@@ -16,10 +16,12 @@ export function taeglich({ daten = join(WURZEL, 'daten'), docs = join(WURZEL, 'd
   const fehler = pruefeAlle(lesenJson(join(daten, 'funde.json')), config);
   if (fehler.length) throw new Error('Prüfer meldet Fehler:\n' + fehler.join('\n'));
   const ergebnis = bauen({ daten, docs, config, heute, jetzt });
-  if (ergebnis.neueZeile && ergebnis.neueZeile.art === 'fund') {
-    const fund = lesenJson(join(daten, 'funde.json')).find((f) => f.id === ergebnis.neueZeile.fund);
-    protokoll({ wer: 'GitHub Actions', woher: 'taeglich.yml', system: 'amazon-engine', objekt: `${heute} ${fund.id}`,
-      aktion: 'veröffentlicht', was: fund.titel, warum: 'H-AMAZON-ENGINE Tageslauf', rueckgaengig: 'git revert' },
+  // je neu in den Verlauf übernommenem Fund eine Protokollzeile (auch für nachgetragene Tage)
+  const funde = lesenJson(join(daten, 'funde.json'));
+  for (const z of ergebnis.neueZeilen.filter((x) => x.art === 'fund')) {
+    const fund = funde.find((f) => f.id === z.fund);
+    protokoll({ wer: 'GitHub Actions', woher: 'taeglich.yml', system: 'amazon-engine', objekt: `${z.datum} ${fund.id}`,
+      aktion: z.datum === heute ? 'veröffentlicht' : 'nachgetragen', was: fund.titel, warum: 'H-AMAZON-ENGINE Tageslauf', rueckgaengig: 'git revert' },
     { ordner: protokollOrdner, jetzt });
   }
   return { vorrat: plan.vorrat, ...ergebnis };

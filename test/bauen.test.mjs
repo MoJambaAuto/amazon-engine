@@ -18,7 +18,7 @@ const JETZT = new Date('2026-11-25T04:10:00Z');
 function ordner({ freigegeben = [], plan = {}, verlauf = [] } = {}) {
   const o = mkdtempSync(join(tmpdir(), 'ae06-'));
   const daten = join(o, 'daten');
-  const funde = lesenJson(join(WURZEL, 'daten', 'funde.json')).map((f) => (freigegeben.includes(f.id) ? { ...f, status: 'freigegeben' } : f));
+  const funde = lesenJson(join(WURZEL, 'daten', 'funde.json')).map((f) => (({ ...f, status: freigegeben.includes(f.id) ? 'freigegeben' : 'vorschlag' })));
   schreibenJson(join(daten, 'funde.json'), funde);
   schreibenJson(join(daten, 'plan.json'), plan);
   writeFileSync(join(daten, 'verlauf.jsonl'), verlauf.map((v) => JSON.stringify(v) + '\n').join(''));
@@ -158,5 +158,40 @@ test('Ersatzlauf: schonGelaufen erkennt, ob heute schon gebaut wurde', () => {
     bauen({ daten: t.daten, docs: t.docs, config, heute: HEUTE, jetzt: JETZT });
     assert.equal(schonGelaufen({ docs: t.docs, heute: HEUTE }), true);
     assert.equal(schonGelaufen({ docs: t.docs, heute: plusTage(HEUTE, 1) }), false);
+  } finally { t.weg(); }
+});
+
+test('Kopierseite enthält die Texte aller geplanten Tage; der Browser wählt den heutigen', () => {
+  const alle = lesenJson(join(WURZEL, 'daten', 'funde.json')).map((f) => f.id);
+  const t = ordner({ freigegeben: alle });
+  try {
+    taeglich({ daten: t.daten, docs: t.docs, protokollOrdner: t.protokoll, config, heute: HEUTE, jetzt: JETZT });
+    const html = readFileSync(join(t.docs, 'heute', 'index.html'), 'utf8');
+    const block = html.match(/<script type="application\/json" id="tage">([\s\S]*?)<\/script>/);
+    assert.ok(block, 'Datenblock fehlt');
+    const D = JSON.parse(block[1]);
+    const plan = lesenJson(join(t.daten, 'plan.json'));
+    assert.equal(D.gebaut, HEUTE);
+    assert.equal(D.tage.length, Object.keys(plan).length);
+    for (const tag of D.tage) {
+      assert.ok(tag.kanal.startsWith(tag.art === 'fund' ? P.anfang_kanal : P.anfang_rueckblick) && tag.kanal.endsWith(P.ende), tag.datum);
+      assert.deepEqual(pruefeText(tag.kanal, 'kanal', config), [], tag.datum);
+      if (tag.art === 'fund') assert.deepEqual(pruefeText(tag.social, 'social', config), [], tag.datum);
+    }
+    assert.ok(html.includes("timeZone:'Europe/Berlin'"));
+    assert.ok(!block[1].includes('</'), 'kein </ im Datenblock');
+  } finally { t.weg(); }
+});
+
+test('verpasster Tag wird beim nächsten Lauf nachgetragen und protokolliert', () => {
+  const gestern = plusTage(HEUTE, -1);
+  const plan = { [gestern]: { art: 'fund', fund: 'f-0002', ton: null, format: null, fassung: 0 }, [HEUTE]: { art: 'fund', fund: 'f-0003', ton: null, format: null, fassung: 0 } };
+  const t = ordner({ freigegeben: ['f-0002', 'f-0003'], plan });
+  try {
+    taeglich({ daten: t.daten, docs: t.docs, protokollOrdner: t.protokoll, config, heute: HEUTE, jetzt: JETZT });
+    assert.deepEqual(verlaufZeilen(t.daten).map((v) => [v.datum, v.fund]), [[gestern, 'f-0002'], [HEUTE, 'f-0003']]);
+    const prot = readFileSync(join(t.protokoll, '2026-11.jsonl'), 'utf8').split('\n').filter(Boolean).map((z) => JSON.parse(z).aktion);
+    assert.deepEqual(prot, ['nachgetragen', 'veröffentlicht']);
+    assert.equal(lesenJson(join(t.docs, 'feed', 'funde.json')).length, 2);
   } finally { t.weg(); }
 });
