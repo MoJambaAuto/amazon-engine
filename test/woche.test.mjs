@@ -11,17 +11,37 @@ import { rssLesen, anlaesseNaechste, signale } from '../werkzeug/signale.mjs';
 
 const config = lesenJson(join(WURZEL, 'config.json'));
 const startliste = () => lesenJson(join(WURZEL, 'daten', 'funde.json'));
-const testPaket = () => startliste().slice(0, 3).map((f, i) => ({ ...f, id: `f-90${i + 1}0`, titel: f.titel + ' Test ' + i, status: 'vorschlag', paket: 'KW-2026-49', freigabe: '' }));
+const testPaket = () => startliste().slice(0, 3).map((f, i) => ({ ...f, id: `f-90${i + 1}0`, titel: f.titel + ' Test ' + i, asin: `B0WOCHE00${i + 1}`, status: 'vorschlag', paket: 'KW-2026-49', freigabe: '' }));
 
-test('freigeben: Vorschläge des Pakets werden freigegeben, --ohne verworfen, andere Pakete bleiben', () => {
+test('freigeben (AE-14): Mos Ja trägt die Sichtprüfung ein; Ausnahme bleibt Vorschlag mit Ersatz, ohne Ersatz verworfen', () => {
   const alt = startliste();
-  const r = freigeben([...alt, ...testPaket()], { paket: 'KW-2026-49', bezug: 'F-AE-20261129', ohne: ['f-9020'], am: '2026-11-29' });
-  assert.equal(r.frei, 2);
+  const paket = testPaket().map((f, i) => ({ ...f, produkt: { ...f.produkt, ersatz: i === 1 ? ['B0ERSATZ01'] : [], geprueft_am: null, geprueft_von: null, pruef_beleg: null } }));
+  const r = freigeben([...alt, ...paket], { paket: 'KW-2026-49', bezug: 'F-AE-20261129', ohne: ['f-9020', 'f-9030'], am: '2026-11-25' });
+  assert.equal(r.frei, 1);
+  assert.equal(r.ersetzt, 1);
   assert.equal(r.verworfen, 1);
   const neu = r.funde.filter((f) => f.paket === 'KW-2026-49');
-  assert.deepEqual(neu.map((f) => f.status), ['freigegeben', 'verworfen', 'freigegeben']);
-  assert.deepEqual(neu[0].freigabe, { von: 'Mo', am: '2026-11-29', bezug: 'F-AE-20261129' });
+  assert.deepEqual(neu.map((f) => f.status), ['freigegeben', 'vorschlag', 'verworfen']);
+  assert.deepEqual(neu[0].freigabe, { von: 'Mo', am: '2026-11-25', bezug: 'F-AE-20261129' });
+  assert.equal(neu[0].produkt.geprueft_am, '2026-11-25');
+  assert.equal(neu[0].produkt.geprueft_von, 'Mo');
+  assert.equal(neu[0].produkt.pruef_beleg, 'F-AE-20261129');
+  assert.equal(neu[1].asin, 'B0ERSATZ01');
+  assert.equal(neu[1].produkt.geprueft_am, null);
+  assert.ok(neu[2].notiz_intern.includes('unpassend'));
   assert.deepEqual(r.funde.slice(0, alt.length), alt);
+  assert.deepEqual(pruefeAlle(r.funde, config), []);
+});
+
+test('freigeben --nachpruefung: Startpaket bekommt Mos Prüfung, Ausnahme ohne Ersatz bleibt ungeprüft', () => {
+  const alt = startliste();
+  const r = freigeben(alt, { paket: 'start', bezug: 'F-AE-6-20261126', nachpruefung: ['f-0001', 'f-0002'], ohne: ['f-0002'], am: '2026-11-25' });
+  assert.equal(r.nachgeprueft, 1);
+  const [f1, f2] = r.funde;
+  assert.equal(f1.produkt.geprueft_am, '2026-11-25');
+  assert.equal(f1.status, 'freigegeben');
+  assert.equal(f2.produkt.geprueft_am, alt[1].produkt.ersatz.length ? null : alt[1].produkt.geprueft_am);
+  assert.deepEqual(r.funde.slice(2), alt.slice(2));
   assert.deepEqual(pruefeAlle(r.funde, config), []);
 });
 

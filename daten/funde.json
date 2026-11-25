@@ -5,7 +5,7 @@
     "gattung": "gag-kleidung",
     "suchbegriff": "Notfall Unterhose Dose",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0DGPL4SGB",
     "kategorie": "bekleidung",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -48,7 +48,7 @@
     "texte": {
       "web": {
         "h": "Gibt es wirklich: Notfall-Unterhose in der Dose",
-        "p": "Eine Unterhose, verpackt wie eine Konserve. Der Witz steht schon auf der Dose, du musst sie nur noch überreichen. Passt zu jeder Wichtelrunde mit Kollegen. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Eine Unterhose, verpackt wie eine Konserve. Der Witz steht schon auf der Dose, du musst sie nur noch überreichen. Passt zu jeder Wichtelrunde mit Kollegen. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -80,7 +80,16 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "COZYMATE Notfall-Unterhose, Sofortunterwäsche … in einer kleinen Blechdose",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0002",
@@ -88,7 +97,7 @@
     "gattung": "bad-spass",
     "suchbegriff": "Toilettengolf Set",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0CW9HMLQD",
     "kategorie": "spielwaren",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -130,7 +139,7 @@
     "texte": {
       "web": {
         "h": "Toiletten-Golf: Putten auf dem stillen Örtchen",
-        "p": "Putting-Grün, Schläger und Bälle für das stille Örtchen. Golf dort, wo man ohnehin sitzt. Für alle, die keine Minute ungenutzt lassen wollen. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Putting-Grün, Schläger und Bälle für das stille Örtchen. Golf dort, wo man ohnehin sitzt. Für alle, die keine Minute ungenutzt lassen wollen. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -162,7 +171,16 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Toiletten Golf, Klo Minigolf, 6-teilig, Minigolfspiel mit Schläger, Bällen …",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0003",
@@ -170,7 +188,7 @@
     "gattung": "buero-stress",
     "suchbegriff": "Schreibtisch Boxsack Saugnapf",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0C1TMQ78L",
     "kategorie": "spielwaren",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -213,7 +231,7 @@
     "texte": {
       "web": {
         "h": "Schreibtisch-Boxsack für Tage voller Besprechungen",
-        "p": "Ein kleiner Boxsack mit Saugnapf für den Schreibtisch. Für Tage mit zu vielen Besprechungen. Ein Wichtelgeschenk für Kolleginnen und Kollegen mit vollem Kalender. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Ein kleiner Boxsack mit Saugnapf für den Schreibtisch. Für Tage mit zu vielen Besprechungen. Ein Wichtelgeschenk für Kolleginnen und Kollegen mit vollem Kalender. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -245,7 +263,18 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Schreibtisch-Boxsack, Tisch-Boxsäcke für Erwachsene, Stress-Buster … mit Saugnapf",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B0G2KDM9FF"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0004",
@@ -253,7 +282,7 @@
     "gattung": "kueche-figur",
     "suchbegriff": "Taco Halter Dinosaurier",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B07BP8HZVS",
     "kategorie": "kueche",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -296,7 +325,7 @@
     "texte": {
       "web": {
         "h": "Taco-Halter als Dinosaurier: Abendessen auf dem Rücken",
-        "p": "Ein Dinosaurier, der zwei Tacos auf dem Rücken trägt. Er hält das Essen aufrecht und die Laune gleich mit. Für Taco-Abende mit Familie oder Freunden. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Ein Dinosaurier, der zwei Tacos auf dem Rücken trägt. Er hält das Essen aufrecht und die Laune gleich mit. Für Taco-Abende mit Familie oder Freunden. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -328,7 +357,19 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Funwares Original Tacosaurus – Dinosaurier-Taco-Halter",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B07GX7FM2B",
+        "B01LZNTN8S"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0005",
@@ -336,7 +377,7 @@
     "gattung": "kueche-figur",
     "suchbegriff": "Suppenkelle Seeungeheuer",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0FB3TMRTZ",
     "kategorie": "kueche",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -379,7 +420,7 @@
     "texte": {
       "web": {
         "h": "Suppenkelle als Seeungeheuer: Es taucht im Topf auf",
-        "p": "Die Kelle steht im Topf und schaut heraus wie das Ungeheuer aus dem See. Ein kleiner Gruselmoment für jeden Suppenabend. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Die Kelle steht im Topf und schaut heraus wie das Ungeheuer aus dem See. Ein kleiner Gruselmoment für jeden Suppenabend. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -411,7 +452,19 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "OTOTO The Original Nessie Edelstahl-Schöpfkelle – Suppenkelle",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B01B84KCZE"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)",
+      "hinweis": "Ersatz ist ein Dreier-Set (Kelle, Sieblöffel, Tee-Ei)."
+    }
   },
   {
     "id": "f-0006",
@@ -419,7 +472,7 @@
     "gattung": "kueche-werkzeug",
     "suchbegriff": "Eierschalensollbruchstellenverursacher",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B000QD7770",
     "kategorie": "kueche",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -461,7 +514,7 @@
     "texte": {
       "web": {
         "h": "Gibt es wirklich: Eierschalensollbruchstellenverursacher",
-        "p": "Eine Kugel fällt am Stab herunter und knackt das Frühstücksei sauber auf. Der Name ist das halbe Geschenk – die andere Hälfte ist das Gesicht beim Vorlesen. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Eine Kugel fällt am Stab herunter und knackt das Frühstücksei sauber auf. Der Name ist das halbe Geschenk – die andere Hälfte ist das Gesicht beim Vorlesen. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -493,7 +546,19 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Take 2 Germany – Clack 99002 Eierschalensollbruchstellenverursacher – Edelstahl – Motiv Holzkopf",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B000QD54LG",
+        "B0DKFVX3R5"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0007",
@@ -501,7 +566,7 @@
     "gattung": "decke",
     "suchbegriff": "Tortilla Decke",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0HJ2DMNWL",
     "kategorie": "haushalt",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -544,7 +609,7 @@
     "texte": {
       "web": {
         "h": "Tortilla-Decke: Wer sich einrollt, ist die Füllung",
-        "p": "Eine runde Kuscheldecke, bedruckt wie ein Weizenfladen. Wer sich einrollt, ist die Füllung. Herrlich albern fürs Schrottwichteln oder für lange Sofaabende. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Eine runde Kuscheldecke, bedruckt wie ein Weizenfladen. Wer sich einrollt, ist die Füllung. Herrlich albern fürs Schrottwichteln oder für lange Sofaabende. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -576,7 +641,18 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Burrito Decke 160 cm, Runde Tortilla Decke aus Flanell",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B0DCYZVZQ4"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0008",
@@ -584,7 +660,7 @@
     "gattung": "gag-schuhe",
     "suchbegriff": "Fisch Badelatschen",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B08MC27537",
     "kategorie": "schuhe",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -627,7 +703,7 @@
     "texte": {
       "web": {
         "h": "Fisch-Badelatschen: Der Fuß steckt im Maul",
-        "p": "Badeschuhe in Form zweier Fische, der Fuß steckt im Maul. Ein Paar Latschen, über das am Beckenrand gesprochen wird. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Badeschuhe in Form zweier Fische, der Fuß steckt im Maul. Ein Paar Latschen, über das am Beckenrand gesprochen wird. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -659,7 +735,17 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Uniqstore Unisex Sandalen Flip Flops Fisch Hausschuhe Strand Dusche",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)",
+      "hinweis": "Schuhe: Größen wählt der Käufer auf der Seite."
+    }
   },
   {
     "id": "f-0009",
@@ -667,7 +753,7 @@
     "gattung": "wecker",
     "suchbegriff": "Wecker auf Rädern",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B000PWLTNA",
     "kategorie": "elektronik",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -710,7 +796,7 @@
     "texte": {
       "web": {
         "h": "Wecker, der wegläuft: Ausschalten nur im Stehen",
-        "p": "Er klingelt, springt vom Nachttisch und rollt davon. Ausschalten geht nur im Stehen. Für alle, die morgens die Schlummertaste zu gut kennen. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Er klingelt, springt vom Nachttisch und rollt davon. Ausschalten geht nur im Stehen. Für alle, die morgens die Schlummertaste zu gut kennen. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -742,7 +828,18 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "CLOCKY, Wecker auf Rädern (Original)",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B004MSMUGI"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0010",
@@ -750,7 +847,7 @@
     "gattung": "winter-spiel",
     "suchbegriff": "Schneeballzange",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0CNPWHPTQ",
     "kategorie": "spielwaren",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -792,7 +889,7 @@
     "texte": {
       "web": {
         "h": "Schneeballzange: Schneebälle wie vom Fließband",
-        "p": "Sie formt Schneebälle wie vom Fließband. Kalte Finger gibt es nur noch beim Gegner. Für den ersten Schnee mit Familie oder Freunden. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Sie formt Schneebälle wie vom Fließband. Kalte Finger gibt es nur noch beim Gegner. Für den ersten Schnee mit Familie oder Freunden. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -824,7 +921,18 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "GOODS+GADGETS Schneeballzange – Schneeball Former für 7 cm Bälle",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B0DDPRMBNJ"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0011",
@@ -832,7 +940,7 @@
     "gattung": "bad-spass",
     "suchbegriff": "Toilettenpapier Sudoku",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B00175TFU8",
     "kategorie": "haushalt",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -874,7 +982,7 @@
     "texte": {
       "web": {
         "h": "Sudoku-Toilettenpapier: ein Rätsel pro Blatt",
-        "p": "Auf jedem Blatt steht ein Rätsel. Für Sitzungen, die länger dauern. Ein kleines Wichtelgeschenk mit viel Gesprächsstoff. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Auf jedem Blatt steht ein Rätsel. Für Sitzungen, die länger dauern. Ein kleines Wichtelgeschenk mit viel Gesprächsstoff. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -906,7 +1014,19 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Toilettenpapier SUDOKU – Let's play … (Thumbs Up)",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B07TVF3BVJ",
+        "B0GCN6F21Q"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0012",
@@ -914,7 +1034,7 @@
     "gattung": "krach",
     "suchbegriff": "Gummihuhn quietschend",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0GSRVMZJM",
     "kategorie": "spielwaren",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -955,7 +1075,7 @@
     "texte": {
       "web": {
         "h": "Quietsche-Huhn: empört auf Druck",
-        "p": "Ein Gummihuhn, das beim Drücken empört schreit. Es hebt jede Stimmung, außer die des Sitznachbarn. Für Büros, Wichtelrunden und Familienabende mit Humor. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Ein Gummihuhn, das beim Drücken empört schreit. Es hebt jede Stimmung, außer die des Sitznachbarn. Für Büros, Wichtelrunden und Familienabende mit Humor. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -987,7 +1107,17 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "FANCY Quietsche Huhn 28 cm, Hundespielzeug Huhn",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)",
+      "hinweis": "UNSICHER: wird als Hundespielzeug verkauft. Der Text spricht von einem Scherzartikel."
+    }
   },
   {
     "id": "f-0013",
@@ -995,7 +1125,7 @@
     "gattung": "tee",
     "suchbegriff": "Teesieb Faultier",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0FY3WKDTB",
     "kategorie": "kueche",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -1037,7 +1167,7 @@
     "texte": {
       "web": {
         "h": "Teesieb als Faultier: Es hängt, der Tee zieht",
-        "p": "Das Faultier hängt am Tassenrand und lässt den Tee für sich arbeiten. Ein ruhiges kleines Geschenk für alle, die es gern gemütlich mögen. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Das Faultier hängt am Tassenrand und lässt den Tee für sich arbeiten. Ein ruhiges kleines Geschenk für alle, die es gern gemütlich mögen. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -1069,7 +1199,17 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Omabeta Faultier-Tee-Ei aus Silikon für lose Blätter, Lutscherform",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)",
+      "hinweis": "UNSICHER: Der Text sagt, das Faultier hängt am Tassenrand. Aus dem Treffer nicht erkennbar."
+    }
   },
   {
     "id": "f-0014",
@@ -1077,7 +1217,7 @@
     "gattung": "bad-licht",
     "suchbegriff": "Toilettenlicht Bewegungsmelder",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B09P59D7KY",
     "kategorie": "baumarkt",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -1120,7 +1260,7 @@
     "texte": {
       "web": {
         "h": "WC-Nachtlicht: bunte Schüssel bei Nacht",
-        "p": "Es beleuchtet die Schüssel in bunten Farben, sobald sich nachts jemand nähert. Ein Geschenk für Badezimmer mit Humor, etwa zum Einzug oder zum Wichteln. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Es beleuchtet die Schüssel in bunten Farben, sobald sich nachts jemand nähert. Ein Geschenk für Badezimmer mit Humor, etwa zum Einzug oder zum Wichteln. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -1152,7 +1292,19 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "HAC24 2er Set LED Toilettenlicht mit Bewegungsmelder WC Nachtlicht",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B0FHB1YNPZ",
+        "B0DFCCSKJ4"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0015",
@@ -1160,7 +1312,7 @@
     "gattung": "finger-gag",
     "suchbegriff": "Fingerhände Fingerpuppen",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0H6WR463L",
     "kategorie": "spielwaren",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -1201,7 +1353,7 @@
     "texte": {
       "web": {
         "h": "Mini-Fingerhände: Hände für deine Finger",
-        "p": "Winzige Hände zum Aufstecken auf die Finger. Sinnlos und sofort im Einsatz. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Winzige Hände zum Aufstecken auf die Finger. Sinnlos und sofort im Einsatz. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -1233,7 +1385,16 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "WENAUANG Mini Hände Fingerpuppen, 12 Stück",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0016",
@@ -1241,7 +1402,7 @@
     "gattung": "nutzlos",
     "suchbegriff": "Useless Box",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B08H4ZHDSP",
     "kategorie": "spielwaren",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -1283,7 +1444,7 @@
     "texte": {
       "web": {
         "h": "Unnütze Maschine: Sie schaltet sich selbst aus",
-        "p": "Ein Kasten mit Schalter. Legt man ihn um, kommt ein Finger heraus und schaltet wieder aus. Mehr kann sie nicht – und genau das macht sie zum Klassiker fürs Schrottwichteln. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Ein Kasten mit Schalter. Legt man ihn um, kommt ein Finger heraus und schaltet wieder aus. Mehr kann sie nicht – und genau das macht sie zum Klassiker fürs Schrottwichteln. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -1315,7 +1476,18 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Maijia Useless Box … fertig zusammengebaut",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B08P4ZK54Y"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0017",
@@ -1323,7 +1495,7 @@
     "gattung": "gag-kleidung",
     "suchbegriff": "Pizza Socken Box",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0B6DNKK9L",
     "kategorie": "bekleidung",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -1366,7 +1538,7 @@
     "texte": {
       "web": {
         "h": "Pizza-Socken: verpackt wie zum Mitnehmen",
-        "p": "Socken, gefaltet und verpackt wie eine Pizza im Karton. Beim Öffnen wartet jeder auf den Duft – und bekommt Socken. Ein Geschenk für Pizza-Fans in der Wichtelrunde. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Socken, gefaltet und verpackt wie eine Pizza im Karton. Beim Öffnen wartet jeder auf den Duft – und bekommt Socken. Ein Geschenk für Pizza-Fans in der Wichtelrunde. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -1398,7 +1570,18 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Lustige Pizza Socken Box Herren Damen …",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B09LLMQWLW"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0018",
@@ -1406,7 +1589,7 @@
     "gattung": "entspannung",
     "suchbegriff": "Kopfmassage Spinne",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0BSTDDPGJ",
     "kategorie": "haushalt",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -1448,7 +1631,7 @@
     "texte": {
       "web": {
         "h": "Kopfmassage-Spinne: Drahtfinger für die Kopfhaut",
-        "p": "Drahtfinger, die über die Kopfhaut gleiten. Wer es einmal probiert, gibt sie nicht mehr her. Ein kleines Geschenk, das beim Wichteln sofort die Runde macht. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Drahtfinger, die über die Kopfhaut gleiten. Wer es einmal probiert, gibt sie nicht mehr her. Ein kleines Geschenk, das beim Wichteln sofort die Runde macht. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -1480,7 +1663,19 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "HELDSON Kopfmassage Spinne – Kopfmassagegerät Kopfkrauler",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B01B4LBA9I"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)",
+      "hinweis": "Ersatz ist ein Viererpack."
+    }
   },
   {
     "id": "f-0019",
@@ -1488,7 +1683,7 @@
     "gattung": "buero-helfer",
     "suchbegriff": "Tischstaubsauger Marienkäfer",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B06XFNCHWT",
     "kategorie": "haushalt",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -1530,7 +1725,7 @@
     "texte": {
       "web": {
         "h": "Tisch-Staubsauger als Marienkäfer: Krümel weg",
-        "p": "Ein Käfer, der Krümel vom Schreibtisch saugt. Nützlich und albern zugleich, also genau richtig fürs Wichteln im Büro. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Ein Käfer, der Krümel vom Schreibtisch saugt. Nützlich und albern zugleich, also genau richtig fürs Wichteln im Büro. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -1562,7 +1757,18 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Roter Marienkäfer Elektrischer Tisch Staubsauger Mini Staub Reiniger",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B0BRNDKMJH"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0020",
@@ -1570,7 +1776,7 @@
     "gattung": "kueche-werkzeug",
     "suchbegriff": "Bananenschneider",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0CRQGTS98",
     "kategorie": "kueche",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -1611,7 +1817,7 @@
     "texte": {
       "web": {
         "h": "Bananenschneider: gleiche Scheiben mit einem Druck",
-        "p": "Er schneidet eine Banane mit einem Druck in gleiche Scheiben. Ein Werkzeug für ein Problem, das niemand hatte. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Er schneidet eine Banane mit einem Druck in gleiche Scheiben. Ein Werkzeug für ein Problem, das niemand hatte. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -1643,7 +1849,17 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "BBTISG Bananenschneider, Holz Bananenschneider Slicer Manuelle …",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)",
+      "hinweis": "UNSICHER: Holz-Modell. Der Text meint den Schneider, der eine Banane mit einem Druck in Scheiben teilt."
+    }
   },
   {
     "id": "f-0021",
@@ -1651,7 +1867,7 @@
     "gattung": "orakel",
     "suchbegriff": "Entscheidungshilfe Kugel Büro",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0CXDV6FBF",
     "kategorie": "spielwaren",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -1693,7 +1909,7 @@
     "texte": {
       "web": {
         "h": "Entscheidungskugel fürs Büro: Frage, Stoß, Antwort",
-        "p": "Frage stellen, anstoßen, Antwort ablesen. Sie trifft Entscheidungen so gut wie manche Besprechung. Ein Wichtelgeschenk für Teams mit Humor. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Frage stellen, anstoßen, Antwort ablesen. Sie trifft Entscheidungen so gut wie manche Besprechung. Ein Wichtelgeschenk für Teams mit Humor. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -1725,7 +1941,16 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Tyatocepy 1 Stück Prophezeiung Schicksal Entscheidung Kugel Büro",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0022",
@@ -1733,7 +1958,7 @@
     "gattung": "waerme",
     "suchbegriff": "Wärmflasche Kuscheltier",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0FNR8SSTJ",
     "kategorie": "haushalt",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -1776,7 +2001,7 @@
     "texte": {
       "web": {
         "h": "Wärmflasche im Kuscheltier: warm und zum Festhalten",
-        "p": "Die Wärmflasche steckt im Bauch eines Stofftiers. Warm und zum Festhalten, für kalte Abende auf dem Sofa. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Die Wärmflasche steckt im Bauch eines Stofftiers. Warm und zum Festhalten, für kalte Abende auf dem Sofa. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -1808,7 +2033,18 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Wärmflasche mit Bezug Tier, Wärmflasche flauschig 1 L (Kuh)",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B0DGP6DP9D"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0023",
@@ -1816,7 +2052,7 @@
     "gattung": "gag-schuhe",
     "suchbegriff": "Einhorn Hausschuhe Erwachsene",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B07HHZGLN1",
     "kategorie": "schuhe",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -1858,7 +2094,7 @@
     "texte": {
       "web": {
         "h": "Einhorn-Hausschuhe für Erwachsene: Plüsch für Große",
-        "p": "Plüsch, Horn und Regenbogenmähne in Schuhgröße für Große. Für alle, die zu Hause gern ein bisschen Fabelwesen sind. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Plüsch, Horn und Regenbogenmähne in Schuhgröße für Große. Für alle, die zu Hause gern ein bisschen Fabelwesen sind. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -1890,7 +2126,19 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Nest Home Einhorn Hausschuhe Einhorn Slipper Plüsch … Erwachsene",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B0DQWPZL6M"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)",
+      "hinweis": "Schuhe: Größen wählt der Käufer auf der Seite."
+    }
   },
   {
     "id": "f-0024",
@@ -1898,7 +2146,7 @@
     "gattung": "kueche-geraet",
     "suchbegriff": "Popcorn Schüssel Mikrowelle Silikon",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0D8T4WV9Q",
     "kategorie": "kueche",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -1941,7 +2189,7 @@
     "texte": {
       "web": {
         "h": "Popcorn-Schüssel für die Mikrowelle, faltbar",
-        "p": "Mais hinein, Deckel drauf, in die Mikrowelle. Danach flach zusammenfalten und verstauen. Für Filmabende zu zweit oder mit der ganzen Familie. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Mais hinein, Deckel drauf, in die Mikrowelle. Danach flach zusammenfalten und verstauen. Für Filmabende zu zweit oder mit der ganzen Familie. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -1973,7 +2221,18 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Popcorn Mikrowelle, Faltbar Popcorn Maker, Silikon Popcorn Behälter",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B08PDL2CVV"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0025",
@@ -1981,7 +2240,7 @@
     "gattung": "buero-spiel",
     "suchbegriff": "Tisch Bowling Mini",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0DXF9PCX1",
     "kategorie": "spielwaren",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -2024,7 +2283,7 @@
     "texte": {
       "web": {
         "h": "Tisch-Bowling: eine Bahn zwischen Tastatur und Tasse",
-        "p": "Bahn, Kegel und Kugel im Kleinformat. Passt zwischen Tastatur und Kaffeetasse. Ein Wichtelgeschenk für die Mittagspause. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Bahn, Kegel und Kugel im Kleinformat. Passt zwischen Tastatur und Kaffeetasse. Ein Wichtelgeschenk für die Mittagspause. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -2056,7 +2315,16 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Bowling Spiel Set Mini Bowling Tisch Spiel Schreibtisch Dekoration Holz",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0026",
@@ -2064,7 +2332,7 @@
     "gattung": "haushalt-figur",
     "suchbegriff": "Türstopper Männchen",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B082WX9FZP",
     "kategorie": "haushalt",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -2107,7 +2375,7 @@
     "texte": {
       "web": {
         "h": "Türstopper: ein Männchen hält die Tür auf",
-        "p": "Eine kleine Figur stemmt sich mit aller Kraft gegen die Tür. Sie sieht aus, als bräuchte sie Hilfe, und sorgt bei jedem Besuch für einen zweiten Blick. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Eine kleine Figur stemmt sich mit aller Kraft gegen die Tür. Sie sieht aus, als bräuchte sie Hilfe, und sorgt bei jedem Besuch für einen zweiten Blick. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -2139,7 +2407,16 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Umbra Buddy Türstopper, rutschfest, flexibel, 1er-Pack, Dunkelgrau",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0027",
@@ -2147,7 +2424,7 @@
     "gattung": "kueche-form",
     "suchbegriff": "Eiswürfelform Gehirn",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0B87BFJ1M",
     "kategorie": "kueche",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -2189,7 +2466,7 @@
     "texte": {
       "web": {
         "h": "Eiswürfelform als Gehirn: kühl und irritierend",
-        "p": "Eiswürfel in Hirnform. Sie kühlen das Getränk und irritieren die Gäste. Ein Spaß für Partys und alle, die ihre Limo gern mit Gänsehaut servieren. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Eiswürfel in Hirnform. Sie kühlen das Getränk und irritieren die Gäste. Ein Spaß für Partys und alle, die ihre Limo gern mit Gänsehaut servieren. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -2221,7 +2498,18 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "2 Stück Gehirn-Eiswürfelform …",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B0BL7VRMRP"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0028",
@@ -2229,7 +2517,7 @@
     "gattung": "buero-helfer",
     "suchbegriff": "Handyhalter Liegestuhl",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0CBHNTVPT",
     "kategorie": "elektronik",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -2271,7 +2559,7 @@
     "texte": {
       "web": {
         "h": "Handyhalter als Liegestuhl: Urlaub fürs Telefon",
-        "p": "Das Telefon liegt im winzigen Strandstuhl. Urlaub für das Gerät, wenn schon nicht für den Besitzer. Ein kleines Wichtelgeschenk für den Schreibtisch. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Das Telefon liegt im winzigen Strandstuhl. Urlaub für das Gerät, wenn schon nicht für den Besitzer. Ein kleines Wichtelgeschenk für den Schreibtisch. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -2303,7 +2591,16 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Handyhalter Strandstuhl Holz Canvas Schwarz Stabil … Liegestuhl Design",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0029",
@@ -2311,7 +2608,7 @@
     "gattung": "tasse",
     "suchbegriff": "Tasse mit Keksfach",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B0BBFB45DT",
     "kategorie": "kueche",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -2354,7 +2651,7 @@
     "texte": {
       "web": {
         "h": "Tasse mit Keksfach: Kaffee oben, Vorrat unten",
-        "p": "Unten im Becher ist ein Fach für Kekse. Kaffee oben, Vorrat unten. Für alle, die zur Kaffeepause nicht extra aufstehen wollen. Über den Knopf siehst du die Auswahl bei Amazon."
+        "p": "Unten im Becher ist ein Fach für Kekse. Kaffee oben, Vorrat unten. Für alle, die zur Kaffeepause nicht extra aufstehen wollen. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -2386,7 +2683,16 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "Kaffeetasse 400 ml Kaffeebecher Katze mit Keksfach",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)"
+    }
   },
   {
     "id": "f-0030",
@@ -2394,7 +2700,7 @@
     "gattung": "weihnachten-kleidung",
     "suchbegriff": "Weihnachtspullover LED",
     "haendler": "amazon",
-    "asin": null,
+    "asin": "B08NGRSLNM",
     "kategorie": "bekleidung",
     "preisklasse": "bis_40",
     "anlaesse": [
@@ -2437,7 +2743,7 @@
     "texte": {
       "web": {
         "h": "Weihnachtspullover mit Lichtern: hässlich mit Absicht",
-        "p": "Strick mit eingebauten Lämpchen. Je hässlicher, desto besser für die Weihnachtsfeier – und dieser leuchtet sogar dabei. Über den Knopf geht es zur Auswahl bei Amazon."
+        "p": "Strick mit eingebauten Lämpchen. Je hässlicher, desto besser für die Weihnachtsfeier – und dieser leuchtet sogar dabei. Der Knopf führt direkt zum Produkt bei Amazon."
       },
       "kanal": [
         {
@@ -2469,6 +2775,18 @@
     },
     "freigabe": "Mo 2026-11-25 12:3x Claude-Chat (alle 30)",
     "angelegt": "2026-11-19",
-    "geaendert": "2026-11-25"
+    "geaendert": "2026-11-25",
+    "produkt": {
+      "titel_gesehen": "JOYIN Damen-Weihnachtspullover mit LED-Beleuchtung, Lichterkette",
+      "gefunden_am": "2026-11-25",
+      "gefunden_ueber": "websuche",
+      "ersatz": [
+        "B085SG3VKV"
+      ],
+      "geprueft_am": "2026-11-25",
+      "geprueft_von": "Mo",
+      "pruef_beleg": "Mo 25.11.2026 16:25 im Hauptchat „Amazon-Engine“: „Alle passen“ (Antwort auf die Prüfliste mit 30 Links, weitergereicht von Claude Fable)",
+      "hinweis": "UNSICHER: Damenmodell. Der Text richtet sich an alle."
+    }
   }
 ]

@@ -12,11 +12,13 @@ const config = lesenJson(join(WURZEL, 'config.json'));
 const MONTAG = '2026-11-23'; // Montag; Sonntag darauf ist der 29.11.2026
 
 let nr = 0;
+const GEPRUEFT = { geprueft_am: '2026-11-01', geprueft_von: 'Mo', pruef_beleg: 'Test' };
 function fund(gattung, kategorie, grund, aenderung = {}) {
   nr++;
   return {
     id: `f-${String(nr).padStart(4, '0')}`, titel: `Fund ${nr}`, gattung, kategorie, status: 'freigegeben',
     score: { kurios: 0, nachfrage: 0, kauf: 0, grund }, texte: { web: { h: '', p: '' }, kanal: [], social: [] },
+    asin: `B0TEST${String(nr).padStart(4, '0')}`, produkt: GEPRUEFT, // AE-13: Test-Funde gelten als geprüft
     ...aenderung,
   };
 }
@@ -126,23 +128,24 @@ test('Ton und Format: Fassung, deren Paar an den zwei Tagen davor nicht vorkam',
 test('Sperrfrist Fund 180 Tage; Notfall senkt auf 60 Tage und nimmt die am längsten unbenutzte Fassung', () => {
   const f = fund('gn', 'kn', 60, { texte: { web: { h: '', p: '' }, social: [], kanal: [fassung('trocken', 'urteil'), fassung('absurd', 'frage')] } });
   const kurz = [{ datum: plusTage(MONTAG, -10), art: 'fund', fund: f.id, gattung: 'gn', kategorie: 'kn', ton: 'trocken', format: 'urteil', fassung: 0 }];
-  assert.equal(planen({ funde: [f], verlauf: kurz, config: { ...config, planung_tage_voraus: 1 }, heute: MONTAG }).plan[MONTAG], undefined);
+  assert.deepEqual(planen({ funde: [f], verlauf: kurz, config: { ...config, planung_tage_voraus: 1 }, heute: MONTAG }).plan[MONTAG], { art: 'pause' }); // AE-13: statt leer
   const lang = [{ datum: plusTage(MONTAG, -100), art: 'fund', fund: f.id, gattung: 'gn', kategorie: 'kn', ton: 'trocken', format: 'urteil', fassung: 0 }];
   assert.deepEqual(planen({ funde: [f], verlauf: lang, config: { ...config, planung_tage_voraus: 1 }, heute: MONTAG }).plan[MONTAG],
     { art: 'fund', fund: f.id, ton: 'absurd', format: 'frage', fassung: 1 });
 });
 
-test('nur freigegebene Funde; ohne Kandidaten bleibt der Tag leer; vorrat_tage zählt ungenutzte Freigegebene', () => {
+test('nur freigegebene Funde; ohne Kandidaten wird der Tag zur Pause; vorrat_tage zählt ungenutzte Freigegebene', () => {
   const funde = [fund('v1', 'kv1', 70, { status: 'vorschlag' }), fund('v2', 'kv2', 50), fund('v3', 'kv3', 50, { status: 'verworfen' })];
   const { plan, vorrat } = planen({ funde, config: { ...config, planung_tage_voraus: 3 }, heute: MONTAG });
-  assert.deepEqual(Object.values(plan).map((e) => e.fund), [funde[1].id]);
+  assert.deepEqual(Object.values(plan).filter((e) => e.art === 'fund').map((e) => e.fund), [funde[1].id]);
+  assert.equal(Object.values(plan).filter((e) => e.art === 'pause').length, 2);
   assert.equal(vorrat, 0);
   assert.equal(planen({ funde, config, heute: MONTAG, plan: {} }).vorrat, 0);
   assert.equal(planen({ funde: [fund('v4', 'kv4', 50), fund('v5', 'kv5', 50)], config: { ...config, planung_tage_voraus: 1 }, heute: MONTAG }).vorrat, 1);
 });
 
 test('Probelauf: Startliste komplett freigegeben ergibt 14 Plan-Tage nach allen Regeln', () => {
-  const funde = bewerteAlle(lesenJson(join(WURZEL, 'daten', 'funde.json')), config, '2026-11-19').map((f) => ({ ...f, status: 'freigegeben' }));
+  const funde = bewerteAlle(lesenJson(join(WURZEL, 'daten', 'funde.json')), config, '2026-11-19').map((f) => ({ ...f, status: 'freigegeben', produkt: { ...f.produkt, ...GEPRUEFT } }));
   for (const heute of ['2026-11-19', MONTAG, '2026-11-22']) {
     const { plan, vorrat } = planen({ funde, config, heute });
     assert.equal(Object.keys(plan).length, 14, heute);

@@ -41,7 +41,7 @@ test('Pflichtfeld fehlt', () => {
 test('Werte außerhalb der erlaubten Listen', () => {
   const fehler = pruefeFund(fund({ status: 'live', preisklasse: 'teuer', haendler: 'ebay', kategorie: 'tabakwaren' }), config);
   for (const teil of ['status', 'preisklasse', 'haendler', 'kategorie']) assert.ok(fehler.some((x) => x.startsWith(teil)), teil);
-  assert.deepEqual(pruefeFund(fund({ status: 'freigegeben', texte: { web: { h: 'Kekse im Keller', p: 'Ein Fach unten im Becher.' }, kanal: [{ format: 'urteil', ton: 'trocken', text: 'Kaffee oben, Kekse unten.' }], social: [] } }), config), []);
+  assert.deepEqual(pruefeFund(fund({ status: 'freigegeben', asin: 'B0TEST0001', texte: { web: { h: 'Kekse im Keller', p: 'Ein Fach unten im Becher.' }, kanal: [{ format: 'urteil', ton: 'trocken', text: 'Kaffee oben, Kekse unten.' }], social: [] } }), config), []);
 });
 
 test('Titel ohne Amazon', () => {
