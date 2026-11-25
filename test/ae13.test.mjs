@@ -13,6 +13,8 @@ import { pruefeAusgaben } from '../werkzeug/pruefen.mjs';
 const config = lesenJson(join(WURZEL, 'config.json'));
 const HEUTE = '2026-11-25';
 const geprueft = (am) => ({ geprueft_am: am, geprueft_von: 'Mo', pruef_beleg: 'Test' });
+// Testdaten: echte Funde ohne Sichtprüfung (seit 25.11.2026 sind die echten Funde von Mo geprüft)
+const ungeprueft = () => lesenJson(join(WURZEL, 'daten', 'funde.json')).map((f) => ({ ...f, produkt: { ...f.produkt, geprueft_am: null, geprueft_von: null, pruef_beleg: null } }));
 
 test('produktLink: Produkt-Muster mit Kennung; ungültige asin wirft', () => {
   assert.equal(produktLink('B0DGPL4SGB', 'schmetterlingsfutter-21', config), 'https://www.amazon.de/dp/B0DGPL4SGB/ref=nosim?tag=schmetterlingsfutter-21');
@@ -77,7 +79,7 @@ test('bauen: keine Fund-Ausgabe enthält amazon.de/s?; ungeprüfter veröffentli
   const o = mkdtempSync(join(tmpdir(), 'ae13-'));
   try {
     const daten = join(o, 'daten'), docs = join(o, 'docs');
-    const funde = lesenJson(join(WURZEL, 'daten', 'funde.json')).map((f) => ({ ...f, produkt: { ...f.produkt, ...(f.id === 'f-0002' ? geprueft('2026-11-20') : {}) } }));
+    const funde = ungeprueft().map((f) => ({ ...f, produkt: { ...f.produkt, ...(f.id === 'f-0002' ? geprueft('2026-11-20') : {}) } }));
     schreibenJson(join(daten, 'funde.json'), funde);
     schreibenJson(join(daten, 'plan.json'), { [HEUTE]: { art: 'fund', fund: 'f-0002', ton: null, format: null, fassung: 0 }, '2026-11-26': { art: 'pause' } });
     writeFileSync(join(daten, 'verlauf.jsonl'), JSON.stringify({ datum: '2026-11-24', art: 'fund', fund: 'f-0001', gattung: 'x', kategorie: 'y', ton: null, format: null, fassung: 0 }) + '\n');
@@ -108,7 +110,7 @@ test('pruefeAusgaben: meldet Suchlinks und ungeprüfte Funde im Plan', () => {
   const o = mkdtempSync(join(tmpdir(), 'ae13p-'));
   try {
     const daten = join(o, 'daten'), docs = join(o, 'docs');
-    const funde = lesenJson(join(WURZEL, 'daten', 'funde.json'));
+    const funde = ungeprueft();
     schreibenJson(join(daten, 'plan.json'), { '2026-11-27': { art: 'fund', fund: 'f-0003' } });
     writeFileSync(join(daten, 'verlauf.jsonl'), '');
     schreibenJson(join(docs, 'feed', 'funde.json'), [{ id: 'f-0001', link: 'https://www.amazon.de/s?k=X&tag=schmetterlingsfutter-21' }]);
