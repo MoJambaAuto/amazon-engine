@@ -112,7 +112,7 @@ test('ohne freigegebene Funde: Warnung „Heute kein Fund geplant“ und leerer 
     assert.deepEqual(lesenJson(join(t.docs, 'feed', 'funde.json')), []);
     assert.equal(readFileSync(join(t.docs, 'robots.txt'), 'utf8').includes('Disallow: /heute/'), true);
     assert.ok(existsSync(join(t.docs, '.nojekyll')));
-    assert.ok(readFileSync(join(t.docs, 'heute', 'index.html'), 'utf8').includes('Heute kein neuer Fund. Alle Funde: ' + config.funde_seite));
+    assert.ok(readFileSync(join(t.docs, 'heute', 'index.html'), 'utf8').includes('Heute kein neuer Fund. Alle bisherigen findest du unter schmetterlingsfutter.de/funde.'));
   } finally { t.weg(); }
 });
 

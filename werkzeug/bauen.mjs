@@ -139,7 +139,7 @@ function heuteSeite({ datum, tage, plan }, config) {
     config.kanal_url
       ? `<button class="knopf" type="button" id="kanalknopf" data-kopiere="kanal" data-dann="${esc(config.kanal_url)}"${aus(t)}>Kopieren und Kanal öffnen</button>`
       : `<button class="knopf" type="button" id="kanalknopf" data-kopiere="kanal"${aus(t)}>Text kopieren</button>`,
-    `<p class="box leer" id="leer"${aus(!t)}>Heute kein neuer Fund. Alle Funde: ${esc(config.funde_seite)}</p>`,
+    `<p class="box leer" id="leer"${aus(!t)}>Heute kein neuer Fund. Alle bisherigen findest du unter schmetterlingsfutter.de/funde.</p>`,
     `<h2 id="socialkopf"${aus(t && t.social)}>Für Instagram und Facebook</h2>`,
     `<pre class="box" id="social"${aus(t && t.social)}>${esc(t && t.social ? t.social : '')}</pre>`,
     `<button class="knopf zwei" type="button" id="socialknopf" data-kopiere="social"${aus(t && t.social)}>Text kopieren</button>`,

@@ -99,7 +99,7 @@ test('bauen: keine Fund-Ausgabe enthält amazon.de/s?; ungeprüfter veröffentli
     schreibenJson(join(daten, 'plan.json'), { '2026-11-26': { art: 'pause' } });
     bauen({ daten, docs, config, heute: '2026-11-26', jetzt: new Date('2026-11-26T04:10:00Z') });
     assert.equal(lesenJson(join(docs, 'feed', 'heute.json')).art, 'pause');
-    assert.ok(readFileSync(join(docs, 'heute', 'index.html'), 'utf8').includes('Heute kein neuer Fund. Alle Funde: ' + config.funde_seite));
+    assert.ok(readFileSync(join(docs, 'heute', 'index.html'), 'utf8').includes('Heute kein neuer Fund. Alle bisherigen findest du unter schmetterlingsfutter.de/funde.'));
     assert.ok(lesenJson(join(docs, 'status.json')).warnungen.includes('Heute Pause: kein Fund mit gültiger Sichtprüfung'));
   } finally { rmSync(o, { recursive: true, force: true }); }
 });
