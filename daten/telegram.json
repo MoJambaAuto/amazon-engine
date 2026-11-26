@@ -4,6 +4,11 @@
       "datum": "2026-11-25",
       "message_id": 2,
       "zeit": "2026-11-25T17:17:47.124Z"
+    },
+    {
+      "datum": "2026-11-26",
+      "message_id": 3,
+      "zeit": "2026-11-26T09:58:11.172Z"
     }
   ],
   "letzter_fehler": null
