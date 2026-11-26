@@ -1,27 +1,27 @@
 {
-  "erzeugt": "2026-11-25T21:05:39.653Z",
-  "datum": "2026-11-25",
+  "erzeugt": "2026-11-26T06:35:09.597Z",
+  "datum": "2026-11-26",
   "anlaesse": [
     "wichteln",
     "herbst"
   ],
   "frage": {
-    "id": "fr-0092",
-    "t": "Was wünschst du dir heimlich zum Wichteln?"
+    "id": "fr-0018",
+    "t": "Worauf bist du in letzter Zeit stolz?"
   },
   "piek": {
-    "id": "pk-0032",
-    "c": "unaufgefordert",
-    "t": "Reparier heute die eine Kleinigkeit, die schon lange nervt."
+    "id": "pk-0053",
+    "c": "neu",
+    "t": "Probiert heute ein Getränk oder Gericht, das keiner von euch kennt."
   },
   "wissen": {
-    "id": "wi-0008",
-    "t": "Das Taubenschwänzchen sieht aus wie ein Kolibri, ist aber ein Schmetterling aus der Familie der Schwärmer."
+    "id": "wi-0035",
+    "t": "In den 70er- und 80er-Jahren war der Schwalbenschwanz selten. Heute gilt er nicht mehr als gefährdet – vor allem, weil weniger Gift in Gärten landet."
   },
   "quiz": {
-    "id": "qz-0021",
-    "w": 0,
-    "s": "Landkärtchen-Raupen leben einzeln.",
-    "x": "Sie leben in Gruppen an Brennnesseln."
+    "id": "qz-0005",
+    "w": 1,
+    "s": "Der Admiral hat seinen Namen von einer Uniform.",
+    "x": "Seine Flügelfärbung erinnert an eine Admirals-Uniform."
   }
 }

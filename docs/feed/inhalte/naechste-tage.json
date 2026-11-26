@@ -1,32 +1,6 @@
 {
-  "erzeugt": "2026-11-25T21:05:39.653Z",
+  "erzeugt": "2026-11-26T06:35:09.597Z",
   "tage": [
-    {
-      "datum": "2026-11-25",
-      "anlaesse": [
-        "wichteln",
-        "herbst"
-      ],
-      "frage": {
-        "id": "fr-0092",
-        "t": "Was wünschst du dir heimlich zum Wichteln?"
-      },
-      "piek": {
-        "id": "pk-0032",
-        "c": "unaufgefordert",
-        "t": "Reparier heute die eine Kleinigkeit, die schon lange nervt."
-      },
-      "wissen": {
-        "id": "wi-0008",
-        "t": "Das Taubenschwänzchen sieht aus wie ein Kolibri, ist aber ein Schmetterling aus der Familie der Schwärmer."
-      },
-      "quiz": {
-        "id": "qz-0021",
-        "w": 0,
-        "s": "Landkärtchen-Raupen leben einzeln.",
-        "x": "Sie leben in Gruppen an Brennnesseln."
-      }
-    },
     {
       "datum": "2026-11-26",
       "anlaesse": [
@@ -373,6 +347,33 @@
         "w": 0,
         "s": "Ein Taubenschwänzchen schafft in fünf Minuten höchstens zehn Blüten.",
         "x": "Es schafft mehr als hundert."
+      }
+    },
+    {
+      "datum": "2026-12-09",
+      "anlaesse": [
+        "advent",
+        "wichteln",
+        "winter"
+      ],
+      "frage": {
+        "id": "fr-0096",
+        "t": "Welches Weihnachtslied kannst du nicht mehr hören?"
+      },
+      "piek": {
+        "id": "pk-0064",
+        "c": "neu",
+        "t": "Backt heute zusammen eine Sorte Plätzchen. Wer verliert beim Abschmecken, spült."
+      },
+      "wissen": {
+        "id": "wi-0039",
+        "t": "Der Ameisenbläuling schlüpft mitten im Ameisennest – und muss schnell raus, denn seine Tarnung ist dann weg."
+      },
+      "quiz": {
+        "id": "qz-0054",
+        "w": 1,
+        "s": "Die Raupe des Landkärtchens hat zwei Dornen am Kopf.",
+        "x": "Als einzige Raupe an Brennnesseln."
       }
     }
   ]
