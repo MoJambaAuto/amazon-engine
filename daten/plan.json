@@ -95,5 +95,12 @@
     "ton": "trocken",
     "format": "mini-geschichte",
     "fassung": 0
+  },
+  "2026-12-10": {
+    "art": "fund",
+    "fund": "f-0029",
+    "ton": "begeistert",
+    "format": "steckbrief",
+    "fassung": 0
   }
 }

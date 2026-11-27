@@ -1,32 +1,6 @@
 {
-  "erzeugt": "2026-11-26T13:48:27.337Z",
+  "erzeugt": "2026-11-27T06:35:56.235Z",
   "tage": [
-    {
-      "datum": "2026-11-26",
-      "anlaesse": [
-        "wichteln",
-        "herbst"
-      ],
-      "frage": {
-        "id": "fr-0018",
-        "t": "Worauf bist du in letzter Zeit stolz?"
-      },
-      "piek": {
-        "id": "pk-0053",
-        "c": "neu",
-        "t": "Probiert heute ein Getränk oder Gericht, das keiner von euch kennt."
-      },
-      "wissen": {
-        "id": "wi-0035",
-        "t": "In den 70er- und 80er-Jahren war der Schwalbenschwanz selten. Heute gilt er nicht mehr als gefährdet – vor allem, weil weniger Gift in Gärten landet."
-      },
-      "quiz": {
-        "id": "qz-0005",
-        "w": 1,
-        "s": "Der Admiral hat seinen Namen von einer Uniform.",
-        "x": "Seine Flügelfärbung erinnert an eine Admirals-Uniform."
-      }
-    },
     {
       "datum": "2026-11-27",
       "anlaesse": [
@@ -374,6 +348,33 @@
         "w": 1,
         "s": "Die Raupe des Landkärtchens hat zwei Dornen am Kopf.",
         "x": "Als einzige Raupe an Brennnesseln."
+      }
+    },
+    {
+      "datum": "2026-12-10",
+      "anlaesse": [
+        "advent",
+        "wichteln",
+        "winter"
+      ],
+      "frage": {
+        "id": "fr-0066",
+        "t": "Worüber haben wir schon lange nicht mehr gesprochen?"
+      },
+      "piek": {
+        "id": "pk-0016",
+        "c": "aufmerksamkeit",
+        "t": "Frag {r} heute: „Was kann ich diese Woche für dich tun?“"
+      },
+      "wissen": {
+        "id": "wi-0003",
+        "t": "Tagfalter erkennt man an ihren keulenförmigen Fühlern. Nachtfalter haben faden- oder federförmige Fühler."
+      },
+      "quiz": {
+        "id": "qz-0026",
+        "w": 1,
+        "s": "Das Tagpfauenauge überwintert als fertiger Falter.",
+        "x": "Es sucht sich Höhlen, Keller, Garagen oder Dachböden."
       }
     }
   ]

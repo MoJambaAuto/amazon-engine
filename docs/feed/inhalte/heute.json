@@ -1,27 +1,27 @@
 {
-  "erzeugt": "2026-11-26T13:48:27.337Z",
-  "datum": "2026-11-26",
+  "erzeugt": "2026-11-27T06:35:56.235Z",
+  "datum": "2026-11-27",
   "anlaesse": [
     "wichteln",
     "herbst"
   ],
   "frage": {
-    "id": "fr-0018",
-    "t": "Worauf bist du in letzter Zeit stolz?"
+    "id": "fr-0091",
+    "t": "Welches Wichtelgeschenk war das schrägste, das du je bekommen hast?"
   },
   "piek": {
-    "id": "pk-0053",
-    "c": "neu",
-    "t": "Probiert heute ein Getränk oder Gericht, das keiner von euch kennt."
+    "id": "pk-0023",
+    "c": "unaufgefordert",
+    "t": "Räum heute die Spülmaschine ein, auch wenn du dran gewesen wärst, zu sitzen."
   },
   "wissen": {
-    "id": "wi-0035",
-    "t": "In den 70er- und 80er-Jahren war der Schwalbenschwanz selten. Heute gilt er nicht mehr als gefährdet – vor allem, weil weniger Gift in Gärten landet."
+    "id": "wi-0023",
+    "t": "Sommerflieder lockt viele Falter an, stammt aber aus China und breitet sich außerhalb von Gärten gern zu stark aus."
   },
   "quiz": {
-    "id": "qz-0005",
-    "w": 1,
-    "s": "Der Admiral hat seinen Namen von einer Uniform.",
-    "x": "Seine Flügelfärbung erinnert an eine Admirals-Uniform."
+    "id": "qz-0004",
+    "w": 0,
+    "s": "Der Admiral steht auf sechs Beinen.",
+    "x": "Er hat sechs, steht aber nur auf vier. Die verkürzten Vorderbeine sind „Putzpfoten“."
   }
 }

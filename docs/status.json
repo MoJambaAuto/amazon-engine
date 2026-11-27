@@ -1,10 +1,10 @@
 {
-  "letzter_lauf": "2026-11-26T13:48:27.337Z",
-  "datum": "2026-11-26",
+  "letzter_lauf": "2026-11-27T06:35:56.235Z",
+  "datum": "2026-11-27",
   "heute_art": "fund",
-  "heute_fund": "f-0004",
-  "vorrat_tage": 17,
-  "vorrat_geprueft_tage": 17,
+  "heute_fund": "f-0007",
+  "vorrat_tage": 16,
+  "vorrat_geprueft_tage": 16,
   "warten_auf_sichtpruefung": 0,
   "geplante_tage": 14,
   "warnungen": []
