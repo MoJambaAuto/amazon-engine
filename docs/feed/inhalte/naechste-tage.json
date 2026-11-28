@@ -1,32 +1,6 @@
 {
-  "erzeugt": "2026-11-27T13:45:00.096Z",
+  "erzeugt": "2026-11-28T06:36:37.220Z",
   "tage": [
-    {
-      "datum": "2026-11-27",
-      "anlaesse": [
-        "wichteln",
-        "herbst"
-      ],
-      "frage": {
-        "id": "fr-0091",
-        "t": "Welches Wichtelgeschenk war das schrägste, das du je bekommen hast?"
-      },
-      "piek": {
-        "id": "pk-0023",
-        "c": "unaufgefordert",
-        "t": "Räum heute die Spülmaschine ein, auch wenn du dran gewesen wärst, zu sitzen."
-      },
-      "wissen": {
-        "id": "wi-0023",
-        "t": "Sommerflieder lockt viele Falter an, stammt aber aus China und breitet sich außerhalb von Gärten gern zu stark aus."
-      },
-      "quiz": {
-        "id": "qz-0004",
-        "w": 0,
-        "s": "Der Admiral steht auf sechs Beinen.",
-        "x": "Er hat sechs, steht aber nur auf vier. Die verkürzten Vorderbeine sind „Putzpfoten“."
-      }
-    },
     {
       "datum": "2026-11-28",
       "anlaesse": [
@@ -375,6 +349,33 @@
         "w": 1,
         "s": "Das Tagpfauenauge überwintert als fertiger Falter.",
         "x": "Es sucht sich Höhlen, Keller, Garagen oder Dachböden."
+      }
+    },
+    {
+      "datum": "2026-12-11",
+      "anlaesse": [
+        "advent",
+        "wichteln",
+        "winter"
+      ],
+      "frage": {
+        "id": "fr-0032",
+        "t": "Was schätzt du an deiner Familie am meisten?"
+      },
+      "piek": {
+        "id": "pk-0069",
+        "c": "unaufgefordert",
+        "t": "Nimm {r} heute eine Weihnachtsbesorgung komplett ab."
+      },
+      "wissen": {
+        "id": "wi-0032",
+        "t": "Der Schwalbenschwanz hat bis zu acht Zentimeter Spannweite und zählt zu den größten Schmetterlingen Mitteleuropas."
+      },
+      "quiz": {
+        "id": "qz-0013",
+        "w": 1,
+        "s": "Taubenschwänzchen wurden schon auf Alpengletschern beobachtet.",
+        "x": "In bis zu 2.500 Metern Höhe."
       }
     }
   ]

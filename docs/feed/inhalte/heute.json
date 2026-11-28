@@ -1,27 +1,27 @@
 {
-  "erzeugt": "2026-11-27T13:45:00.096Z",
-  "datum": "2026-11-27",
+  "erzeugt": "2026-11-28T06:36:37.220Z",
+  "datum": "2026-11-28",
   "anlaesse": [
     "wichteln",
     "herbst"
   ],
   "frage": {
-    "id": "fr-0091",
-    "t": "Welches Wichtelgeschenk war das schrägste, das du je bekommen hast?"
+    "id": "fr-0061",
+    "t": "Wenn du ein Tier wärst: welches?"
   },
   "piek": {
-    "id": "pk-0023",
+    "id": "pk-0021",
     "c": "unaufgefordert",
-    "t": "Räum heute die Spülmaschine ein, auch wenn du dran gewesen wärst, zu sitzen."
+    "t": "Bring heute den Müll raus, bevor jemand fragt."
   },
   "wissen": {
-    "id": "wi-0023",
-    "t": "Sommerflieder lockt viele Falter an, stammt aber aus China und breitet sich außerhalb von Gärten gern zu stark aus."
+    "id": "wi-0038",
+    "t": "Die Raupen des Ameisenbläulings tarnen sich mit einem Duft und bestechen Ameisen mit Honigdrüsen."
   },
   "quiz": {
-    "id": "qz-0004",
+    "id": "qz-0008",
     "w": 0,
-    "s": "Der Admiral steht auf sechs Beinen.",
-    "x": "Er hat sechs, steht aber nur auf vier. Die verkürzten Vorderbeine sind „Putzpfoten“."
+    "s": "Beim Landkärtchen sehen Männchen und Weibchen völlig verschieden aus.",
+    "x": "Sie sehen gleich aus. Verschieden sind die Frühjahrs- und die Sommergeneration."
   }
 }
