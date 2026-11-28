@@ -25,14 +25,14 @@ export function kanalText(fund, fassung, config) {
   const k = fund.texte.kanal[Number.isInteger(fassung) ? fassung : 0];
   if (!k || !k.text) throw new Error(`${fund.id}: Kanal-Fassung ${fassung} fehlt`);
   const link = produktLink(fund.asin, config.kennungen.kanal, config); // AE-13: direkt zum Produkt
-  return { text: [p.anfang_kanal, k.text, p.link_zeile.replace('{link}', link), p.alle_funde, p.ende].join('\n\n'), links: [link] };
+  return { text: [p.anfang_kanal, k.text, p.link_zeile.replace('{link}', link), p.teilen, p.alle_funde, p.quer_whatsapp, p.ende].filter(Boolean).join('\n\n'), links: [link] };
 }
 
 export function rueckblickText(funde, config) {
   const p = config.pflichttexte;
   const links = funde.map((f) => produktLink(f.asin, config.kennungen.kanal, config));
   const zeilen = funde.map((f, i) => `${i + 1}. ${f.titel} – ${links[i]}`);
-  return { text: [p.anfang_rueckblick, ['Die drei Funde der Woche:', ...zeilen].join('\n'), p.alle_funde, p.ende].join('\n\n'), links };
+  return { text: [p.anfang_rueckblick, ['Die drei Funde der Woche:', ...zeilen].join('\n'), p.teilen, p.alle_funde, p.quer_whatsapp, p.ende].filter(Boolean).join('\n\n'), links };
 }
 
 export function socialText(fund, config) {

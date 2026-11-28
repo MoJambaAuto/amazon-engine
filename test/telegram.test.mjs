@@ -88,3 +88,11 @@ test('telegramText: Rückblick-Links zeigen auf die Fund-Seiten, unbekannte auf 
   assert.ok(t.includes('1. A – https://schmetterlingsfutter.de/funde/f-0001-a/') && t.includes('2. B – https://schmetterlingsfutter.de/funde/'));
   assert.ok(!t.includes('amazon.de/dp'));
 });
+
+test('telegram: Querverweis „Auch bei Telegram“ wird im Telegram-Post zu „Auch bei WhatsApp“ (Mo 28.11.2026)', async () => {
+  const { telegramText } = await import('../werkzeug/telegram.mjs');
+  const p = { quer_whatsapp: 'Auch bei Telegram: t.me/papillionsfund', quer_telegram: 'Auch bei WhatsApp: https://whatsapp.com/channel/x' };
+  const t = telegramText('A\n\nAuch bei Telegram: t.me/papillionsfund\n\nB', () => 'https://schmetterlingsfutter.de/funde/', p);
+  assert.ok(t.includes('Auch bei WhatsApp: https://whatsapp.com/channel/x') && !t.includes('t.me/papillionsfund'));
+  assert.equal(telegramText('A', () => '', {}), 'A');
+});

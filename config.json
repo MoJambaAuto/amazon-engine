@@ -6,6 +6,7 @@
   "funde_seite": "https://schmetterlingsfutter.de/funde/",
   "kanal_url": "https://whatsapp.com/channel/0029Vb9gGpbId7nS5nRT380l",
   "telegram_kanal": "-1005765942483",
+  "telegram_url": "https://t.me/papillionsfund",
   "kennung_aktiv": true,
   "kennungen": {
     "web": "schmetterlingsfutter-21",
@@ -22,7 +23,10 @@
     "anfang_social": "Anzeige",
     "link_zeile": "👉 Bei Amazon ansehen: {link}",
     "alle_funde": "Alle Funde: schmetterlingsfutter.de/funde",
-    "social_verweis": "Den Link gibt es im WhatsApp-Kanal „Papillons Fund des Tages“ (Link im Profil).",
+    "teilen": "💌 Gefällt dir? Schick den Fund an deinen Schatz.",
+    "quer_whatsapp": "Auch bei Telegram: t.me/papillionsfund",
+    "quer_telegram": "Auch bei WhatsApp: https://whatsapp.com/channel/0029Vb9gGpbId7nS5nRT380l",
+    "social_verweis": "Den Link gibt es im WhatsApp- und Telegram-Kanal „Papillons Fund des Tages“ (Link im Profil).",
     "ende": "Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.",
     "web_hinweis": "* Partnerlink: Kaufst du darüber ein, bekommen wir eine kleine Provision. Am Preis ändert sich für dich nichts. Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Die Funde wählen wir selbst aus."
   },

@@ -12,8 +12,11 @@ import { WURZEL, lesenJson, schreibenJson } from './lib.mjs';
 import { protokoll } from './protokoll.mjs';
 
 // Kanaltext für Telegram: jeder Amazon-Produkt-Link wird zur Fund-Seite; „Bei Amazon ansehen“ → „Zum Fund“.
-export function telegramText(kanalText, fundSeite) {
-  return String(kanalText)
+// Mo 28.11.2026 (Querverlinkung): der Hinweis „Auch bei Telegram“ wird im Telegram-Post zu „Auch bei WhatsApp“.
+export function telegramText(kanalText, fundSeite, pflicht = {}) {
+  let t = String(kanalText);
+  if (pflicht.quer_whatsapp && pflicht.quer_telegram) t = t.split(pflicht.quer_whatsapp).join(pflicht.quer_telegram);
+  return t
     .replace(/https:\/\/www\.amazon\.de\/dp\/([A-Z0-9]{10})\/ref=nosim\?tag=[A-Za-z0-9-]+/g, (_, asin) => fundSeite(asin))
     .replace('👉 Bei Amazon ansehen:', '👉 Zum Fund:');
 }
@@ -35,7 +38,7 @@ export async function telegramSenden({ daten = join(WURZEL, 'daten'), docs = joi
   const nachAsin = new Map((existsSync(feedPfad) ? lesenJson(feedPfad) : []).filter((e) => e.asin).map((e) => [e.asin, e.slug]));
   const basis = config.funde_seite.replace(/\/$/, '');
   const fundSeite = (asin) => (nachAsin.has(asin) ? `${basis}/${nachAsin.get(asin)}/` : `${basis}/`);
-  const text = telegramText(heute.kanal_text, fundSeite);
+  const text = telegramText(heute.kanal_text, fundSeite, config.pflichttexte || {});
   // Die Fund-Seite entsteht beim Website-Lauf kurz nach dem Tageslauf. Ist sie noch nicht da, später erneut versuchen
   // (die nächsten Zeitpläne des Tageslaufs rufen dieses Skript wieder auf).
   if (heute.art === 'fund' && heute.fund && heute.fund.asin) {
